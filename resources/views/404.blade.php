@@ -18,7 +18,7 @@
         
         <!-- Rev slider css -->
         <link href="vendors/revolution/css/settings.css" rel="stylesheet">
-        <link href="vendors/revolution/css/layers.css" rel="stylesheet">
+        <link href="vendors/revolution/css/layers.css" rel="stylesheet"> 
         <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
         
         <!-- Extra plugin css -->
