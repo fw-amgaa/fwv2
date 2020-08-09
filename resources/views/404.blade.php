@@ -20,7 +20,7 @@
         <link href="vendors/revolution/css/settings.css" rel="stylesheet">
         <link href="vendors/revolution/css/layers.css" rel="stylesheet"> 
         <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
-        
+           
         <!-- Extra plugin css -->
         <link href="vendors/animate-css/animate.css" rel="stylesheet"> 
         <link href="vendors/scroll/jquery.mCustomScrollbar.css" rel="stylesheet">
