@@ -22,7 +22,7 @@
         <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
            
         <!-- Extra plugin css -->
-        <link href="vendors/animate-css/animate.css" rel="stylesheet"> 
+        <link href="vendors/animate-css/animate.css" rel="stylesheet">  
         <link href="vendors/scroll/jquery.mCustomScrollbar.css" rel="stylesheet">
         <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
         <link href="vendors/magnify-popup/magnific-popup.css" rel="stylesheet">
