@@ -21,8 +21,7 @@ env_variables:
   SESSION_DRIVER: database
   ## Set these environment variables according to your CloudSQL configuration.
   DB_CONNECTION: mysql
-  DB_HOST: 35.184.117.137
-  DB_PORT: 3306
+  DB_HOST: 35.222.185.209 
   DB_DATABASE: writers
   DB_USERNAME: amgaa
   DB_PASSWORD: Maximusprime09!
