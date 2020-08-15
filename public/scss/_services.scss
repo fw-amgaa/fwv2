@@ -1,0 +1,238 @@
+.ro_services_area{}
+.services_item{
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+    &:before{
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(126, 87, 194, 0.80);
+        z-index: 0;
+    }
+    .services_content{
+        position: absolute;
+        bottom: 100px;
+        color: #fff;
+        padding: 0px 50px;
+        h5{
+            font: 500 18px/50px $pop;
+        }
+        p{
+            line-height: 24px;
+            padding: 8px 0px 50px;
+        }
+    }
+    &:nth-child(2){
+        &:before{
+           background-color: rgba(26, 26, 38, 0.80); 
+        }
+    }
+    &:nth-child(3){
+        &:before{
+           background-color: rgba(240, 127, 132, 0.80); 
+        }
+    }
+    &:nth-child(4){
+        &:before{
+           background-color: rgba(63, 81, 181, 0.80); 
+        }
+    }
+}
+
+/* Business service css
+============================================================================================ */
+.b_service_area{
+    overflow: hidden;
+    clear: both;
+    .b_service_item{
+        width: calc(100% / 4);
+        float: left;
+        overflow: hidden;
+        background: #6ed2e6;
+        text-align: center;
+        padding: 90px 0px;
+        &:nth-child(even){
+            background: #75e0f5;
+        }
+        .b_service_inner{
+            max-width: 320px;
+            margin: auto;
+            img{
+                max-width: 100%;
+            }
+            h4{
+                color: #fff;
+                font-family: $pop;
+                font-size: 24px;
+                padding: 30px 0px 15px 0px;
+            }
+            p{
+                color: #fff;
+                font-family: $pop;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                padding-top: 15px;
+            }
+        }
+    }
+}
+/* End Business service css
+============================================================================================ */
+
+/*================ service_three_area css ===============*/
+.service_three_area{
+    background: #f8f8f8;
+    padding: 100px 0px;
+}
+.service_three_item{
+    font-family: $pop;
+    text-align: center;
+    padding: 47px 48px 90px;
+    transition: all 0.6s linear;
+    margin-top: 30px;
+    i{
+        font-size: 50px;
+        color: #888890;
+        transition: all 0.4s linear;
+    }
+    img{
+        display: none;
+        margin-bottom: 5px;
+        & + img{
+            display: inline-block;
+        }
+    }
+    h2{
+        font-size: 24px;
+        line-height: 50px;
+        color: $dip;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 26px;
+        color: $pfont;
+    }
+    a{
+        font: 16px;
+        line-height: 26px;
+        color: $red;
+        padding-top: 15px;
+        display: inline-block;
+    }
+    &:hover{
+        background: #fff;
+        box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.4);
+        i{
+            color: $red;
+        }
+        img{
+            display: inline-block;
+            & + img{
+                display: none;
+            }
+        }
+    }
+}
+/*================ service_three_area css ===============*/
+
+/*============== Start office_area css =================*/
+.office_area{
+    padding: 96px 0px 88px;
+}
+.office_item{
+    .office_img{
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin-top: 30px;
+        &:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.80);
+            z-index: 0;
+            opacity: 0;
+            transition: all 0.3s ease-in;
+        }
+        img{
+           transition: all 0.5s linear;
+            z-index: -1;
+        }
+        .submit_dark{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $dip;
+            background: $baseColor;
+            opacity: 0;
+            transition: all 0.6s linear;
+        }
+        &:hover{
+            &:before{
+                opacity: 0.80;
+                z-index: 1;
+            }
+            img{
+                transform: scale(1.02);
+            }
+            .submit_dark{
+                opacity: 1;
+                z-index: 2;
+            }
+        }
+    }
+}
+.office_address{
+    margin-top: 35px;
+    .office_address_item{
+        font-family: $pop;
+        font-weight: 400;
+        color: $pfont;
+        h4{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 38px;
+            span,a{
+                font-weight: 400;
+                color: $pfont;
+            }
+        }
+        a{
+            color: $baseColor;
+            transition: all 0.4s linear;
+            &:hover{
+                color: $dip;
+            }
+        }
+    }
+}
+.head_title{
+    font: 500 16px/24px $pop;
+    color: $dip;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 15px;
+    &:before{
+        content: "";
+        width: 50px;
+        height: 2px;
+        background: $baseColor;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+    }
+}
+/*============== End office_area css =================*/

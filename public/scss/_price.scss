@@ -1,0 +1,174 @@
+/* Price css
+============================================================================================ */
+.price_area{
+    padding: 100px 0px 85px 0px;
+    .main_title{
+        padding-bottom: 55px;
+    }
+}
+.price_inner_item{
+    min-height: 580px;
+    .col-md-3{
+        &:last-child{
+            .price_item{
+                border-right: 1px solid #ececec;
+            }
+        }
+    }
+}
+.price_item{
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    box-sizing: content-box;
+    @include transition;
+    .price_head{
+        text-align: center;
+        padding: 28px 0px;
+        border-bottom: 1px solid #ececec;
+        @include transition;
+        h3{
+            font-size: 18px;
+            color: $dip;
+            font-family: $pop;
+            letter-spacing: 5.4px;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        h2{
+            font-size: 36px;
+            font-family: $pop;
+            font-weight: 600;
+            color: $dip;
+            span{
+                font-size: 14px;
+                font-family: $play;
+                font-style: italic;
+                color: $pfont;
+            }
+        }
+    }
+    p{
+        padding: 30px 30px;
+        text-align: center;
+        font-family: $pop;
+        line-height: 24px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $pfont;
+    }
+    .price_option{
+        padding-left: 60px;
+        li{
+            a{
+                font-size: 14px;
+                line-height: 30px;
+                font-family: $pop;
+                font-weight: 400;
+                color: $dip;
+                @include transition;
+                i{
+                    position: relative;
+                    left: -8px;
+                    color: $red;
+                    @include transition;
+                }
+            }
+            &:hover{
+                a{
+                    color: $red;
+                    i{
+                        left: -4px;
+                    }
+                }
+            }
+        }
+    }
+    .p_btn{
+        margin: 55px auto 65px;
+        display: block;
+        @include transition;
+    }
+    &:hover{
+        -webkit-box-shadow: 0px 0px 50px -20px rgba(30,30,31,1);
+        -moz-box-shadow: 0px 0px 50px -20px rgba(30,30,31,1);
+        box-shadow: 0px 0px 50px -20px rgba(30,30,31,1);
+        margin-top: -15px;
+        .price_head{
+            padding-top: 43px;
+        }
+        .p_btn{
+            margin-bottom: 80px;
+        }
+    }    
+}
+/* End Price css
+============================================================================================ */
+
+/* Price style2 css
+============================================================================================ */
+.kl_pricing_area{
+    padding: 85px 0px 100px;
+    .sec_title{
+        color: $dip;
+        text-align: center;
+        h2{
+            &:before{
+                left: 50%;
+                transform: translateX(-50%);
+                background: $baseColor;
+            }
+        }
+    }
+    .pricing_box{
+        text-align: center;
+        border: 1px solid #ececec;
+        padding: 30px 0px 65px;
+        margin-top: 40px;
+        .pricing-header{
+            border-bottom: 1px solid #ececec;
+            padding-bottom: 10px;
+            .icon{
+                background: url(../img/testimonial/polygon.png) no-repeat scroll center 0;
+                padding: 23px 0px 27px;
+                img{
+                    img-fill-color:#fff;
+                }
+            }
+            h2{
+                font: 500 18px/36px $pop;
+                color: $dip;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+            .packeg_typ{
+                font: 600 36px $pop;
+                color: $dip;
+                small{
+                    font: 400 14px/32px $play;
+                    color: $pfont;
+                    font-style: italic;
+                }
+            }
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+            color: $pfont;
+            padding: 25px 0px 26px;
+        }
+        .plan-lists{
+            margin-bottom: 52px;
+            li{
+                color: $dip;
+                line-height: 24px;
+                i{
+                    color: $red;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}
+/* End Price Style2 css
+============================================================================================ */

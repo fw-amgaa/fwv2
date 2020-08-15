@@ -1,0 +1,763 @@
+/* WH Footer css
+============================================================================================ */
+.footer_box{
+    margin-bottom: 60px;
+    .ro_footer_area{
+        .footer_top{
+            padding-left: 30px;
+            padding-right: 30px;
+        } 
+        .footer_bottom{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+.wh_footer_area{
+    
+}
+.footer_main_area{
+    padding: 118px 0px 95px 0px;
+    .main_title{
+        padding-bottom: 45px;
+    }
+    .subscribe_form{
+        max-width: 830px;
+        margin: auto;
+        position: relative;
+        input{
+            border: none;
+            border-bottom: 1px solid #e6e5e1;
+            box-shadow: none;
+            outline: none;
+            border-radius: 0px;
+            padding: 0px;
+            height: 50px;
+            @include placeholder{
+                font-size: 14px;
+                font-family: $pop;
+                color: $pfont;
+                font-weight: 400;
+            }
+            &:focus{
+                border-color: $baseColor;
+            }
+        }
+        .btn-default{
+            position: absolute;
+            right: 0px;
+            top: 55%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: $dip;
+            padding: 0px;
+            border: none;
+            border-radius: 0px;
+            outline: none !important;
+            box-shadow: none !important;
+            z-index: 5;
+        }    
+    }
+    .f_menu{
+        overflow: hidden;
+        clear: both;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        .navbar-nav{
+            float: none;
+            text-align: center;
+            display: inline-block;
+            li{
+                margin-right: 35px;
+                a{
+                    background: transparent;
+                    padding: 0px;
+                    color: $pfont;
+                    font-family: $pop;
+                    font-size: 14px;
+                    @include transition;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &:hover{
+                    a{
+                        color: $dip;
+                    }    
+                }
+            }    
+        }    
+    }    
+}
+.f_social{
+    text-align: center;
+    li{
+        display: inline-block;
+        margin-right: 34px;
+        a{
+            font-size: 18px;
+            color: $pfont;
+            @include transition;
+        }
+        &:last-child{
+            margin-right: 0px;
+        }
+        &:hover{
+            a{
+                color: $dip;
+            }
+        }    
+    }
+}
+.footer_copyright{
+    border-top: 1px solid #e6e5e1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .pull-left{
+        h5{
+            font-size: 14px;
+            color: $pfont;
+            font-family: $pop;
+            font-weight: 400;
+            a{
+                font-weight: 600;
+                color: $dip;
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+    .pull-right{
+        h5{
+            font-size: 14px;
+            color: $pfont;
+            font-family: $pop;
+            font-weight: 400;
+            a{
+                font-weight: 600;
+                color: $dip;
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+    &.dark_footer{
+        background: #101017;
+        border-top: none;
+        padding: 43px 0px;
+        .pull-left{
+            h5{
+                font-size: 14px;
+                font-family: $pop;
+                color: $pfont;
+                font-weight: 400;
+                i{
+                    color: #de2f36;
+                }
+                a{
+                    color: #fff;
+                    font-weight: 400;
+                    &:hover{
+                        color: $baseColor;
+                    }
+                }    
+            }
+        }
+        .pull-right{
+            h5{
+                color: $pop;
+                font-weight: 400;
+                a{
+                    color: #fff;
+                    font-weight: 400;
+                    &:hover{
+                        color: $baseColor;
+                    }
+                }    
+            }
+        }
+    }
+}
+.footer_copy{
+    font-size: 14px;
+    color: $pfont;
+    font-family: $pop;
+    font-weight: 400;
+    a{
+        font-weight: 600;
+        color: $dip;
+        transition: all 0.6s linear;
+        &:hover{
+            color: $baseColor;
+        }
+    }
+}
+.footer_ask{
+    font-size: 14px;
+    color: $pfont;
+    font-family: $pop;
+    font-weight: 400;
+    a{
+        font-weight: 600;
+        color: $dip;
+        transition: all 0.6s linear;
+        &:hover{
+            color: $baseColor;
+        }
+    }
+}
+/* End WH Footer css
+============================================================================================ */
+
+/*==============Start ro_footer_area css ================*/
+.ro_footer_area{
+    background: $dip;
+    a{
+        color: #fff;
+        transition: all 0.1s linear;
+        &:hover{
+            color: $baseColor;
+        }
+    }
+}
+.footer_top{
+    padding: 5px 45px 0px;
+    border-bottom: 1px solid #262636;
+    .footer_menu{
+        li{
+            display: inline-block;
+            a{
+                font: 400 14px/80px $pop;
+            }
+            & + li{
+                padding-left: 40px;
+            }
+        }
+    }
+    .f_content{
+        text-align: right;
+        p{
+            font: 400 14px/80px $pop;
+            color: $pfont;
+        }
+    }
+}
+.footer_bottom{
+    padding: 47px 45px;
+    .copy_right_text{
+        font: 400 14px/60px $pop;
+        color: $pfont;
+    }
+    .footer_logo{
+        text-align: center;
+        a{
+            display: inline-block;
+            line-height: 60px;
+        }
+    }
+    .footer_social{
+        text-align: right;
+        li{
+            display: inline-block;
+            a{
+                font-size: 18px;
+                line-height: 60px;
+                color: $pfont;
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+            & + li{
+                margin-left: 36px;
+            }
+        }
+    }
+}
+/*==============End ro_footer_area css ================*/
+
+/* Dark Footer area css
+============================================================================================ */
+.dark_footer_area{
+    .d_footer_top_area{
+        background: #1a1a26;
+        .d_footer_details{
+            border-bottom: 1px solid #272738;
+            padding: 60px 0px;
+        }
+    }
+}
+.d_title{
+    padding-bottom: 15px;
+    h3{
+        color: #fff;
+        font-size: 18px;
+        font-family: $pop;
+        text-transform: uppercase;
+    }
+}
+.d_f_detail_item{
+    p{
+        color: #fff;
+        font-family: $pop;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+}
+.footer_widget_area{
+    padding: 100px 0px 120px 0px;
+}
+.f_title{
+    padding-bottom: 40px;
+    h3{
+        color: #fff;
+        font-family: $pop;
+        font-size: 24px;
+        font-weight: 400;
+        position: relative;
+        padding-bottom: 20px;
+        &:before{
+            content: "";
+            width: 40px;
+            height: 2px;
+            background: $baseColor;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+    }
+}
+
+.service_w{
+    ul{
+        li{
+            a{
+                font-size: 14px;
+                color: $pfont;
+                font-family: $pop;
+                line-height: 28px;
+                @include transition;
+            }
+            &:hover{
+                a{
+                    color: $baseColor;
+                }    
+            }
+        }
+    }
+}
+.newsletter_w{
+    .input-group{
+        width: 100%;
+        input{
+            width: 100%;
+            display: block;
+            border-radius: 0px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            box-shadow: none;
+            outline: none;
+            padding: 0px 0px;
+            height: 50px;
+            font-size: 14px;
+            color: #fff;
+            font-family: $pop;
+            font-weight: 400;
+            @include placeholder{
+                font-size: 14px;
+                color: #fff;
+                font-family: $pop;
+                font-weight: 400;
+            }
+            &:focus{
+                border-bottom: 1px solid $baseColor;
+            }
+        }
+        .btn-default{
+            position: absolute;
+            right: 0px;
+            top: 55%;
+            transform: translateY(-50%);
+            background: transparent;
+            border-radius: 0px;
+            box-shadow: none !important;
+            outline: none !important;
+            border: none;
+            color: #fff;
+            padding: 0px;
+            font-size: 20px;
+            z-index: 5;
+            cursor: pointer;
+        }
+    }
+    .f_social{
+        text-align: left;
+        margin-top: 35px;
+        li{
+            a{
+                font-size: 24px;
+                color: #fff;
+                @include transition;
+            }
+            &:hover{
+                a{
+                    color: $pfont;
+                }
+            }
+        }
+    } 
+    .mchimp-errmessage, .mchimp-sucmessage{
+        color: #fff;
+    }
+}
+
+.f_social_list{
+    text-align: left;
+    margin-top: 35px;
+    li{
+        display: inline-block;
+        a{
+            font-size: 24px;
+            color: #fff;
+            @include transition;
+        }
+        &:hover{
+            a{
+                color: $pfont;
+            }
+        }
+        & + li{
+            margin-left: 36px;
+        }
+    }
+}
+.about_w{
+    p{
+        color: $pfont;
+        padding-top: 60px;
+    }
+    .address_link{
+        padding-top: 40px;
+        padding-right: 180px;
+        li{
+            font: 400 14px/24px $pop;
+            color: $pfont;
+            padding-bottom: 8px;
+            span{
+                color: #fff;
+                font-weight: 500;
+            }
+            a{
+                color: $pfont;
+            }
+        }
+    }
+    .f_social{
+        text-align: left;
+        margin-top: 35px;
+        li{
+            a{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.instagram_w{
+    .instagram_list{
+        margin-right: -9px;
+        overflow: hidden;
+        margin-top: 5px;
+        li{
+            width: calc(100% / 3);
+            float: left;
+            overflow: hidden;
+            padding-bottom: 9px;
+            a{
+                padding-right: 9px;
+                display: block;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .newsletter_w{
+        margin-top: 43px;
+        .input-group{
+            input{
+                color: $pfont;
+                border-color: $pfont;
+                @include placeholder{
+                    color: $pfont;
+                }
+            }
+            .btn-default{
+                color: $pfont;
+            }
+        }
+        .mailchimp{
+            .mchimp-errmessage, .mchimp-sucmessage{
+                text-align: center;
+                font-size: 14px;
+                color: #fff; 
+                font-family: $pop;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+/* End Dark Footer area css
+============================================================================================ */
+
+/* Start Dark Footer two area css
+============================================================================================ */
+.dark_f_two_area{
+    .d_footer_top_area{
+        padding: 100px 0px;
+    }
+}
+/* End Dark Footer two area css
+============================================================================================ */
+
+.footer_area_five{
+    .footer_top{
+        padding: 100px 0px;
+        border: 0px;
+    }
+    .service_w{
+        .f_title{
+            h3{
+                color: $dip;
+            }
+        }
+        ul{
+            li{
+                a{
+                    font-weight: 400;
+                    i{
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .footer_copyright{
+        border-top: 1px solid #f1f2eb;
+        padding-top: 37px;
+        padding-bottom: 38px;
+        h5{
+            color: $pfont;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            a{
+                font-weight: 600;
+                color: $pfont;
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+}
+.subscribe_w{
+    p{
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $pop;
+        color: $pfont;
+    }
+    .subscribe-form{
+        padding-top: 27px;
+        .subscribe-input{
+            font-size: 14px;
+            line-height: 24px;
+            color: $pfont;
+            box-shadow: none;
+            border-radius: 0px;
+            border: 1px solid #ececec;
+            height: 40px;
+            padding-left: 15px;
+            @include placeholder{
+                color: $pfont;
+            }
+            &:focus{
+                border-color: $baseColor;
+            }
+        }
+        .subscribe-submit{
+            width: 100%;
+            font-size: 16px;
+            line-height: 40px;
+            padding: 0px;
+            border: 0px;
+            box-shadow: none;
+            background: $baseColor;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 12px;
+            transition: all 0.2s linear;
+            outline: none !important;
+            box-shadow: none !important;
+            &:hover{
+                background: $dip;
+            }
+        }
+    }
+}
+
+/*============= w_footer_two css ============*/
+.w_footer_two{
+    background: #fff;
+    border-top: 1px solid #dadedf;
+    .about_w .address_link li{
+        span{
+            color: $pfont;
+        }
+    } 
+    .f_title h3{
+        color: $dip;
+    }
+    .f_social_list li a{
+        color: $dip;
+        &:hover{
+            color: #888890;
+        }
+    }
+    .footer_copyright{
+        background: #f8f8f8;
+    }
+}
+.red_icon{
+    color: #de2f36;
+}
+/*================= footer-five area css ==============*/
+.footer-five{
+    padding: 100px 0px;
+    .footer_copy{
+        padding-top: 28px;
+        line-height: 24px;
+    }
+    .footer_ask{
+        padding-top: 25px;
+        line-height: 24px;
+        br{
+            @media (min-width:992px){
+                display: none;
+            }
+        }
+    }
+    .footer_social{
+        li{
+            display: inline-block;
+            a{
+                font-size: 24px;
+                color: $dip;
+                padding: 0px 17px;
+                transition: all 0.2s linear;
+                &:hover{
+                    color: $pfont;
+                }
+            }
+        }
+    }
+    .middle_footer{
+        text-align: center;
+        .top_p_footer{
+            max-width: 500px;
+            margin: 0 auto 10px;
+            position: relative;
+            z-index: 1;
+            &:before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: url("../img/portfolio/portfolio-5/wave.png") no-repeat scroll center bottom;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+            .footer_social{
+                li{
+                    a{
+                        font-size: 16px;
+                    }
+                }
+            }
+            p{
+                padding: 18px 0px 28px;
+            }
+        }
+        .footer_copy{
+            padding-top: 23px;
+        }
+    }
+    .footer_copyright{
+        i{
+            color: #de2f36; 
+        }
+    }
+}
+
+/*============== w_footer css =============*/
+.w_footer{
+    padding: 120px 60px 37px;
+    margin-bottom: 0px;
+    background: #fff;
+    .footer_top{
+        border-color: #dce0e1;
+    }
+    .footer_top,.footer_bottom{
+        padding-left: 0px;
+        padding-right: 0px;
+        a{
+            color: $dip;
+            font-weight: 600;
+            transition: all 0.4s linear;
+        }
+    }
+    .footer_top{
+        .footer_menu li a{
+            color: $dip;
+            &:hover{
+                color: $baseColor;
+            }
+        }
+    }
+    .footer_bottom{
+        a{
+            font-weight: 600;
+            &:hover{
+                color: $baseColor;
+            }
+        }
+    }
+}
+
+/*============= footer_dark css =============*/
+.footer_dark{
+    background: #252525;
+    .footer_social li a {
+        color: #fff;
+    }
+    .footer_copy a{
+        color: #fff;
+        &:hover{
+            color: $baseColor;
+        }
+    }
+}
+.f_border_none{
+    border: 0px;
+}
