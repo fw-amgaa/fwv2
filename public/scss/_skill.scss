@@ -1,0 +1,443 @@
+/*============= ro_skill_area css ================*/
+.ro_skill_area{
+    background: #f8f8f8;
+    overflow: hidden;
+    display: flex;
+    height: 850px;
+}
+.skill_left_side{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    .inner_sec{
+        width: 50%;
+        float: left;
+        padding: 94px 60px 256px;
+        position: relative;
+        z-index: 1;
+        &:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1; 
+        }
+    }
+    .skill_inner_sec{
+        background: url("../img/skill/skill-bg.jpg") no-repeat scroll center 0;
+        background-size: cover;
+        &:before{
+            background: rgba(61, 61 ,61, 0.40);
+        }
+        .progress-element{
+            
+        }
+    }
+    .struck_inner_sec{
+        background: url("../img/skill/str-bg.jpg") no-repeat scroll center 0;
+        background-size: cover;
+        padding-bottom: 183px;
+        &:before{
+            background: rgba(0, 0 ,0, 0.65);
+        } 
+        .tab-accordion{
+            padding-top: 35px;
+            .panel{
+                box-shadow: none;
+                background: transparent;
+                border-radius: 0px;
+                border-color: #fff;
+                opacity: 1;
+                .panel-heading{
+                    padding: 0px;
+                    background: transparent;
+                    .panel-title{
+                        a{
+                            display: block;
+                            font: 600 14px/50px $pop;
+                            color: #fff;
+                            padding: 0px 15px;
+                            position: relative;
+                            i{
+                                position: absolute;
+                                right: 15px;
+                                line-height: 50px;
+                                font-size: 14px;
+                                & + i{
+                                    display: none;
+                                }
+                            }
+                            &.collapsed{
+                                i{
+                                    display: none;
+                                    & + i{
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .panel-collapse{
+                    .panel-body{
+                        border: 0px;
+                        padding-top: 5px;
+                        color: #fff;
+                        font: 400 14px/24px $pop;
+                    }
+                }
+                & + .panel{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+.skill_right_side{
+    width: 50%;
+    float: right;
+    flex: 1;
+    align-self: center;
+    .feature_inner{
+        padding-left: 60px;
+        max-width: 810px;
+        margin-right: auto;
+        .main_title{
+            text-align: left;
+            h2{
+                &:before{
+                    left: 0;
+                    transform: translateX(0);
+                    background: $red;
+                }
+            }
+        }
+        .ro-features{
+            padding-top: 40px;
+            padding-bottom: 26px;
+            .features_item{
+                max-width: 50%;
+                float: left;
+                margin-bottom: 45px;
+                cursor: pointer;
+                .media-left{
+                    padding-right: 30px;
+                    i{
+                        width: 70px;
+                        height: 70px;
+                        text-align: center;
+                        font-size: 25px;
+                        line-height: 70px;
+                        color: #1c1f2c;
+                        background: #75e0f5;
+                        box-shadow: 2px 2px 0px 0px rgba(219,219,233,1);
+                        transition: all 0.4s linear;
+                        display: block;
+                    }
+                }
+                .media-body{
+                    h4{
+                        font-size: 16px;
+                        font-weight: 500;
+                        font-family: $pop;
+                        color: $dip;
+                        padding-bottom: 10px;
+                    }
+                    p{
+                        font: 400 14px/24px $pop;
+                        color: $pfont;
+                    }
+                }
+                &:nth-child(even){
+                    float: right;
+                    padding-left: 20px;
+                }
+                & + .features_item{
+                    margin-top: 0px;
+                    
+                }
+                &:hover{
+                    .media-left{
+                        i{
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.skill_item{
+    color: #fff;
+    padding-top: 15px;
+    .skill-name{
+        font: 500 16px/40px $pop;
+        color: #fff;
+        display: inline-block;
+    }
+    .skill-coun{
+        font: 400 18px/40px $pop;
+        display: inline-block;
+        float: right;
+    }
+    .bt-skill{
+        .bt-skillholder{
+            width: 100%;
+            display: block;
+            height: 10px;
+            border-radius: 40px;
+            background: #fff;
+            .bt-skillbar{
+                height: 10px;
+                background-image: -moz-linear-gradient( 180deg, rgb(161,196,253) 0%, rgb(194,233,251) 100%);
+                background-image: -webkit-linear-gradient( 180deg, rgb(161,196,253) 0%, rgb(194,233,251) 100%);
+                background-image: -ms-linear-gradient( 180deg, rgb(161,196,253) 0%, rgb(194,233,251) 100%);
+                float: left;
+                border-radius: 40px;
+            }
+        }
+    } 
+}
+.dark_skill{
+    .skill_item{
+        .skill-name{
+            color: $dip;
+        }
+        .skill-coun{
+            color: $pfont;
+        }
+    }
+}
+
+
+/*===============Start kl_agency_area css ===========*/
+
+.kl_agency_area{
+    .display-table{
+        display: table;
+        .col_height{
+            display: table-row;
+        }
+        .agency-left-side,.agency-right-side{
+            width: 50%;
+            display: table-cell;
+        }
+    }
+}
+.agency-left-side{
+    background: #f8f8f8;
+    padding:83px 60px 180px;
+    vertical-align: top;
+    .sec_title{
+        h2{
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+    }
+}
+.agency_content{
+    .tab_fillter{
+        border-color: #dadedf;
+        margin: 45px 0px 25px;
+        li{
+            margin: 0px;
+            a{
+                font: 500 16px/28px $pop;
+                color: $dip;
+                padding: 0px;
+                border-radius: 0px;
+                border: 0px;
+                margin: 0;
+                text-transform: capitalize;
+                position: relative;
+                &:before{
+                    content: "";
+                    width: 0;
+                    height: 3px;
+                    bottom: -1px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: transparent;
+                    transition: all 0.3s linear;
+                }
+                &:hover,&:focus{
+                    background: transparent;
+                    &:before{
+                        content: "";
+                        width: 100%;
+                        background: $baseColor;
+                    }
+                }
+            }
+            &.active{
+                a{
+                    background: transparent;
+                    border: 0px;
+                    color: $baseColor;
+                    &:before{
+                        content: "";
+                        width: 100%;
+                        background: $baseColor;
+                    }
+                }
+            }
+            & + li{
+                padding-left: 60px;
+            }
+        }
+    } 
+    .agency_tab{
+        p{
+            color: $pfont;
+            line-height: 24px;
+        }
+        .tab_item{
+            max-width: 33%;
+            float: left;
+            padding: 50px 0px 0px;
+            .tab-icon{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 1px solid #888890;
+                line-height: 100px;
+                text-align: center;
+            }
+            h2{
+                font: 500 16px/30px $pop;
+                color: #1e1e1f;
+                padding:23px 0px 5px;
+            }
+            & + .tab_item{
+                margin-left: 70px;
+            }
+        }
+    }
+}
+.agency-right-side{
+    background: url("../img/service/single-image-slider.jpg") no-repeat center 0;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+        position: absolute;
+        background: rgba(0, 0 ,0, 0.50);
+        z-index: -1;
+    }
+    .owl-prev,.owl-next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        i{
+            width: 42px;
+            height: 42px;
+            font-size: 18px;
+            line-height: 40px;
+            background: #fff;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                background: $baseColor;
+                color: #fff;
+            }
+        }
+    }
+    .owl-prev{
+        left: 0;
+    }
+    .owl-next{
+        right: 0;
+    }
+}
+.passion_slider{
+    max-width: 535px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .sec_title{
+        margin-bottom: 25px;
+        h2{
+            &:before{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .l_btn{
+        margin-top: 50px;
+    }
+}
+/*===============End kl_agency_area css ===========*/
+
+/*===============Start kl_funfact_area css ===========*/
+.kl_funfact_area{
+    
+}
+.funfact_item{
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+    width: calc(100% / 5);
+    float: left;
+    &:before{
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.50);
+        position: absolute;
+        z-index: 0;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+.fact_content{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    h3{
+        font-size: 42px;
+        line-height: 50px;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding-bottom: 13px;
+    }
+}
+/*===============End kl_funfact_area css ===========*/
+
+.kl_mul_fact_area{
+    background: $dip;
+    padding: 55px 0px 60px;
+    .funfact_items{
+        .fact_content{
+            position: relative;
+            left: auto;
+            transform: translate(0);
+        }
+    } 
+}
