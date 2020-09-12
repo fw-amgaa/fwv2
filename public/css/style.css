@@ -6404,9 +6404,9 @@ i:before {
 .single_blog_img_content .single_blog_content {
     padding: 60px 100px 0px 100px;
 }
-.single_blog_img_content .single_blog_content *{
+.single_blog_img_content .single_blog_content * {
     color: black !important;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
 }
 
 .single_blog_img_content .single_blog_content img {
