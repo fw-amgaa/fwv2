@@ -44,9 +44,9 @@
         <section class="single_blog_area">
             <div class="container">
                 <div class="single_blog_title">
-                    <a href="#"><h6 class="blog_category">Brading Design</h6></a>
+                    <a href="#"><h6 class="blog_category" style="text-transform: capitalize">{{ $blog->sluger }}</h6></a>
                     <h2>{{ $blog->title }}</h2>
-                    <a href="#"><h5 class="blog_date"> Posted On: {{ $blog->created_at }}</h5></a>
+                    <a href="#"><h5 class="blog_date"> Нийтэлсэн огноо: {{ $blog->created_at }}</h5></a>
                 </div>
                 <div class="single_blog_img_content">
                     <div class="blog_image_slider owl-carousel">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="single_blog_category">
                     <div class="pull-left">
-                        <b>Category: </b> <a href="#" style="text-transform: capitalize">{{ $blog->sluger }}</a>
+                        <b>Категори: </b> <a href="#" style="text-transform: capitalize">{{ $blog->sluger }}</a>
                     </div>
                     <div class="pull-right">
                         <h4>Share :</h4>
