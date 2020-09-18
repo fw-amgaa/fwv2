@@ -96,10 +96,10 @@
         <section class="main_slider_area">
             <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
                 <ul> 
-                <?php $__currentLoopData = $blogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+
                     <li data-index="rs-1595" data-transition="slotzoom-horizontal" data-slotamount="10">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo e(Voyager::image($blog->image)); ?>" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+                        <img src="<?php echo e(Voyager::image($featuredBlog->image)); ?>" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
@@ -141,7 +141,7 @@
                                 data-start="500" 
                                 data-splitout="none" 
                                 data-responsive_offset="on" 
-                                data-elementdelay="0.05"><?php echo e($blog->title); ?>
+                                data-elementdelay="0.05"><?php echo e($featuredBlog->title); ?>
 
                             </div>
                             <div class="tp-caption third_text" 
@@ -187,11 +187,11 @@
                                 data-splitin="none" 
                                 data-splitout="none" 
                                 data-responsive_offset="on">
-                                <a class="l_btn" href="/blogs/<?php echo e($blog->slug); ?>">Read News</a>
+                                <a class="l_btn" href="/blogs/<?php echo e($featuredBlog->slug); ?>">Read News</a>
                             </div>
                         </div>
                     </li>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
                 </ul>
             </div>
         </section>
@@ -367,10 +367,12 @@
                 <nav class="latest_menu">
                     <ul>
                         <li data-filter="*" class="active"><a href="">All</a></li>
-                        <li data-filter=".financial"><a href="">Financial</a></li>
-                        <li data-filter=".design"><a href="">Web Design</a></li>
-                        <li data-filter=".marketing"><a href="">Seo & Marketing</a></li>
-                        <li data-filter=".startup"><a href="">IT Startup</a></li>
+                        <li id="history" data-filter=".history">History</li>
+                        <li id="politics" data-filter=".politics">Politics</li>
+                        <li id="self-development" data-filter=".self-development">Self Development</li>
+                        <li id="interview" data-filter=".interview">Interview</li>
+                        <li id="book-introduction" data-filter=".book-introduction">Book Introduction</li>
+                        <li id="art" data-filter=".art">Art</li>
                     </ul>
                 </nav>
                 <div class="row">
