@@ -130,7 +130,7 @@
                                 data-start="500" 
                                 data-splitout="none" 
                                 data-responsive_offset="on" 
-                                data-elementdelay="0.05">Чөлөөт бичээчид
+                                data-elementdelay="0.05">{{$blog->title}}
                             </div>
                             <div class="tp-caption third_text" 
                                 data-x="['center']" 
@@ -150,7 +150,7 @@
                                 data-splitin="none" 
                                 data-splitout="none" 
                                 data-responsive_offset="on" 
-                                data-elementdelay="0.05" ><p>Бидний дуртай авга ах</p>
+                                data-elementdelay="0.05" ><p></p>
                             </div>
                             <div class="tp-caption button" 
                                 data-x="['center']" 
@@ -175,8 +175,7 @@
                                 data-splitin="none" 
                                 data-splitout="none" 
                                 data-responsive_offset="on">
-                                <a class="l_btn" href="/blog">Read News</a>
-                                <a class="c_btn" href="/contact">Contact us</a>
+                                <a class="l_btn" href="/blogs/{{ $blog->slug }}">Read News</a>
                             </div>
                         </div>
                     </li>
@@ -364,78 +363,20 @@
                 </nav>
                 <div class="row">
                     <div class="l_project_inner">
+                        @foreach($blogs as $blog)
                         <div class="col-md-4 col-sm-6 l_p_i design marketing">
                             <div class="l_project_item">
-                                <img src="img/l-project/l-project-1.jpg" alt="">
+                                <img src="{{ Voyager::image($blog->image) }}" alt="">
                                 <div class="l_project_hover">
                                     <div class="l_project_h_inner">
-                                        <h4>Business Conference 2019</h4>
-                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                                        <a href="#">See project <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <h4>{{ $blog->title }}</h4>
+                                        <p>{{ $blog->excerpt }}</p>
+                                        <a href="/blogs/{{ $blog->slug }}">Read more<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 l_p_i financial">
-                            <div class="l_project_item">
-                                <img src="img/l-project/l-project-2.jpg" alt="">
-                                <div class="l_project_hover">
-                                    <div class="l_project_h_inner">
-                                        <h4>Business Conference 2019</h4>
-                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                                        <a href="#">See project <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 l_p_i design marketing startup">
-                            <div class="l_project_item">
-                                <img src="img/l-project/l-project-3.jpg" alt="">
-                                <div class="l_project_hover">
-                                    <div class="l_project_h_inner">
-                                        <h4>Business Conference 2019</h4>
-                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                                        <a href="#">See project <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 l_p_i financial design">
-                            <div class="l_project_item">
-                                <img src="img/l-project/l-project-4.jpg" alt="">
-                                <div class="l_project_hover">
-                                    <div class="l_project_h_inner">
-                                        <h4>Business Conference 2019</h4>
-                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                                        <a href="#">See project <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 l_p_i design startup">
-                            <div class="l_project_item">
-                                <img src="img/l-project/l-project-5.jpg" alt="">
-                                <div class="l_project_hover">
-                                    <div class="l_project_h_inner">
-                                        <h4>Business Conference 2019</h4>
-                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                                        <a href="#">See project <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 l_p_i financial design">
-                            <div class="l_project_item">
-                                <img src="img/l-project/l-project-6.jpg" alt="">
-                                <div class="l_project_hover">
-                                    <div class="l_project_h_inner">
-                                        <h4>Business Conference 2019</h4>
-                                        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                                        <a href="#">See project <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
