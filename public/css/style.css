@@ -12142,5 +12142,10 @@ path {
     display: inline-block;
     float: right;
 }
+.image.align-center {
+    width: max-content;
+    display: inline-block;
+    margin: 0 auto;
+}
 
 /* Pizda */
