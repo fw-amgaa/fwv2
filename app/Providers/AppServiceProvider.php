@@ -32,6 +32,5 @@ class AppServiceProvider extends ServiceProvider
     
         View::share('blogs', $blogs);
         View::share('categories', $categories);
-        View::share('featuredBlog', $featuredBlog);
     }
 }
