@@ -6416,10 +6416,10 @@ i:before {
 }
 
 .single_blog_img_content .single_blog_content p {
-    font-size: 14px;
+    font-size: 45px;
     color: #888890;
     font-family: "Poppins", sans-serif;
-    line-height: 24px;
+    line-height: 26px;
     padding-bottom: 25px;
 }
 
@@ -12151,6 +12151,7 @@ path {
 }
 .column .image {
     margin: 20px 0;
+    width: 100%;
 }
 .column figcaption {
     text-transform: capitalize;
