@@ -6402,7 +6402,8 @@ i:before {
 }
 
 .single_blog_img_content .single_blog_content {
-    padding: 60px 100px 0px 100px;
+    max-width: 640px;
+    margin: 80px auto;
 }
 .single_blog_img_content .single_blog_content * {
     color: black !important;
@@ -6410,7 +6411,8 @@ i:before {
 }
 
 .single_blog_img_content .single_blog_content img {
-    max-width: 100%;
+    width: 100% !important;
+    height: auto !important;
 }
 
 .single_blog_img_content .single_blog_content p {
@@ -12147,5 +12149,10 @@ path {
     display: inline-block;
     margin: 0 auto;
 }
-
+.column .image {
+    margin: 20px 0;
+}
+.column figcaption {
+    text-transform: capitalize;
+}
 /* Pizda */
