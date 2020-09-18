@@ -12159,3 +12159,6 @@ path {
     text-transform: capitalize;
 }
 /* Pizda */
+.customer_saying_area_two .clients_logo .clogo_item {
+    width: calc(100% / 3);
+}
