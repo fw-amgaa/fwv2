@@ -111,7 +111,7 @@
         <!--================End Like post Area =================-->
         
         <!--================Comment Area =================-->
-        <section class="comment_area">
+        <!-- <section class="comment_area">
             <div class="container">
                 <div class="comment_list">
                     <div class="comment_title">
@@ -126,7 +126,7 @@
                                 <a href="#"><h4>Kusner Ivanka</h4></a>
                                 <a href="#"><h5>Dec 12,2017 </h5></a>
                                 <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, 
-vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac.</p>
+                                        vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac.</p>
                                 <a class="comment_reply" href="#">Reply</a>
                             </div>
                         </div>
@@ -138,7 +138,7 @@ vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas se
                                 <a href="#"><h4>Diamante Rosinante</h4></a>
                                 <a href="#"><h5>Dec 12,2017 </h5></a>
                                 <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, 
-vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac.</p>
+                                    vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac.</p>
                                 <a class="comment_reply" href="#">Reply</a>
                             </div>
                         </div>
@@ -172,7 +172,7 @@ vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas se
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--================End Comment Area =================-->
                                 
         <x-footer/>

@@ -52,6 +52,7 @@
                         <li data-filter=".self-development">Self Development</li>
                         <li data-filter=".interview">Interview</li>
                         <li data-filter=".book-introduction">Book Introduction</li>
+                        <li data-filter=".art">Art</li>
                     </ul>
                     <div class="row blog_main_item_inner">
                         @foreach($blogs as $blog)
@@ -60,12 +61,12 @@
                                     <div class="blog_image">
                                         <img src="{{ Voyager::image($blog->image) }}" alt="">
                                         <div class="blog_hover">
-                                            <a class="image_pop"  href="{{ Voyager::image($blog->image) }}"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                            <a class="image_pop"  href="/blogs/{{ $blog->slug }}"><i class="fa fa-plus" aria-hidden="true"></i></a>
                                             <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <div class="n_blog_text">
-                                        <a href="#"><h5>{{ $blog->created_at }}</h5></a>
+                                        <a href="/blogs/{{ $blog->slug }}"><h5>{{ $blog->created_at }}</h5></a>
                                         <a href="/blogs/{{ $blog->slug }}"><h3>{{ $blog->title }}</h3></a>
                                         <p>{{ $blog->excerpt }}</p>
                                         <a class="blog_r_btn" href="/blogs/{{ $blog->slug }}" style="text-align: center !important">Read More</a>

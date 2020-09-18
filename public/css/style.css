@@ -5535,6 +5535,8 @@ i:before {
 
 .n_blog_item .blog_image img {
     max-width: 100%;
+    height: 275px;
+    object-fit: cover;
 }
 
 .n_blog_item .blog_image .blog_hover {
