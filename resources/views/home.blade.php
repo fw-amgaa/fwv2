@@ -85,10 +85,10 @@
         <section class="main_slider_area">
             <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
                 <ul> 
-
+                @foreach($blogs as $blog)
                     <li data-index="rs-1595" data-transition="slotzoom-horizontal" data-slotamount="10">
                         <!-- MAIN IMAGE -->
-                        <img src="{{ Voyager::image($featuredBlog->image) }}" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+                        <img src="{{ Voyager::image($blog->image) }}" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
@@ -130,7 +130,7 @@
                                 data-start="500" 
                                 data-splitout="none" 
                                 data-responsive_offset="on" 
-                                data-elementdelay="0.05">{{$featuredBlog->title}}
+                                data-elementdelay="0.05">{{$blog->title}}
                             </div>
                             <div class="tp-caption third_text" 
                                 data-x="['center']" 
@@ -175,11 +175,11 @@
                                 data-splitin="none" 
                                 data-splitout="none" 
                                 data-responsive_offset="on">
-                                <a class="l_btn" href="/blogs/{{ $featuredBlog->slug }}">Read News</a>
+                                <a class="l_btn" href="/blogs/{{ $blog->slug }}">Read News</a>
                             </div>
                         </div>
                     </li>
-
+                @endforeach
                 </ul>
             </div>
         </section>
