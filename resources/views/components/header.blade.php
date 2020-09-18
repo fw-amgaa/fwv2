@@ -128,14 +128,10 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/" class="dropdown-toggle">Home</a>
-                        </li>
-                        <li><a href="/about-us">About Us</a></li>
                         <li class="dropdown">
-                            <a href="/portfolio" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                            <a href="/portfolio" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
                             <ul class="dropdown-menu sub-menu">
-                                <li><a href="/portfolio-single">Single</a></li>
+                                <li><a href="/portfolio-single">About Us</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -146,23 +142,9 @@
                                     @endforeach
                                 </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="/photography" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Phorography</a>
-                            <ul class="dropdown-menu sub-menu">
-                                <li><a href="/photographer_portfolio">Photographer portfolio</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="/photography" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meet the team</a>
-                            <ul class="dropdown-menu sub-menu">
-                                <li><a href="/photographer_portfolio">Single Team Member</a></li>
-                            </ul>
-                        </li>
                         <li><a href="/about-us">Contact Us</a></li>
-                        <li><a href="404.html">404</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="shop_cart"><a href="#"><i class="ti-bag"></i></a></li>
                         <li class="nav_searchFrom"><a href="#"><i class="ti-search"></i></a></li>
                         <li><a href="#"><i class="lnr lnr-menu bar_menu"></i></a></li>
                     </ul>
