@@ -355,10 +355,12 @@
                 <nav class="latest_menu">
                     <ul>
                         <li data-filter="*" class="active"><a href="">All</a></li>
-                        <li data-filter=".financial"><a href="">Financial</a></li>
-                        <li data-filter=".design"><a href="">Web Design</a></li>
-                        <li data-filter=".marketing"><a href="">Seo & Marketing</a></li>
-                        <li data-filter=".startup"><a href="">IT Startup</a></li>
+                        <li id="history" data-filter=".history">History</li>
+                        <li id="politics" data-filter=".politics">Politics</li>
+                        <li id="self-development" data-filter=".self-development">Self Development</li>
+                        <li id="interview" data-filter=".interview">Interview</li>
+                        <li id="book-introduction" data-filter=".book-introduction">Book Introduction</li>
+                        <li id="art" data-filter=".art">Art</li>
                     </ul>
                 </nav>
                 <div class="row">
