@@ -85,9 +85,10 @@
         <section class="main_slider_area">
             <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
                 <ul> 
+                @foreach($blogs as $blog)
                     <li data-index="rs-1595" data-transition="slotzoom-horizontal" data-slotamount="10">
                         <!-- MAIN IMAGE -->
-                        <img src="img/slider/home-slider-1.jpg" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+                        <img src="{{ Voyager::image($blog->image) }}" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
@@ -179,254 +180,14 @@
                             </div>
                         </div>
                     </li>
-                    <li data-index="rs-1596" data-transition="slotzoom-horizontal" data-slotamount="10">
-                        <!-- MAIN IMAGE -->
-                        <img src="img/slider/home-slider-2.jpg" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                        <!-- LAYERS -->
-
-                         <!--LAYER NR. 1 -->
-                        <div class="slider_text_box">
-                            <div class="tp-caption first_text" 
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-                                data-x="['center']" 
-                                data-y="top"
-                                data-voffset="['355','300','300','220','210','215']"
-                                data-hoffset="['0,'0','0','0','0']"
-                                data-fontsize="['80','80','80','70','45','38']"
-                                data-lineheight="['85','85','85','85',65','48']"
-                                data-transform_idle="o:1;"
-                                data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
-                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                data-start="1000" 
-                                data-splitin="chars" 
-                                data-splitout="none" 
-                                data-responsive_offset="on" 
-                                style="font-family: 'Roboto', sans-serif; color:#fff;text-transform:uppercase; font-style:normal; font-weight:900;">innovate & grow?
-                            </div>
-                            <div class="tp-caption third_text" 
-                                data-x="['center']" 
-                                data-y="top" 
-                                data-voffset="['450','385','400','320','280','285']"
-                                data-fontsize="['32','32','32','28','28','20']"
-                                data-lineheight="['60','60','60','28','28','25']"
-                                data-width="['800','800','600','800','800','290']"
-                                data-height="none"
-                                data-transform_idle="o:1;"
-                                data-whitespace="normal"
-                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                                data-textalign="['center','center','center','center']" 
-                                data-start="800" 
-                                data-splitin="none" 
-                                data-splitout="none" 
-                                data-responsive_offset="on" 
-                                 data-elementdelay="0.05" style="transform:uppercase; font-weight:400;text-transform:uppercase;"> a professionals template
-                            </div>
-                            <div class="tp-caption button" 
-                                data-x="['center']" 
-                                data-y="top" 
-                                data-voffset="['560','500','500','385','360','360']" 
-                                data-hoffset="['0','0','0','0','0','0']" 
-                                data-fontsize="['20','20','20','20','20']"
-                                data-lineheight="['20','20','20','20','20']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-                                data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:[-100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-                                data-start="1500" 
-                                data-splitin="on" 
-                                data-splitout="none" 
-                                data-responsive_offset="on">
-                                <a class="l_btn" href="#">learn more</a>
-                                <a class="c_btn" href="#">contact us</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li data-index="rs-1597" data-transition="slotzoom-horizontal" data-slotamount="10">
-                        <!-- MAIN IMAGE -->
-                        <img src="img/slider/home-slider-1.jpg" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                         <!--LAYERS-->
-                         <!---LAYER NR. 1 --->
-                        <div class="slider_text_box">
-                            <div class="tp-caption first_text" 
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-                                data-x="['center']" 
-                                data-y="top"
-                                data-voffset="['300','300','300','210','180','185']"
-                                data-hoffset="['0','0','0','0','0']"
-                                data-fontsize="['32','32','32','25','25','18']"
-                                data-lineheight="['40','40','40','28','28']"
-                                data-transform_idle="o:1;"
-                                data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
-                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                data-start="1000" 
-                                data-splitin="chars" 
-                                data-splitout="none" 
-                                data-responsive_offset="on">We provide solution 
-                            </div>
-                            <div class="tp-caption secand_text" 
-                                data-x="['center']" 
-                                data-y="top" 
-                                data-voffset="['365','365','350','250','210']"
-                                data-fontsize="['60','60','60','50','40','30']" 
-                                data-lineheight="['60','60','60','60','75']" 
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-                                data-transform_idle="o:1;"
-                                data-transform_in="x:[105%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
-                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
-                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                data-start="500" 
-                                data-splitout="none" 
-                                data-responsive_offset="on" 
-                                data-elementdelay="0.05">For your business
-                            </div>
-                            <div class="tp-caption third_text" 
-                                data-x="['center']" 
-                                data-y="top" 
-                                data-voffset="['450','450','450','330','290','290','280']"
-                                data-fontsize="['20','20','18','18','18']"
-                                data-lineheight="['20','20','20','20','20','20','16']"
-                                data-width="['820','840','820','600','450','350','380']"
-                                data-height="none"
-                                data-transform_idle="o:1;"
-                                data-whitespace="normal"
-                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                data-start="800" 
-                                data-splitin="none" 
-                                data-splitout="none" 
-                                data-responsive_offset="on" 
-                                data-elementdelay="0.05" ><p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                            </div>
-                            <div class="tp-caption button" 
-                                data-x="['center']" 
-                                data-y="top" 
-                                data-voffset="['560','570','560','450','430','430','510']" 
-                                data-hoffset="['0','0','0','0','0','0']" 
-                                data-fontsize="['20','20','20','20','20','20']"
-                                data-lineheight="['20','20','20','20','20']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                data-textAlign="['center','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[10,10,10,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[10,10,10,0]"
-                                data-start="1500" 
-                                data-splitin="none" 
-                                data-splitout="none" 
-                                data-responsive_offset="on">
-                                <a class="l_btn" href="#">learn more</a>
-                                <a class="c_btn" href="#">contact us</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li data-index="rs-1598" data-transition="slotzoom-horizontal" data-slotamount="10">
-                         <!--MAIN IMAGE--> 
-                        <img src="img/slider/home-slider-2.jpg" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                         <!--LAYERS--> 
-
-                         <!--LAYER NR. 1--> 
-                        <div class="slider_text_box">
-                            <div class="tp-caption first_text" 
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-                                data-x="['center']" 
-                                data-y="top"
-                                data-voffset="['355','300','300','220','210','215']"
-                                data-hoffset="['0,'0','0','0','0']"
-                                data-fontsize="['80','80','80','70','45','38']"
-                                data-lineheight="['85','85','85','85',65','48']"
-                                data-transform_idle="o:1;"
-                                data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
-                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                data-start="1000" 
-                                data-splitin="chars" 
-                                data-splitout="none" 
-                                data-responsive_offset="on" 
-                                style="font-family: 'Roboto', sans-serif; color:#fff;text-transform:uppercase; font-style:normal; font-weight:900;">innovate & grow?
-                            </div>
-                            <div class="tp-caption third_text" 
-                                data-x="['center']" 
-                                data-y="top" 
-                                data-voffset="['450','385','400','320','280','285']"
-                                data-fontsize="['32','32','32','28','28','20']"
-                                data-lineheight="['60','60','60','28','28','25']"
-                                data-width="['800','800','600','800','800','290']"
-                                data-height="none"
-                                data-transform_idle="o:1;"
-                                data-whitespace="normal"
-                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                                data-textalign="['center','center','center','center']" 
-                                data-start="800" 
-                                data-splitin="none" 
-                                data-splitout="none" 
-                                data-responsive_offset="on" 
-                                 data-elementdelay="0.05" style="transform:uppercase; font-weight:400;text-transform:uppercase;"> a professionals template
-                            </div>
-                            <div class="tp-caption button" 
-                                data-x="['center']" 
-                                data-y="top" 
-                                data-voffset="['560','500','500','385','360','360']" 
-                                data-hoffset="['0','0','0','0','0','0']" 
-                                data-fontsize="['20','20','20','20','20']"
-                                data-lineheight="['20','20','20','20','20']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-                                data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":2500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:[-100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-                                data-textAlign="['left','left','left','left']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-                                data-start="1500" 
-                                data-splitin="on" 
-                                data-splitout="none" 
-                                data-responsive_offset="on">
-                                <a class="l_btn" href="#">learn more</a>
-                                <a class="c_btn" href="#">contact us</a>
-                            </div>
-                        </div>
-                    </li>
+                @endforeach
                 </ul>
             </div>
         </section>
         <!--================End Slider Area =================-->
         
         <!--================Start feature_area =================-->
-        <section class="feature_area">
+        <!-- <section class="feature_area">
             <div class="main_title">
                 <h5>Industry expertise</h5>
                 <h2>Klamp Business Features</h2>
@@ -501,11 +262,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--================End feature_area =================-->
         
         <!--================About Area =================-->
-        <section class="about_area">
+        <!-- <section class="about_area">
             <div class="about_left_side">
                 <div class="sec_b_title">
                     <h5>About Us</h5>
@@ -582,7 +343,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--================End About Area =================-->
         
         <!--================End About Area =================-->
@@ -680,87 +441,9 @@
             </div>
         </section>
         <!--================End About Area =================-->
-        
-        <!--================Customer Area =================-->
-        <section class="customer_saying_area_two">
-            <div class="container">
-                <div class="sec_title">
-                    <h2>What our customer saying</h2>
-                </div>
-                <div class="saying_slider owl-carousel">
-                    <div class="item">
-                        <div class="saying_item">
-                            <img class="img-circle" src="img/saying-slider/saying-client-1.png" alt="">
-                            <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                            <a href="#"><h4>Rosinante Vole</h4></a>
-                            <h5>SEO Marketer</h5>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="saying_item">
-                            <img class="img-circle" src="img/saying-slider/saying-client-1.png" alt="">
-                            <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                            <a href="#"><h4>Rosinante Vole</h4></a>
-                            <h5>SEO Marketer</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row m0 clients_logo">
-                <div class="clogo_item">
-                    <img src="img/clients-logo/coffie.png" alt="">
-                </div>
-                <div class="clogo_item">
-                    <img src="img/clients-logo/chock.png" alt="">
-                </div>
-                <div class="clogo_item">
-                    <img src="img/clients-logo/market.png" alt="">
-                </div>
-                <div class="clogo_item">
-                    <img src="img/clients-logo/moun.png" alt="">
-                </div>
-                <div class="clogo_item">
-                    <img src="img/clients-logo/m-bike.png" alt="">
-                </div>
-                <div class="clogo_item">
-                    <img src="img/clients-logo/coffie.png" alt="">
-                </div>
-            </div>
-        </section>
-        <!--================End Customer Area =================-->
-        
-        <!--================Find More Area =================-->
-        <section class="find_more_area">
-            <div class="container">
-                <div class="pull-left">
-                    <h5>Purchase Klamp today!</h5>
-                    <h3>What are you waiting for?</h3>
-                </div>
-                <div class="pull-right">
-                    <a class="l_btn" href="#">find our more</a>
-                </div>
-            </div>
-        </section>
-        <!--================End Find More Area =================-->
-        
-        <!--================Team Members Area =================-->
-        <section class="team_members_area">
-            <div class="container">
-                <div class="team_details">
-                    <div class="main_w_title">
-                        <h5>Behind the scenes</h5>
-                        <h2>We help clients Business & Consulting</h2>
-                        <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. </p>
-                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus . Aenean lacinia bibendum nulla sed consectetur vestibulum id ligula porta.</p>
-                    </div>
-                    <a class="c_btn" href="#">view team members</a>
-                </div>
-            </div>
-        </section>
-        <!--================End Team Members Area =================-->
-        
-        <!--================News Blog Area =================-->
-        <section class="news_blog_area">
+
+                <!--================News Blog Area =================-->
+        <!-- <section class="news_blog_area">
             <div class="container">
                 <div class="main_title">
                     <h5>Latest News</h5>
@@ -820,11 +503,80 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--================End News Blog Area =================-->
         
+        <!--================Customer Area =================-->
+        <section class="customer_saying_area_two">
+            <!-- <div class="container">
+                <div class="sec_title">
+                    <h2>What our customer saying</h2>
+                </div>
+                <div class="saying_slider owl-carousel">
+                    <div class="item">
+                        <div class="saying_item">
+                            <img class="img-circle" src="img/saying-slider/saying-client-1.png" alt="">
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                            <a href="#"><h4>Rosinante Vole</h4></a>
+                            <h5>SEO Marketer</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="saying_item">
+                            <img class="img-circle" src="img/saying-slider/saying-client-1.png" alt="">
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                            <a href="#"><h4>Rosinante Vole</h4></a>
+                            <h5>SEO Marketer</h5>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row m0 clients_logo">
+                <div class="clogo_item">
+                    <img src="img/clients-logo/coffie.png" alt="">
+                </div>
+                <div class="clogo_item">
+                    <img src="img/clients-logo/chock.png" alt="">
+                </div>
+                <div class="clogo_item">
+                    <img src="img/clients-logo/market.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!--================End Customer Area =================-->
+        
+        <!--================Find More Area =================-->
+        <!-- <section class="find_more_area">
+            <div class="container">
+                <div class="pull-left">
+                    <h5>Purchase Klamp today!</h5>
+                    <h3>What are you waiting for?</h3>
+                </div>
+                <div class="pull-right">
+                    <a class="l_btn" href="#">find our more</a>
+                </div>
+            </div>
+        </section> -->
+        <!--================End Find More Area =================-->
+        
+        <!--================Team Members Area =================-->
+        <!-- <section class="team_members_area">
+            <div class="container">
+                <div class="team_details">
+                    <div class="main_w_title">
+                        <h5>Behind the scenes</h5>
+                        <h2>We help clients Business & Consulting</h2>
+                        <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. </p>
+                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus . Aenean lacinia bibendum nulla sed consectetur vestibulum id ligula porta.</p>
+                    </div>
+                    <a class="c_btn" href="#">view team members</a>
+                </div>
+            </div>
+        </section> -->
+        <!--================End Team Members Area =================-->
+        
         <!--================Map Contact Area =================-->
-        <section class="map_area">
+        <!-- <section class="map_area">
             <div id="mapBox" class="mapBox row m0" 
             data-lat="40.7058316" 
             data-lon="-74.2581888" 
@@ -893,7 +645,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--================End Map Contact Area =================-->
         
         <x-footer/>

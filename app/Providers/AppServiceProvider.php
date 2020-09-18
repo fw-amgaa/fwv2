@@ -27,7 +27,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         $blogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->get();
+        $categories = Category::all();
     
         View::share('blogs', $blogs);
+        View::share('categories', $categories);
     }
 }

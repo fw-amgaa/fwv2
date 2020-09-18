@@ -47,12 +47,12 @@
                     </div>
                     <ul class="port_fillter blog_fillter">
                         <li class="active" data-filter="*">All</li>
-                        <li data-filter=".history">History</li>
-                        <li data-filter=".politics">Politics</li>
-                        <li data-filter=".self-development">Self Development</li>
-                        <li data-filter=".interview">Interview</li>
-                        <li data-filter=".book-introduction">Book Introduction</li>
-                        <li data-filter=".art">Art</li>
+                        <li id="history" data-filter=".history">History</li>
+                        <li id="politics" data-filter=".politics">Politics</li>
+                        <li id="self-development" data-filter=".self-development">Self Development</li>
+                        <li id="interview" data-filter=".interview">Interview</li>
+                        <li id="book-introduction" data-filter=".book-introduction">Book Introduction</li>
+                        <li id="art" data-filter=".art">Art</li>
                     </ul>
                     <div class="row blog_main_item_inner">
                         @foreach($blogs as $blog)
@@ -81,6 +81,19 @@
         <!--================End Blog Main Area =================-->
         
         <x-footer/>
+
+
+        <script>
+            var queryStrings = window.location.search;
+            var urlParams = new URLSearchParams(queryStrings);
+            var category = urlParams.get('category');
+            var filter = document.getElementById(category);
+            if (filter){
+                $(filter).click();
+            } else {
+                console.log("Filter not found")
+            }
+        </script>
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="{{ URL::asset('js/jquery-2.2.4.js')}}"></script>

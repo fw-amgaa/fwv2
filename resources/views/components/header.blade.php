@@ -81,12 +81,12 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <ul class="nav navbar-nav">
-                        <li><a href="/about-us">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="dropdown">
                             <a href="/blogs" class="dropdown-toggle">Blogs</a>
                                 <ul class="dropdown-menu sub-menu">
-                                    @foreach($blogs as $blog)
-                                        <li><a href="/blogs/{{ $blog->slug }}">{{ $blog->title }}</a></li>
+                                    @foreach($categories as $categories)
+                                        <li><a href="/blogs?category={{$categories->sluger}}">{{ $categories->name }}</a></li>
                                     @endforeach
                                 </ul>
                         </li>

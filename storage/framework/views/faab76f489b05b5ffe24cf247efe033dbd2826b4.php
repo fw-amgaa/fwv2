@@ -5,8 +5,7 @@
             <div class="container">
                 <div class="footer_main_area">
                     <div class="main_title">
-                        <h5>Subscribe</h5>
-                        <h2>Sign Up For Newletter</h2>
+                        <h2>Бидэнтэй холбогдох</h2>
                     </div>
                     <form class="mailchimp" method="post">
                         <div class="subscribe_form">
@@ -16,22 +15,9 @@
                         <p class="mchimp-errmessage"></p>
                         <p class="mchimp-sucmessage"></p>
                     </form>
-                    <div class="f_menu">
-                        <ul class="nav navbar-nav"> 
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/photography">Photography</a></li>
-                            <li><a href="/portfolio">Portfolio</a></li>
-                        </ul>
-                    </div>
                     <ul class="f_social">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="ti-google"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                     </ul>
                 </div>
             </div>

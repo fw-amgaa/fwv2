@@ -58,12 +58,12 @@
                     </div>
                     <ul class="port_fillter blog_fillter">
                         <li class="active" data-filter="*">All</li>
-                        <li data-filter=".history">History</li>
-                        <li data-filter=".politics">Politics</li>
-                        <li data-filter=".self-development">Self Development</li>
-                        <li data-filter=".interview">Interview</li>
-                        <li data-filter=".book-introduction">Book Introduction</li>
-                        <li data-filter=".art">Art</li>
+                        <li id="history" data-filter=".history">History</li>
+                        <li id="politics" data-filter=".politics">Politics</li>
+                        <li id="self-development" data-filter=".self-development">Self Development</li>
+                        <li id="interview" data-filter=".interview">Interview</li>
+                        <li id="book-introduction" data-filter=".book-introduction">Book Introduction</li>
+                        <li id="art" data-filter=".art">Art</li>
                     </ul>
                     <div class="row blog_main_item_inner">
                         <?php $__currentLoopData = $blogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -72,7 +72,7 @@
                                     <div class="blog_image">
                                         <img src="<?php echo e(Voyager::image($blog->image)); ?>" alt="">
                                         <div class="blog_hover">
-                                            <a  href="/blogs/<?php echo e($blog->slug); ?>"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                            <a href="/blogs/<?php echo e($blog->slug); ?>"><i class="fa fa-plus" aria-hidden="true"></i></a>
                                             <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
@@ -103,6 +103,19 @@
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?> 
+
+
+        <script>
+            var queryStrings = window.location.search;
+            var urlParams = new URLSearchParams(queryStrings);
+            var category = urlParams.get('category');
+            var filter = document.getElementById(category);
+            if (filter){
+                $(filter).click();
+            } else {
+                console.log("Filter not found")
+            }
+        </script>
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="<?php echo e(URL::asset('js/jquery-2.2.4.js')); ?>"></script>
