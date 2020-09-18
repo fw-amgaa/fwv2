@@ -61,7 +61,7 @@
                                     <div class="blog_image">
                                         <img src="{{ Voyager::image($blog->image) }}" alt="">
                                         <div class="blog_hover">
-                                            <a class="image_pop"  href="/blogs/{{ $blog->slug }}"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                            <a href="/blogs/{{ $blog->slug }}"><i class="fa fa-plus" aria-hidden="true"></i></a>
                                             <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
                                         </div>
                                     </div>

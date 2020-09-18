@@ -27,6 +27,9 @@
         <link href="<?php echo e(URL::asset('css/style.css')); ?>" rel="stylesheet">
         <link href="<?php echo e(URL::asset('css/responsive.css')); ?>" rel="stylesheet">
 
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -52,9 +55,9 @@
         <section class="single_blog_area">
             <div class="container">
                 <div class="single_blog_title">
-                    <a href="#"><h6 class="blog_category">Brading Design</h6></a>
+                    <a href="#"><h6 class="blog_category" style="text-transform: capitalize"><?php echo e($blog->sluger); ?></h6></a>
                     <h2><?php echo e($blog->title); ?></h2>
-                    <a href="#"><h5 class="blog_date"> Posted On: <?php echo e($blog->created_at); ?></h5></a>
+                    <a href="#"><h5 class="blog_date"> Нийтэлсэн огноо: <?php echo e($blog->created_at); ?></h5></a>
                 </div>
                 <div class="single_blog_img_content">
                     <div class="blog_image_slider owl-carousel">
@@ -69,7 +72,7 @@
                 </div>
                 <div class="single_blog_category">
                     <div class="pull-left">
-                        <b>Category: </b> <a href="#" style="text-transform: capitalize"><?php echo e($blog->sluger); ?></a>
+                        <b>Категори: </b> <a href="#" style="text-transform: capitalize"><?php echo e($blog->sluger); ?></a>
                     </div>
                     <div class="pull-right">
                         <h4>Share :</h4>
@@ -120,7 +123,7 @@
         <!--================End Like post Area =================-->
         
         <!--================Comment Area =================-->
-        <section class="comment_area">
+        <!-- <section class="comment_area">
             <div class="container">
                 <div class="comment_list">
                     <div class="comment_title">
@@ -135,7 +138,7 @@
                                 <a href="#"><h4>Kusner Ivanka</h4></a>
                                 <a href="#"><h5>Dec 12,2017 </h5></a>
                                 <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, 
-vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac.</p>
+                                        vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac.</p>
                                 <a class="comment_reply" href="#">Reply</a>
                             </div>
                         </div>
@@ -147,7 +150,7 @@ vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas se
                                 <a href="#"><h4>Diamante Rosinante</h4></a>
                                 <a href="#"><h5>Dec 12,2017 </h5></a>
                                 <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, 
-vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac.</p>
+                                    vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac.</p>
                                 <a class="comment_reply" href="#">Reply</a>
                             </div>
                         </div>
@@ -181,7 +184,7 @@ vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Maecenas se
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--================End Comment Area =================-->
                                 
          <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>

@@ -30,79 +30,32 @@
             </div>
             <div class="menu_title">
                 <h2> Welcome to Writers </h2>
-                <p>Чиний дургүй авга ах</p>
+                <p>We will script your fate in a piece of paper</p>
             </div>
             <div class="off_menu">
                 <ul class="nav">
                     <li class="submenu active">
                         <a href="#">Home</a>
-                        <ul>
-                            <li><a href="agency-slider.html">agency slider</a></li>
-                            <li><a href="corporate-slider.html">corporate slider</a></li>
-                            <li><a href="company-corporate.html">company corporate</a></li>
-                            <li><a href="creative-multipurpose.html">Creative Multipurpose</a></li>
-                            <li><a href="creative-corporate.html">Creative corporate</a></li>
-                            <li class="active"><a href="business.html">Business</a></li>
-                            <li><a href="creative-business.html">Creative Business</a></li>
-                            <li><a href="agency-fullpage.html">agency fullpage</a></li>
-                            <li><a href="agency-split-content.html">agency split content</a></li>
-                        </ul>
                     </li>
-                    <li><a href="about-us.html">about</a></li>
-                    <li class="submenu">
-                        <a href="#">portfolio</a>
-                        <ul>
-                            <li><a href="portfolio-1.html">Portfolio 01</a></li>
-                            <li><a href="portfolio_gallery.html">Portfolio Gallery</a></li>
-                            <li><a href="portfolio_gallery_space.html">Portfolio Gallery Space</a></li>
-                            <li><a href="portfolio_metro.html">Portfolio Metro</a></li>
-                            <li><a href="portfolio_metro_space.html">Portfolio Metro Space</a></li>
-                            <li><a href="portfolio_masonry.html">Portfolio Masonry</a></li>
-                            <li><a href="portfolio_carousel.html">Portfolio Carousel</a></li>
-                            <li><a href="photography_carousel.html">Photography Carousel</a></li>
-                            <li><a href="photography_slider.html">Photography Slider</a></li>
-                            <li><a href="photographer_portfolio.html">Photographer Portfolio</a></li>
-                            <li><a href="photographer_portfolio_space.html">Photographer Portfolio Space</a></li>
-                            <li><a href="portfolio-single-1.html">Portfolio Single 01</a></li>
-                            <li><a href="portfolio-single-2.html">Portfolio Single 02</a></li>
-                            <li><a href="portfolio-single-3.html">Portfolio Single 03</a></li>
-                            <li><a href="portfolio-single-4.html">Portfolio Single 04</a></li>
-                            <li><a href="portfolio-single-5.html">Portfolio Single 05</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="/about-us">about</a></li>
                     <li class="submenu">
                         <a href="#">blog</a>
                         <ul>
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
-                            <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
-                            <li><a href="blog-masonry.html">Blog Masonry</a></li>
-                            <li><a href="blog-masonry2.html">Blog Masonry 02</a></li>
-                            <li><a href="blog-listing.html">Blog Listing</a></li>
-                            <li><a href="blog-single.html">Blog Single</a></li>
-                            <li><a href="blog-single-2.html">Blog Single 02</a></li>
-                            <li><a href="blog-single-3.html">Blog Single 03</a></li>
-                            <li><a href="blog-single-left-sidebar.html">Blog Single Left Sidebar</a></li>
-                            <li><a href="blog-single-right-sidebar.html">Blog Single Right Sidebar</a></li>
                         </ul>
                     </li>
                     <li class="submenu">
-                        <a href="#">Contact</a>
+                        <a href="#">Contact Us</a>
                         <ul>
                             <li><a href="creative-contact.html">Creative Contact</a></li>
-                            <li><a href="classic-contact.html">Classic Contact</a></li>
-                            <li><a href="classic-contact2.html">Classic Contact 02</a></li>
-                            <li><a href="classic-contact3.html">Classic Contact 03</a></li>
                         </ul>
                     </li>
-                    <li><a href="404.html">404</a></li>
                 </ul>
             </div>
             <div class="curency language">
                 <h4>Language</h4>
-                <a href="#">Eng</a>
-                <a class="active" href="#">vn</a>
-                <a href="#">fra</a>
+                <a class="active" href="#">Eng</a>
+                <a href="#">Mon</a>
             </div>
             <ul class="of_social">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -128,16 +81,7 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <ul class="nav navbar-nav">
-                        <li>
-                            <a href="/" class="dropdown-toggle">Home</a>
-                        </li>
-                        <li><a href="/about-us">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="/portfolio" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                            <ul class="dropdown-menu sub-menu">
-                                <li><a href="/portfolio-single">Single</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="/about-us">Home</a></li>
                         <li class="dropdown">
                             <a href="/blogs" class="dropdown-toggle">Blogs</a>
                                 <ul class="dropdown-menu sub-menu">
@@ -146,23 +90,9 @@
                                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                 </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="/photography" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Phorography</a>
-                            <ul class="dropdown-menu sub-menu">
-                                <li><a href="/photographer_portfolio">Photographer portfolio</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="/photography" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meet the team</a>
-                            <ul class="dropdown-menu sub-menu">
-                                <li><a href="/photographer_portfolio">Single Team Member</a></li>
-                            </ul>
-                        </li>
                         <li><a href="/about-us">Contact Us</a></li>
-                        <li><a href="404.html">404</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="shop_cart"><a href="#"><i class="ti-bag"></i></a></li>
                         <li class="nav_searchFrom"><a href="#"><i class="ti-search"></i></a></li>
                         <li><a href="#"><i class="lnr lnr-menu bar_menu"></i></a></li>
                     </ul>
