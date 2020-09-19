@@ -97,10 +97,10 @@
                                 </div>
                             </div>
                             <div class="n_blog_text">
-                                <a href="#"><h5>{{ $blog->created_at }}</h5></a>
-                                <a href="#"><h3>{{ $blog->title }}</h3></a>
+                                <a href="/blogs/{{ $blog->slug }}"><h5>{{ $blog->created_at }}</h5></a>
+                                <a href="/blogs/{{ $blog->slug }}"><h3>{{ $blog->title }}</h3></a>
                                 <p>{{ $blog->excerpt }}</p>
-                                <a class="blog_r_btn" href="#" style="text-align: center !important">{{__('customlang.read')}}</a>
+                                <a class="blog_r_btn" href="/blogs/{{ $blog->slug }}" style="text-align: center !important">{{__('customlang.read')}}</a>
                             </div>
                         </div>
                     </div>
