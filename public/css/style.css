@@ -3045,9 +3045,10 @@ i:before {
 ============================================================================================ */
 /*================= customer_saying_area_two css =================*/
 .customer_saying_area_two {
-    background: url("../img/customer/cus_bg.jpg") no-repeat scroll center 0;
+    background: url("../img/1920x795.jpg") no-repeat scroll center 0;
     background-size: cover;
     padding-top: 90px;
+    background-position: center;
 }
 
 .customer_saying_area_two .sec_title {
@@ -12169,4 +12170,7 @@ path {
 }
 .clogo_item img {
     height: 80px;
+}
+.customer_saying_area_two .clients_logo {
+    margin-top: 90px !important;
 }

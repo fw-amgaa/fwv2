@@ -38,10 +38,7 @@
                     </li>
                     <li><a href="/about-us"><?php echo e(__('customlang.about')); ?></a></li>
                     <li class="submenu">
-                        <a href="#"><?php echo e(__('customlang.blog')); ?></a>
-                        <ul>
-                            <li><a href="blog.html"><?php echo e(__('customlang.blog')); ?></a></li>
-                        </ul>
+                        <a href="/blogs"><?php echo e(__('customlang.blog')); ?></a>
                     </li>
                     <li class="submenu">
                         <a href="#"><?php echo e(__('customlang.contact')); ?></a>

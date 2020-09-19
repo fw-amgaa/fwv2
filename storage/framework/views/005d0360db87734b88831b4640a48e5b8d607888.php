@@ -460,11 +460,11 @@
         
         <!--================Customer Area =================-->
         <section class="customer_saying_area_two">
-            <!-- <div class="container">
+            <div class="container">
                 <div class="sec_title">
-                    <h2>What our customer saying</h2>
+                    <h2><?php echo e(__('customlang.partner')); ?></h2>
                 </div>
-                <div class="saying_slider owl-carousel">
+                <!-- <div class="saying_slider owl-carousel">
                     <div class="item">
                         <div class="saying_item">
                             <img class="img-circle" src="img/saying-slider/saying-client-1.png" alt="">
@@ -481,8 +481,8 @@
                             <h5>SEO Marketer</h5>
                         </div>
                     </div>
-                </div>
-            </div> -->
+                </div> -->
+            </div>
             <div class="row m0 clients_logo">
                 <div class="clogo_item">
                     <img src="img/ufe-mon.png" alt="Logo of UFE">

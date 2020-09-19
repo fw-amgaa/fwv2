@@ -44,5 +44,6 @@ return [
     'goal' => 'Main goal',
     'values' => 'Values',
     'sharevalue' => 'Let\'s share our values', 
-    'email' => 'Enter your email'
+    'email' => 'Enter your email',
+    'partner' => 'Our partners'
 ];
