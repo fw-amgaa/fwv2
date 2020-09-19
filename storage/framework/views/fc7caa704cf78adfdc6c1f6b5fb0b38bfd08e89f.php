@@ -69,7 +69,7 @@
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" style="width: 60px"></a>
+                        <a class="navbar-brand" href="/"><img src="img/logo.png" alt="" style="width: 60px"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
