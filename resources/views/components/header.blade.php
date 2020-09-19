@@ -83,7 +83,7 @@
                                     <li><a href="/blogs?category=art">{{__('customlang.art')}}</a></li>
                                 </ul>
                         </li>
-                        <li><a href="/about-us">{{__('customlang.contact')}}</a></li>
+                        <li><a href="/about-us">{{__('customlang.about')}}</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav_searchFrom"><a href="#"><i class="ti-search"></i></a></li>
