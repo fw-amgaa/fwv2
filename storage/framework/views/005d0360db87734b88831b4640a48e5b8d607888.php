@@ -96,7 +96,7 @@
         <section class="main_slider_area">
             <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
                 <ul> 
-                    <li data-index="rs-1595" data-transition="slotzoom-horizontal" data-slotamount="10">
+                    <li data-index="rs-1595" data-transition="slotzoom-horizontal" data-slotamount="10" style="text-shadow: 0 0 5px black">
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo e(Voyager::image($featuredBlog->image)); ?>" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
                         <!-- LAYERS -->
@@ -186,7 +186,7 @@
                                 data-splitin="none" 
                                 data-splitout="none" 
                                 data-responsive_offset="on">
-                                <a class="l_btn" href="/blogs/<?php echo e($featuredBlog->slug); ?>">Read News</a>
+                                <a class="l_btn" href="/blogs/<?php echo e($featuredBlog->slug); ?>">Read More</a>
                             </div>
                         </div>
                     </li>
@@ -365,18 +365,18 @@
                 <nav class="latest_menu">
                     <ul>
                         <li data-filter="*" class="active"><a href="">All</a></li>
-                        <li id="history" data-filter=".history">History</li>
-                        <li id="politics" data-filter=".politics">Politics</li>
-                        <li id="self-development" data-filter=".self-development">Self Development</li>
-                        <li id="interview" data-filter=".interview">Interview</li>
-                        <li id="book-introduction" data-filter=".book-introduction">Book Introduction</li>
-                        <li id="art" data-filter=".art">Art</li>
+                        <li id="history" data-filter=".history"><a href="">History</a></li>
+                        <li id="politics" data-filter=".politics"><a href="">Politics</a></li>
+                        <li id="self-development" data-filter=".self-development"><a href="">Self Development</a></li>
+                        <li id="interview" data-filter=".interview"><a href="">Interview</a></li>
+                        <li id="book-introduction" data-filter=".book-introduction"><a href="">Book introduction</a></li>
+                        <li id="art" data-filter=".art"><a href="">Art</a></li>
                     </ul>
                 </nav>
                 <div class="row">
                     <div class="l_project_inner">
                         <?php $__currentLoopData = $blogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                        <div class="col-md-4 col-sm-6 l_p_i design marketing">
+                        <div class="col-md-4 col-sm-6 l_p_i <?php echo e($blog->sluger); ?>">
                             <div class="l_project_item">
                                 <img src="<?php echo e(Voyager::image($blog->image)); ?>" alt="">
                                 <div class="l_project_hover">
@@ -486,13 +486,13 @@
             </div> -->
             <div class="row m0 clients_logo">
                 <div class="clogo_item">
-                    <img src="img/clients-logo/coffie.png" alt="">
+                    <img src="img/ufe-mon.png" alt="Logo of UFE">
                 </div>
                 <div class="clogo_item">
-                    <img src="img/clients-logo/chock.png" alt="">
+                    <img src="img/Untitled-1.png" alt="Logo of FW-Media">
                 </div>
                 <div class="clogo_item">
-                    <img src="img/clients-logo/market.png" alt="">
+                    <img src="img/partner.png" alt="Logo of our Partner">
                 </div>
             </div>
         </section>
