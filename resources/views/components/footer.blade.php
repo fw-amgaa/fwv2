@@ -23,7 +23,7 @@
             </div>
             <div class="footer_copyright h_pad">
                 <div class="pull-left">
-                    <h5 class="footer_copy">© <script>document.write(new Date().getFullYear());</script> <a href="#">Writers</a> . All Rights Reserved .</h5>
+                    <h5 class="footer_copy">© <script>document.write(new Date().getFullYear());</script> <a href="#">Writers</a> . {{__('customlang.rights')}} .</h5>
                 </div>
                 <div class="pull-right">
                     <h5 class="footer_ask">{{__('customlang.ques')}}: <a href="#">+(976) 9554-1132 / +(976) 9908-6244</a></h5>
