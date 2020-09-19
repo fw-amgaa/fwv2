@@ -96,7 +96,6 @@
         <section class="main_slider_area">
             <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
                 <ul> 
-
                     <li data-index="rs-1595" data-transition="slotzoom-horizontal" data-slotamount="10">
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo e(Voyager::image($featuredBlog->image)); ?>" data-bgparallax="7" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
@@ -191,7 +190,6 @@
                             </div>
                         </div>
                     </li>
-
                 </ul>
             </div>
         </section>
