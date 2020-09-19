@@ -51,9 +51,9 @@
                         <li class="active" data-filter="*">{{__('customlang.all')}}</li>
                         <li id="history" data-filter=".history">{{__('customlang.history')}}</li>
                         <li id="politics" data-filter=".politics">{{__('customlang.politics')}}</li>
-                        <li id="self-development" data-filter=".self-development">{{__('customlang.self-dev')}}</li>
+                        <li id="self-development" data-filter=".self-development">{{__('customlang.selfdev')}}</li>
                         <li id="interview" data-filter=".interview">{{__('customlang.interview')}}</li>
-                        <li id="book-introduction" data-filter=".book-introduction">{{__('customlang.book-intro')}}</li>
+                        <li id="book-introduction" data-filter=".book-introduction">{{__('customlang.bookintro')}}</li>
                         <li id="art" data-filter=".art">{{__('customlang.art')}}</li>
                     </ul>
                     <div class="row blog_main_item_inner">
