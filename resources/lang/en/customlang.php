@@ -45,5 +45,7 @@ return [
     'values' => 'Values',
     'sharevalue' => 'Let\'s share our values', 
     'email' => 'Enter your email',
-    'partner' => 'Our partners'
+    'partner' => 'Our partners',
+    'mission' => 'Mission',
+    'photo' => 'Gallery'
 ];

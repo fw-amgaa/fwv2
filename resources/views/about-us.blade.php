@@ -52,17 +52,13 @@
         <!--================Start description_area =================-->
         <div class="description_area">
             <div class="container">
-                <div class="description_text">
-                    <h6>{{__('customlang.vision')}} | {{__('customlang.history')}}</h6>
-                    <h4>Аль боомт руу явж байгаагаа үл мэдэх хүнд ямар ч салхи тусгүй. <span>- Сенека</span></h4>
-                </div>
-                <div class="main_title main_title_blue" style="margin-bottom: 50px">
-                    <h2>{{__('customlang.goal')}}</h2>
-                    <p>“Өөрийгөө таньж мэдэхийн төлөө үргэлж хичээж, оюун санаа, сэтгэлгээгээ тасралтгүй хөгжүүлж, үүнийхээ үрээр өөрийн болон бусдын оюун санааны үнэт зүйлсэд хувь нэмрээ оруулах юм.”</p>
+            <div class="main_title main_title_blue" style="margin-bottom: 50px; margin-top: 200px">
+                    <h2>{{__('customlang.vision')}}</h2>
+                    <p>Өөрийн болон нийтийн соён гэгээрэлд хувь нэмрээ оруулж чадахуйц олон мянган хүмүүс нэгдэн ажиллах гүүр болно. </p>
                 </div>
                 <div class="main_title main_title_blue" style="margin-bottom: 100px">
-                    <h2>{{__('customlang.foresight')}}</h2>
-                    <p>Өөрийн болон нийтийн соён гэгээрэлд хувь нэмрээ оруулж чадахуйц олон мянган хүмүүс нэгдэн ажиллах гүүр болно. </p>
+                    <h2>{{__('customlang.mission')}}</h2>
+                    <p>“Өөрийгөө таньж мэдэхийн төлөө үргэлж хичээж, оюун санаа, сэтгэлгээгээ тасралтгүй хөгжүүлж, үүнийхээ үрээр өөрийн болон бусдын оюун санааны үнэт зүйлсэд хувь нэмрээ оруулах юм.”</p>
                 </div>
             </div>
         </div>
@@ -161,7 +157,7 @@
                     </div>
                     <div class="col-md-6 col-sm-4 col-xs-6">
                         <div class="m_team_inner">
-                            <img src="img/about/9.png" alt="" style="width: 100%">
+                            <img src="img/logo.png" alt="" style="width: 100%; padding: 50px">
                             <div class="m_team_hover">
                                 <div class="m_team_inner_h">
                                     <h5>9. Үлдсэн түүхийг та бүтээх болно. </h5>
@@ -227,6 +223,114 @@
             </div>
         </section>
         <!-- ==========End service three area ==========-->
+        <!--==========Start portfolio_grid_area ===========-->
+        <section class="portfolio_area h_pad">
+            <div class="container">
+                <div class="description_text">
+                    <h4>{{__('customlang.photo')}}</h4>
+                </div>
+            </div>
+            <div class="row portfolio_masonry portfolio_masonry_two">
+                <div class="col-md-3 col-sm-6 col-xs-6 portfolio-sizer"></div>
+                <div class="col-md-6 col-sm-6 col-xs-12 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/55529787_2693157967423575_6206509080257757184_o.jpg" alt="">
+                            <a href="img/55529787_2693157967423575_6206509080257757184_o.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/57162557_2752790408071371_5146488671746129920_o.jpg" alt="">
+                            <a href="img/57162557_2752790408071371_5146488671746129920_o.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/IMGL6736 (1).jpg" alt="">
+                            <a href="img/IMGL6736 (1).jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/1920x795.jpg" alt="">
+                            <a href="img/portfolio/p-portfolio-12/p-por-4.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/portfolio/p-portfolio-12/p-por-6.jpg" alt="">
+                            <a href="img/portfolio/p-portfolio-12/p-por-6.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/IMG_3831.jpg" alt="">
+                            <a href="img/IMG_3831.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/portfolio/p-portfolio-12/p-por-5.jpg" alt="">
+                            <a href="img/portfolio/p-portfolio-12/p-por-5.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/portfolio/p-portfolio-12/p-por-8.jpg" alt="">
+                            <a href="img/portfolio/p-portfolio-12/p-por-8.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/portfolio/p-portfolio-12/p-por-9.jpg" alt="">
+                            <a href="img/portfolio/p-portfolio-12/p-por-9.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/portfolio/p-portfolio-12/p-por-10.jpg" alt="">
+                            <a href="img/portfolio/p-portfolio-12/p-por-10.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/portfolio/p-portfolio-12/p-por-11.jpg" alt="">
+                            <a href="img/portfolio/p-portfolio-12/p-por-11.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 portfolio_m_item">
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img class="img-responsive" src="img/portfolio/p-portfolio-12/p-por-12.jpg" alt="">
+                            <a href="img/portfolio/p-portfolio-12/p-por-12.jpg" data-lightbox="image-1"><i class="ti-plus" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==========End portfolio_grid_area ===========-->
         <!--================Start office Area =================-->
         <!-- <section class="office_area">
             <div class="container">

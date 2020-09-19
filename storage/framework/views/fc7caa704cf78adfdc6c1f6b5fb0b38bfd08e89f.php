@@ -41,7 +41,7 @@
                         <a href="/blogs"><?php echo e(__('customlang.blog')); ?></a>
                     </li>
                     <li class="submenu">
-                        <a href="#"><?php echo e(__('customlang.contact')); ?></a>
+                        <a href="#"><?php echo e(__('customlang.about')); ?></a>
                     </li>
                 </ul>
             </div>
@@ -83,7 +83,7 @@
                                     <li><a href="/blogs?category=art"><?php echo e(__('customlang.art')); ?></a></li>
                                 </ul>
                         </li>
-                        <li><a href="/about-us"><?php echo e(__('customlang.contact')); ?></a></li>
+                        <li><a href="/about-us"><?php echo e(__('customlang.about')); ?></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav_searchFrom"><a href="#"><i class="ti-search"></i></a></li>

@@ -141,7 +141,7 @@ i:before {
     content: "";
     width: 102px;
     height: 1px;
-    background: #f07f84;
+    background: #6ed2e6bf;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -230,7 +230,7 @@ i:before {
     content: "";
     width: 102px;
     height: 1px;
-    background: #f07f84;
+    background: #6ed2e6bf;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -329,7 +329,7 @@ i:before {
     content: "";
     width: 100px;
     height: 1px;
-    background: #f07f84;
+    background: #6ed2e6bf;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1900,7 +1900,7 @@ i:before {
 
 /* Quote Red BTN */
 .quote_btn {
-    background: #f07f84;
+    background: #6ed2e6bf;
     width: 180px;
     height: 50px;
     display: inline-block;
@@ -1942,7 +1942,7 @@ i:before {
 
 .p_btn:hover,
 .p_btn:focus {
-    background: #f07f84;
+    background: #6ed2e6bf;
     color: #fff;
 }
 
@@ -3267,7 +3267,7 @@ i:before {
 /* Find More css
 ============================================================================================ */
 .find_more_area {
-    background: #f07f84;
+    background: #6ed2e6bf;
 }
 
 .find_more_area .pull-left h5 {
@@ -4768,14 +4768,14 @@ i:before {
 .price_item .price_option li a i {
     position: relative;
     left: -8px;
-    color: #f07f84;
+    color: #6ed2e6bf;
     -webkit-transition: all 400ms linear 0s;
     -o-transition: all 400ms linear 0s;
     transition: all 400ms linear 0s;
 }
 
 .price_item .price_option li:hover a {
-    color: #f07f84;
+    color: #6ed2e6bf;
 }
 
 .price_item .price_option li:hover a i {
@@ -4882,7 +4882,7 @@ i:before {
 }
 
 .kl_pricing_area .pricing_box .plan-lists li i {
-    color: #f07f84;
+    color: #6ed2e6bf;
     padding-right: 8px;
 }
 
@@ -5340,7 +5340,7 @@ i:before {
 .team_items .team_item_inner .text p {
     font-size: 13px;
     line-height: 24px;
-    color: #f07f84;
+    color: #6ed2e6bf;
     text-transform: capitalize;
 }
 
@@ -5603,7 +5603,7 @@ i:before {
 
 .n_blog_item .blog_quote {
     text-align: center;
-    background: #f07f84;
+    background: #6ed2e6bf;
     color: #fff;
     padding: 30px 30px 40px 30px;
 }
@@ -6426,14 +6426,14 @@ i:before {
 .single_blog_img_content .single_blog_content p {
     font-size: 45px;
     color: #888890;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     line-height: 26px;
     padding-bottom: 25px;
 }
 
 .single_blog_img_content .single_blog_content p:last-child {
     padding-bottom: 0px;
-} 
+}
 
 .single_blog_img_content .single_blog_content blockquote {
     margin-left: 100px;
@@ -7022,7 +7022,7 @@ i:before {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
-    background: #f07f84;
+    background: #6ed2e6bf;
 }
 
 .skill_right_side .feature_inner .ro-features {
@@ -7870,7 +7870,7 @@ i:before {
 .partner_logos {
     max-width: 970px;
     margin: 0 auto;
-    border: 10px solid #f07f84;
+    border: 10px solid #6ed2e6bf;
     padding: 65px 70px;
     overflow: hidden;
 }
@@ -8046,7 +8046,7 @@ i:before {
 .service_three_item a {
     font: 16px;
     line-height: 26px;
-    color: #f07f84;
+    color: #6ed2e6bf;
     padding-top: 15px;
     display: inline-block;
 }
@@ -8058,7 +8058,7 @@ i:before {
 }
 
 .service_three_item:hover i {
-    color: #f07f84;
+    color: #6ed2e6bf;
 }
 
 .service_three_item:hover img {
@@ -9530,7 +9530,7 @@ path {
 }
 
 .error_inner_content .quote_btn:hover {
-    background: #f07f84;
+    background: #6ed2e6bf;
     color: #fff;
 }
 
@@ -9875,7 +9875,7 @@ path {
 
 .portfolio_grid_area .por_grid_item .hover_text .see_btn {
     font-size: 14px;
-    color: #f07f84;
+    color: #6ed2e6bf;
     padding-top: 8px;
     display: block;
 }
