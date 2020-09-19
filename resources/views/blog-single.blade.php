@@ -83,7 +83,7 @@
                     <h2>You May Also Like...</h2>
                 </div>
                 <div class="row">
-                    @foreach($blogs as $blog)
+                    @foreach($alsoBlogs as $blog)
                     <div class="col-md-4">
                         <div class="n_blog_item">
                             <div class="blog_image">
