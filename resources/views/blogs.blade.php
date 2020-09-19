@@ -44,17 +44,17 @@
             <div class="container">
                 <div class="blog_main_inner">
                     <div class="breadcumd_title">
-                        <h2>Blogs</h2>
-                        <p>This is blog landing page</p>
+                        <h2>{{__('customlang.blogs')}}</h2>
+                        <!-- <p>This is blog landing page</p> -->
                     </div>
                     <ul class="port_fillter blog_fillter">
-                        <li class="active" data-filter="*">All</li>
-                        <li id="history" data-filter=".history">History</li>
-                        <li id="politics" data-filter=".politics">Politics</li>
-                        <li id="self-development" data-filter=".self-development">Self Development</li>
-                        <li id="interview" data-filter=".interview">Interview</li>
-                        <li id="book-introduction" data-filter=".book-introduction">Book Introduction</li>
-                        <li id="art" data-filter=".art">Art</li>
+                        <li class="active" data-filter="*">{{__('customlang.all')}}</li>
+                        <li id="history" data-filter=".history">{{__('customlang.history')}}</li>
+                        <li id="politics" data-filter=".politics">{{__('customlang.politics')}}</li>
+                        <li id="self-development" data-filter=".self-development">{{__('customlang.self-dev')}}</li>
+                        <li id="interview" data-filter=".interview">{{__('customlang.interview')}}</li>
+                        <li id="book-introduction" data-filter=".book-introduction">{{__('customlang.book-intro')}}</li>
+                        <li id="art" data-filter=".art">{{__('customlang.art')}}</li>
                     </ul>
                     <div class="row blog_main_item_inner">
                         @foreach($blogs as $blog)
@@ -71,7 +71,7 @@
                                         <a href="/blogs/{{ $blog->slug }}"><h5>{{ $blog->created_at }}</h5></a>
                                         <a href="/blogs/{{ $blog->slug }}"><h3>{{ $blog->title }}</h3></a>
                                         <p>{{ $blog->excerpt }}</p>
-                                        <a class="blog_r_btn" href="/blogs/{{ $blog->slug }}" style="text-align: center !important">Read More</a>
+                                        <a class="blog_r_btn" href="/blogs/{{ $blog->slug }}" style="text-align: center !important">{{__('customlang.read')}}</a>
                                     </div>
                                 </div>
                             </div>

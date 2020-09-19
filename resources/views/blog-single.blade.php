@@ -46,7 +46,7 @@
                 <div class="single_blog_title">
                     <a href="#"><h6 class="blog_category" style="text-transform: capitalize">{{ $blog->sluger }}</h6></a>
                     <h2>{{ $blog->title }}</h2>
-                    <a href="#"><h5 class="blog_date"> Нийтэлсэн огноо: {{ $blog->created_at }}</h5></a>
+                    <a href="#"><h5 class="blog_date"> {{__('customlang.posted')}}: {{ $blog->created_at }}</h5></a>
                 </div>
                 <div class="single_blog_img_content">
                     <div class="blog_image_slider owl-carousel">
@@ -60,10 +60,10 @@
                 </div>
                 <div class="single_blog_category">
                     <div class="pull-left">
-                        <b>Категори: </b> <a href="#" style="text-transform: capitalize">{{ $blog->sluger }}</a>
+                        <b>{{__('customlang.category')}}: </b> <a href="#" style="text-transform: capitalize">{{ $blog->sluger }}</a>
                     </div>
                     <div class="pull-right">
-                        <h4>Share :</h4>
+                        <h4>{{__('customlang.share')}} :</h4>
                         <ul class="share_icon">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -80,7 +80,7 @@
         <section class="like_post_area">
             <div class="container">
                 <div class="sec_title sec_title3">
-                    <h2>You May Also Like...</h2>
+                    <h2>{{__('customlang.also')}}...</h2>
                 </div>
                 <div class="row">
                     @foreach($alsoBlogs as $blog)
@@ -100,7 +100,7 @@
                                 <a href="#"><h5>{{ $blog->created_at }}</h5></a>
                                 <a href="#"><h3>{{ $blog->title }}</h3></a>
                                 <p>{{ $blog->excerpt }}</p>
-                                <a class="blog_r_btn" href="#" style="text-align: center !important">Read More</a>
+                                <a class="blog_r_btn" href="#" style="text-align: center !important">{{__('customlang.read')}}</a>
                             </div>
                         </div>
                     </div>

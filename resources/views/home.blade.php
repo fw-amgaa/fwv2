@@ -110,7 +110,7 @@
                                 data-start="1000" 
                                 data-splitin="chars" 
                                 data-splitout="none" 
-                                data-responsive_offset="on">Үнэ цэнийг хуваалцья 
+                                data-responsive_offset="on">{{__('customlang.sharevalue')}} 
                             </div>
                             <div class="tp-caption secand_text" 
                                 data-x="['center']" 
@@ -174,7 +174,7 @@
                                 data-splitin="none" 
                                 data-splitout="none" 
                                 data-responsive_offset="on">
-                                <a class="l_btn" href="/blogs/{{ $featuredBlog->slug }}">Read More</a>
+                                <a class="l_btn" href="/blogs/{{ $featuredBlog->slug }}">{{__('customlang.read')}}</a>
                             </div>
                         </div>
                     </li>
@@ -347,18 +347,17 @@
         <section class="latest_project_area">
             <div class="container">
                 <div class="main_title">
-                    <h5>Check Our Works</h5>
-                    <h2>Latest Projects</h2>
+                    <h2>{{__('customlang.blogs')}}</h2>
                 </div>
                 <nav class="latest_menu">
                     <ul>
-                        <li data-filter="*" class="active"><a href="">All</a></li>
-                        <li id="history" data-filter=".history"><a href="">History</a></li>
-                        <li id="politics" data-filter=".politics"><a href="">Politics</a></li>
-                        <li id="self-development" data-filter=".self-development"><a href="">Self Development</a></li>
-                        <li id="interview" data-filter=".interview"><a href="">Interview</a></li>
-                        <li id="book-introduction" data-filter=".book-introduction"><a href="">Book introduction</a></li>
-                        <li id="art" data-filter=".art"><a href="">Art</a></li>
+                        <li data-filter="*" class="active"><a href="">{{__('customlang.all')}}</a></li>
+                        <li id="history" data-filter=".history"><a href="">{{__('customlang.history')}}</a></li>
+                        <li id="politics" data-filter=".politics"><a href="">{{__('customlang.politics')}}</a></li>
+                        <li id="self-development" data-filter=".self-development"><a href="">{{__('customlang.selfdev')}}</a></li>
+                        <li id="interview" data-filter=".interview"><a href="">{{__('customlang.interview')}}</a></li>
+                        <li id="book-introduction" data-filter=".book-introduction"><a href="">{{__('customlang.bookintro')}}</a></li>
+                        <li id="art" data-filter=".art"><a href="">{{__('customlang.art')}}</a></li>
                     </ul>
                 </nav>
                 <div class="row">
@@ -371,7 +370,7 @@
                                     <div class="l_project_h_inner">
                                         <h4>{{ $blog->title }}</h4>
                                         <p>{{ $blog->excerpt }}</p>
-                                        <a href="/blogs/{{ $blog->slug }}">Read more<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        <a href="/blogs/{{ $blog->slug }}">{{__('customlang.read')}}<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -597,8 +596,8 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-                        <h2 class="modal-title">Thank you</h2>
-                        <p class="modal-subtitle">Your message is successfully sent...</p>
+                        <h2 class="modal-title">{{__('customlang.thank')}}</h2>
+                        <p class="modal-subtitle">{{__('customlang.succ')}}...</p>
                     </div>
                 </div>
             </div>
@@ -611,8 +610,8 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-                        <h2 class="modal-title">Sorry</h2>
-                        <p class="modal-subtitle"> Something went wrong </p>
+                        <h2 class="modal-title">{{__('customlang.sorry')}}</h2>
+                        <p class="modal-subtitle"> {{__('customlang.smth')}} </p>
                     </div>
                 </div>
             </div>

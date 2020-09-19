@@ -53,15 +53,15 @@
         <div class="description_area">
             <div class="container">
                 <div class="description_text">
-                    <h6>Үзэл санаа | Түүх</h6>
+                    <h6>{{__('customlang.vision')}} | {{__('customlang.history')}}</h6>
                     <h4>Аль боомт руу явж байгаагаа үл мэдэх хүнд ямар ч салхи тусгүй. <span>- Сенека</span></h4>
                 </div>
                 <div class="main_title main_title_blue" style="margin-bottom: 50px">
-                    <h2>Эрхэм зорилго</h2>
+                    <h2>{{__('customlang.goal')}}</h2>
                     <p>“Өөрийгөө таньж мэдэхийн төлөө үргэлж хичээж, оюун санаа, сэтгэлгээгээ тасралтгүй хөгжүүлж, үүнийхээ үрээр өөрийн болон бусдын оюун санааны үнэт зүйлсэд хувь нэмрээ оруулах юм.”</p>
                 </div>
                 <div class="main_title main_title_blue" style="margin-bottom: 100px">
-                    <h2>Алсын хараа</h2>
+                    <h2>{{__('customlang.foresight')}}</h2>
                     <p>Өөрийн болон нийтийн соён гэгээрэлд хувь нэмрээ оруулж чадахуйц олон мянган хүмүүс нэгдэн ажиллах гүүр болно. </p>
                 </div>
             </div>
@@ -76,8 +76,7 @@
         <section class="meet_team_area">
             <div class="container">
                 <div class="main_title main_title_blue">
-                    <h2>Түүх</h2>
-                    <p>Чиний хайртай авга ах</p>
+                    <h2>{{__('customlang.history')}}</h2>
                 </div>
                 <div class="row m_team_items">
                     <div class="col-md-3 col-sm-4 col-xs-6">
@@ -178,7 +177,7 @@
         <section class="service_three_area">
             <div class="container">
                 <div class="main_title main_title_blue">
-                    <h2>Үнэт зүйлс</h2>
+                    <h2>{{__('customlang.values')}}</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-4">

@@ -29,43 +29,36 @@
                 <i class="ti-close"></i>
             </div>
             <div class="menu_title">
-                <h2> Welcome to Writers </h2>
-                <p>We will script your fate in a piece of paper</p>
+                <h2> {{__('customlang.welcome')}} </h2>
             </div>
             <div class="off_menu">
                 <ul class="nav">
                     <li class="submenu active">
-                        <a href="#">Home</a>
+                        <a href="#">{{__('customlang.home')}}</a>
                     </li>
-                    <li><a href="/about-us">about</a></li>
+                    <li><a href="/about-us">{{__('customlang.about')}}</a></li>
                     <li class="submenu">
-                        <a href="#">blog</a>
+                        <a href="#">{{__('customlang.blog')}}</a>
                         <ul>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog.html">{{__('customlang.blog')}}</a></li>
                         </ul>
                     </li>
                     <li class="submenu">
-                        <a href="#">Contact Us</a>
-                        <ul>
-                            <li><a href="creative-contact.html">Creative Contact</a></li>
-                        </ul>
+                        <a href="#">{{__('customlang.contact')}}</a>
                     </li>
                 </ul>
             </div>
             <div class="curency language">
-                <h4>Language</h4>
-                <a class="active" href="#">Eng</a>
-                <a href="#">Mon</a>
+                <h4>{{__('customlang.language')}}:</h4>
+                <a href="lang/en">Eng</a>
+                <a href="lang/mn">Mon</a>
             </div>
             <ul class="of_social">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
             </ul>
             <div class="copy_right_menu">
-                <p>© <a href="#">Writers</a> 2020. All Rights Reserved. </p>
+                <p>© <a href="#">Writers</a> 2020. {{__('customlang.rights')}}. </p>
             </div>
         </div>
         <!--================End Offcanvas Menu Area =================-->
@@ -81,20 +74,20 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <ul class="nav navbar-nav">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="/">{{__('customlang.home')}}</a></li>
                         <li class="dropdown">
-                            <a href="/blogs" class="dropdown-toggle">Blogs</a>
+                            <a href="/blogs" class="dropdown-toggle">{{__('customlang.blogs')}}</a>
                                 <ul class="dropdown-menu sub-menu">
                                     @foreach($categories as $categories)
                                         <li><a href="/blogs?category={{$categories->sluger}}">{{ $categories->name }}</a></li>
                                     @endforeach
                                 </ul>
                         </li>
-                        <li><a href="/about-us">Contact Us</a></li>
+                        <li><a href="/about-us">{{__('customlang.contact')}}</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav_searchFrom"><a href="#"><i class="ti-search"></i></a></li>
-                        <li><a href="#"><i class="lnr lnr-menu bar_menu"></i></a></li>
+                        <li style="display: inline-block"><a href="#"><i class="lnr lnr-menu bar_menu"></i></a></li>
                     </ul>
                 </div><!-- /.container-fluid -->
             </nav>
