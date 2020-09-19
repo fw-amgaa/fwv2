@@ -27,6 +27,8 @@
         <link href="<?php echo e(URL::asset('css/style.css')); ?>" rel="stylesheet">
         <link href="<?php echo e(URL::asset('css/responsive.css')); ?>" rel="stylesheet">
 
+        
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -53,17 +55,17 @@
             <div class="container">
                 <div class="blog_main_inner">
                     <div class="breadcumd_title">
-                        <h2>Blogs</h2>
-                        <p>This is blog landing page</p>
+                        <h2><?php echo e(__('customlang.blogs')); ?></h2>
+                        <!-- <p>This is blog landing page</p> -->
                     </div>
                     <ul class="port_fillter blog_fillter">
-                        <li class="active" data-filter="*">All</li>
-                        <li id="history" data-filter=".history">History</li>
-                        <li id="politics" data-filter=".politics">Politics</li>
-                        <li id="self-development" data-filter=".self-development">Self Development</li>
-                        <li id="interview" data-filter=".interview">Interview</li>
-                        <li id="book-introduction" data-filter=".book-introduction">Book Introduction</li>
-                        <li id="art" data-filter=".art">Art</li>
+                        <li class="active" data-filter="*"><?php echo e(__('customlang.all')); ?></li>
+                        <li id="history" data-filter=".history"><?php echo e(__('customlang.history')); ?></li>
+                        <li id="politics" data-filter=".politics"><?php echo e(__('customlang.politics')); ?></li>
+                        <li id="self-development" data-filter=".self-development"><?php echo e(__('customlang.selfdev')); ?></li>
+                        <li id="interview" data-filter=".interview"><?php echo e(__('customlang.interview')); ?></li>
+                        <li id="book-introduction" data-filter=".book-introduction"><?php echo e(__('customlang.bookintro')); ?></li>
+                        <li id="art" data-filter=".art"><?php echo e(__('customlang.art')); ?></li>
                     </ul>
                     <div class="row blog_main_item_inner">
                         <?php $__currentLoopData = $blogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -80,7 +82,7 @@
                                         <a href="/blogs/<?php echo e($blog->slug); ?>"><h5><?php echo e($blog->created_at); ?></h5></a>
                                         <a href="/blogs/<?php echo e($blog->slug); ?>"><h3><?php echo e($blog->title); ?></h3></a>
                                         <p><?php echo e($blog->excerpt); ?></p>
-                                        <a class="blog_r_btn" href="/blogs/<?php echo e($blog->slug); ?>" style="text-align: center !important">Read More</a>
+                                        <a class="blog_r_btn" href="/blogs/<?php echo e($blog->slug); ?>" style="text-align: center !important"><?php echo e(__('customlang.read')); ?></a>
                                     </div>
                                 </div>
                             </div>

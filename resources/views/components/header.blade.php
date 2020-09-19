@@ -78,9 +78,12 @@
                         <li class="dropdown">
                             <a href="/blogs" class="dropdown-toggle">{{__('customlang.blogs')}}</a>
                                 <ul class="dropdown-menu sub-menu">
-                                    @foreach($categories as $categories)
-                                        <li><a href="/blogs?category={{$categories->sluger}}">{{ $categories->name }}</a></li>
-                                    @endforeach
+                                    <li><a href="/blogs?category=history">{{__('customlang.history')}}</a></li>
+                                    <li><a href="/blogs?category=politics">{{__('customlang.politics')}}</a></li>
+                                    <li><a href="/blogs?category=self-development">{{__('customlang.selfdev')}}</a></li>
+                                    <li><a href="/blogs?category=interview">{{__('customlang.interview')}}</a></li>
+                                    <li><a href="/blogs?category=book-introduction">{{__('customlang.bookintro')}}</a></li>
+                                    <li><a href="/blogs?category=art">{{__('customlang.art')}}</a></li>
                                 </ul>
                         </li>
                         <li><a href="/about-us">{{__('customlang.contact')}}</a></li>

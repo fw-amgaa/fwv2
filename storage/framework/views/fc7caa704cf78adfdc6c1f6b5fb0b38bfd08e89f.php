@@ -78,9 +78,12 @@
                         <li class="dropdown">
                             <a href="/blogs" class="dropdown-toggle"><?php echo e(__('customlang.blogs')); ?></a>
                                 <ul class="dropdown-menu sub-menu">
-                                    <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categories): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                        <li><a href="/blogs?category=<?php echo e($categories->sluger); ?>"><?php echo e($categories->name); ?></a></li>
-                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                    <li><a href="/blogs?category=history"><?php echo e(__('customlang.history')); ?></a></li>
+                                    <li><a href="/blogs?category=politics"><?php echo e(__('customlang.politics')); ?></a></li>
+                                    <li><a href="/blogs?category=self-development"><?php echo e(__('customlang.selfdev')); ?></a></li>
+                                    <li><a href="/blogs?category=interview"><?php echo e(__('customlang.interview')); ?></a></li>
+                                    <li><a href="/blogs?category=book-introduction"><?php echo e(__('customlang.bookintro')); ?></a></li>
+                                    <li><a href="/blogs?category=art"><?php echo e(__('customlang.art')); ?></a></li>
                                 </ul>
                         </li>
                         <li><a href="/about-us"><?php echo e(__('customlang.contact')); ?></a></li>
