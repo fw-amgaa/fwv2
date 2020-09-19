@@ -41,7 +41,7 @@
                         <a href="/blogs">{{__('customlang.blog')}}</a>
                     </li>
                     <li class="submenu">
-                        <a href="#">{{__('customlang.contact')}}</a>
+                        <a href="#">{{__('customlang.about')}}</a>
                     </li>
                 </ul>
             </div>
