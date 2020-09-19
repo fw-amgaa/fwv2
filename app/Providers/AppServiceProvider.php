@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
         $blogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->get();
         $categories = Category::all();
         $featuredBlog = Post::where('featured', '1')->first();
-        $alsoBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->get(3);
+        $alsoBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->take(3)->get();
 
     
         View::share('blogs', $blogs);
