@@ -12,7 +12,7 @@
                     @foreach($slider as $blog)
                     <div class="slider-single overflow-hidden border-radius-10">
                         <div class="post-thumb position-relative">
-                            <div class="thumb-overlay position-relative" style="background-image: url({{Voyager::image($blog->image)}})">
+                            <div class="thumb-overlay position-relative" style="background-repeat: no-repeat; background-size: cover; background-image: url({{Voyager::image($blog->image)}})">
                                 <div class="post-content-overlay">
                                     <div class="container">
                                         <div class="entry-meta meta-0 font-small mb-20">
