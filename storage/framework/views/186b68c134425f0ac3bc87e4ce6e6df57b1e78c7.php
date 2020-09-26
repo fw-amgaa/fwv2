@@ -45,7 +45,7 @@
                     <p><?php echo e($blog->excerpt); ?> </p>
                 </div>
                 <div class="entry-main-content dropcap wow fadeIn animated">
-                    <?php echo e($blog->body); ?>
+                    <?php echo $blog->body; ?>
 
                 </div>
                 <div class="entry-bottom mt-50 mb-30 wow fadeIn animated">

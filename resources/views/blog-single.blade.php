@@ -46,7 +46,7 @@
                     <p>{{$blog->excerpt}} </p>
                 </div>
                 <div class="entry-main-content dropcap wow fadeIn animated">
-                    {{$blog->body}}
+                    {!!$blog->body!!}
                 </div>
                 <div class="entry-bottom mt-50 mb-30 wow fadeIn animated">
                     <div class="tags">
