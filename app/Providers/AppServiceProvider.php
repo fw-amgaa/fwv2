@@ -39,6 +39,8 @@ class AppServiceProvider extends ServiceProvider
         $history = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'history')->get();
         $politics = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'politics')->get();
         $self = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'self-development')->get();
+
+        $slider = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('home', '1')->get();
     
         View::share('blogs', $blogs);
         View::share('categories', $categories);
@@ -53,5 +55,7 @@ class AppServiceProvider extends ServiceProvider
         View::share('history', $history);
         View::share('politics', $politics);
         View::share('self', $self);
+
+        View::share('slider', $slider);
     }
 }

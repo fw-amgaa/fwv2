@@ -106,14 +106,14 @@
         <div class="bg-grey pt-50 pb-50">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="post-module-2">
                             <div class="widget-header-1 position-relative mb-30  wow fadeInUp animated">
-                                <h5 class="mt-5 mb-30">Interviews</h5>
+                                <h5 class="mt-5 mb-30">FW Academy</h5>
                             </div>
                             <div class="loop-list loop-list-style-1">
                                 <div class="row">
-                                @foreach($interviewBlogs as $blogs)
+                                @foreach($interviewBlogs as $blog)
                                     <article class="col-md-6 mb-40 wow fadeInUp  animated">
                                         <div class="post-card-1 border-radius-10 hover-up">
                                             <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url({{ Voyager::image($blog->image) }})">
@@ -153,7 +153,7 @@
                                 <h5 class="mt-5 mb-30">Latest posts</h5>
                             </div>
                             <div class="loop-list loop-list-style-1">
-                            @foreach($latestBlogs as $blogs)
+                            @foreach($latestBlogs as $blog)
                                 <article class="hover-up-2 transition-normal wow fadeInUp animated">
                                     <div class="row mb-40 list-style-2">
                                         <div class="col-md-4">
@@ -189,7 +189,6 @@
                             </div>
                         </div>
                     </div>
-                    <x-author/>
                 </div>
             </div>
         </div>

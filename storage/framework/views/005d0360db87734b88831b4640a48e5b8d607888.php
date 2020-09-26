@@ -21,69 +21,6 @@
                                         </h1>
                                         <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
                                             <span class="post-on">26 August 2020</span>
-                                            <span class="hit-count has-dot">18k Views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-single overflow-hidden border-radius-10">
-                        <div class="post-thumb position-relative">
-                            <div class="thumb-overlay position-relative" style="background-image: url(http://via.placeholder.com/3000x1144)">
-                                <div class="post-content-overlay">
-                                    <div class="container">
-                                        <div class="entry-meta meta-0 font-small mb-20">
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-info text-uppercase">Lifestyle</span></a>
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-warning text-uppercase">Destinations</span></a>
-                                        </div>
-                                        <h1 class="post-title mb-20 font-weight-900 text-white">
-                                            <a class="text-white" href="single.html" tabindex="0">Abstract Australia from Above</a>
-                                        </h1>
-                                        <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                            <span class="post-on">15 September 2020</span>
-                                            <span class="hit-count has-dot">23k Views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-single overflow-hidden border-radius-10">
-                        <div class="post-thumb position-relative">
-                            <div class="thumb-overlay position-relative" style="background-image: url(http://via.placeholder.com/3000x1144)">
-                                <div class="post-content-overlay">
-                                    <div class="container">
-                                        <div class="entry-meta meta-0 font-small mb-20">
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-warning text-uppercase">Travel Tips</span></a>
-                                        </div>
-                                        <h1 class="post-title mb-20 font-weight-900 text-white">
-                                            <a class="text-white" href="single.html" tabindex="0">Tips for Scuba Diving the Great Barrier Reef</a>
-                                        </h1>
-                                        <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                            <span class="post-on">15 September 2020</span>
-                                            <span class="hit-count has-dot">17k Views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-single overflow-hidden border-radius-10">
-                        <div class="post-thumb position-relative">
-                            <div class="thumb-overlay position-relative" style="background-image: url(http://via.placeholder.com/3000x1144)">
-                                <div class="post-content-overlay">
-                                    <div class="container">
-                                        <div class="entry-meta meta-0 font-small mb-20">
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-info text-uppercase">Hotel</span></a>
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-warning text-uppercase">Healthy</span></a>
-                                        </div>
-                                        <h1 class="post-title mb-20 font-weight-900 text-white">
-                                            <a class="text-white" href="single.html" tabindex="0">Staying at the Hilton Seychelles Northolme Resort & Spa</a>
-                                        </h1>
-                                        <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                            <span class="post-on">22 September 2020</span>
-                                            <span class="hit-count has-dot">16k Views</span>
                                         </div>
                                     </div>
                                 </div>
@@ -154,7 +91,7 @@
                                     </h5>
                                     <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                         <span class="post-on"><?php echo e($blog->created_at); ?></span>
-                                        <span class="time-reading has-dot">12 mins read</span>
+                                        <span class="time-reading has-dot"><?php echo e($blog->read); ?> mins read</span>
                                     </div>
                                 </div>
                             </div>
@@ -167,14 +104,14 @@
         <div class="bg-grey pt-50 pb-50">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="post-module-2">
                             <div class="widget-header-1 position-relative mb-30  wow fadeInUp animated">
-                                <h5 class="mt-5 mb-30">Interviews</h5>
+                                <h5 class="mt-5 mb-30">FW Academy</h5>
                             </div>
                             <div class="loop-list loop-list-style-1">
                                 <div class="row">
-                                <?php $__currentLoopData = $interviewBlogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blogs): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                <?php $__currentLoopData = $interviewBlogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                     <article class="col-md-6 mb-40 wow fadeInUp  animated">
                                         <div class="post-card-1 border-radius-10 hover-up">
                                             <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url(<?php echo e(Voyager::image($blog->image)); ?>)">
@@ -199,7 +136,7 @@
                                                     </div>
                                                     <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                                         <span class="post-on"><?php echo e($blog->created_at); ?></span>
-                                                        <span class="time-reading has-dot">12 mins read</span>
+                                                        <span class="time-reading has-dot"><?php echo e($blog->read); ?> mins read</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -214,7 +151,7 @@
                                 <h5 class="mt-5 mb-30">Latest posts</h5>
                             </div>
                             <div class="loop-list loop-list-style-1">
-                            <?php $__currentLoopData = $latestBlogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blogs): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php $__currentLoopData = $latestBlogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <article class="hover-up-2 transition-normal wow fadeInUp animated">
                                     <div class="row mb-40 list-style-2">
                                         <div class="col-md-4">
@@ -240,7 +177,7 @@
                                                 </h5>
                                                 <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                                     <span class="post-on"><?php echo e($blog->created_at); ?></span>
-                                                    <span class="time-reading has-dot">11 mins read</span>
+                                                    <span class="time-reading has-dot"><?php echo e($blog->read); ?> mins read</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -250,18 +187,6 @@
                             </div>
                         </div>
                     </div>
-                     <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
-<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.author','data' => []]); ?>
-<?php $component->withName('author'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php $component->withAttributes([]); ?>
-<?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
-<?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
-<?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
-<?php endif; ?>
-<?php echo $__env->renderComponent(); ?>
-<?php endif; ?> 
                 </div>
             </div>
         </div>
