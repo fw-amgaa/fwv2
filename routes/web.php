@@ -32,6 +32,16 @@ Route::get('/blogs', function() {
     return view('blogs', compact('blogs'));
 });
 
+Route::get('/academy', function() {
+    $blogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->get();
+    return view('academy', compact('blogs'));
+});
+
+Route::get('/publish', function() {
+    $blogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->get();
+    return view('publish', compact('blogs'));
+});
+
 Route::get('/blogs/art', function() {
     return view('categories/art');
 });
