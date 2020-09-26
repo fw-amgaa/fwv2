@@ -5,10 +5,11 @@
         <!--archive header-->
         <div class="archive-header pt-50 text-center">
             <div class="container">
-                <h2 class="font-weight-900">{{__('customlang.blogs')}}</h2>
+                <h2 class="font-weight-900">{{__('customlang.interview')}}</h2>
                 <div class="breadcrumb">
                     <a href="index.html" rel="nofollow">Home</a>
                     <span></span> {{__('customlang.blogs')}}
+                    <span></span> {{__('customlang.interview')}}
                 </div>
                 <div class="bt-1 border-color-1 mt-30 mb-50"></div>
             </div>
@@ -60,7 +61,7 @@
                             </div>
                         </div>
                     </div>
-                    @foreach($blogs as $blog)
+                    @foreach($interview as $blog)
                     <article class="col-lg-4 col-md-6 mb-30 wow fadeInUp animated" data-wow-delay="0.2s">
                         <div class="post-card-1 border-radius-10 hover-up">
                             <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url({{ Voyager::image($blog->image) }})">

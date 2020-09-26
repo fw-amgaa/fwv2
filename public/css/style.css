@@ -1910,3 +1910,7 @@ pre {
 .layoutArea .column:first-child {
     margin-bottom: 0 !important;
 }
+
+.layoutArea .column .image img {
+    border-radius: 10px;
+}
