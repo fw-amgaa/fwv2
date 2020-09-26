@@ -42,7 +42,7 @@ class AppServiceProvider extends ServiceProvider
 
         $slider = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('home', '1')->get();
 
-        $pub = Post::join('categories', 'categories.id', '=', 'posts.category_id')->orderBy('posts.created_at', 'ACS')->take(3)->get();
+        $pub = Post::join('categories', 'categories.id', '=', 'posts.category_id')->orderBy('posts.created_at', 'ASC')->take(3)->get();
     
         View::share('blogs', $blogs);
         View::share('categories', $categories);
