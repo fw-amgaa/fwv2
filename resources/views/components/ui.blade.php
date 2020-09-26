@@ -118,6 +118,7 @@
                     <nav>
                         <!--Desktop menu-->
                         <ul class="main-menu d-none d-lg-inline font-small">
+                            <img src="img/logo.png" alt="" style="width: 50px">
                             <li class="current-item">
                                 <a href="/"> <i class="elegant-icon icon_house_alt mr-5"></i> Home</a>
                             </li>
