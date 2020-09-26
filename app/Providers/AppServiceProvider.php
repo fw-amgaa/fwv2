@@ -28,13 +28,16 @@ class AppServiceProvider extends ServiceProvider
     {
         $blogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->get();
         $categories = Category::all();
-        $featuredBlog = Post::where('featured', '1')->first();
-        $alsoBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->take(3)->get();
-
+        $featuredBlog = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('featured', '0')->first();
+        $alsoBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->take(4)->get();
+        $latestBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->orderBy('posts.created_at', 'DESC')->take(8)->get();
+        $interviewBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'interview')->take(4)->get();
     
         View::share('blogs', $blogs);
         View::share('categories', $categories);
         View::share('featuredBlog', $featuredBlog);
         View::share('alsoBlogs', $alsoBlogs);
+        View::share('latestBlogs', $latestBlogs);
+        View::share('interviewBlogs', $interviewBlogs);
     }
 }

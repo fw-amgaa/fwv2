@@ -2,15 +2,19 @@
 
 @section('content')
 <main class="bg-grey pb-30">
-        <div class="entry-header entry-header-style-2 pb-80 pt-80 mb-50 text-white" style="background-image: url(http://via.placeholder.com/3000x1144)">
-            <div class="container entry-header-content">
-                <h1 class="entry-title mb-50 font-weight-900">
-                    Get in Touch
-                </h1>
-            </div>
-        </div>
         <div class="container single-content">
-            <div class="entry-wraper mt-50">
+            <div class="entry-header entry-header-style-1 mb-50 pt-50 text-center">
+                <h1 class="entry-title mb-20 font-weight-900 ">
+                    About me
+                </h1>
+                <p class="text-muted"><span class="typewrite d-inline" data-period="2000" data-type='[ " Travel Blogger. ", "Content Writter. ", "Food Guides " ]'></span></p>
+            </div>
+            <!--end single header-->
+            <figure class="image mb-30 m-auto text-center border-radius-10">
+                <img class="border-radius-10" src="http://via.placeholder.com/3000x1144" alt="post-title" />
+            </figure>
+            <!--figure-->
+            <article class="entry-wraper">
                 <p class="font-large">We are AliThemes , a creative and dedicated group of individuals who love web development almost as much as we love our customers.
                     We are passionate team with the mission for achieving the perfection in web design.
                     All designs are made by love with pixel perfect design and excellent coding quality. Speed, security and SEO friendly alway in our mind.</p>
@@ -56,7 +60,7 @@
                         <button type="submit" class="button button-contactForm">Send message</button>
                     </div>
                 </form>
-            </div>
+            </article>
         </div>
         <!--container-->
     </main>

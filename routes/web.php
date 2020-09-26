@@ -23,8 +23,8 @@ Route::get('lang/{locale}', function ($locale) {
     return redirect()->back();
 });
 
-Route::get('/about-us', function () {
-    return view('about-us');
+Route::get('/about', function () {
+    return view('about');
 });
 
 Route::get('/blogs', function() {
