@@ -1,6 +1,7 @@
 @extends('components.ui')
 
 @section('content')
+
       <main>
         <!--archive header-->
         <div class="archive-header pt-50">
