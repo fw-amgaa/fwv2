@@ -44,8 +44,8 @@ Route::get('/blogs/interview', function() {
     return view('categories/interview');
 });
 
-Route::get('/blogs/book', function() {
-    return view('categories/book');
+Route::get('/blogs/books', function() {
+    return view('categories/books');
 });
 
 Route::get('/blogs/politics', function() {

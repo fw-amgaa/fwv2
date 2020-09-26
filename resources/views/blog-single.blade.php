@@ -114,7 +114,7 @@
                                             </h5>
                                             <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                                 <span class="post-on">{{$blogs->created_at}}</span>
-                                                <span class="time-reading has-dot">11 mins read</span>
+                                                <span class="time-reading has-dot">{{$blog->read}}</span>
                                             </div>
                                         </div>
                                     </div>
