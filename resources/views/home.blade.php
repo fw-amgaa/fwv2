@@ -9,26 +9,28 @@
             <div class="featured-slider-3 position-relative">
                 <div class="slider-3-arrow-cover"></div>
                 <div class="featured-slider-3-items">
+                    @foreach($slider as $blog)
                     <div class="slider-single overflow-hidden border-radius-10">
                         <div class="post-thumb position-relative">
-                            <div class="thumb-overlay position-relative" style="background-image: url(http://via.placeholder.com/3000x1144)">
+                            <div class="thumb-overlay position-relative" style="background-image: url({{Voyager::image($blog->image)}})">
                                 <div class="post-content-overlay">
                                     <div class="container">
                                         <div class="entry-meta meta-0 font-small mb-20">
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-info text-uppercase">Travel</span></a>
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-warning text-uppercase">Animal</span></a>
+                                            <a href="/blogs" tabindex="0"><span class="post-cat text-info text-uppercase">Blogs</span></a>
+                                            <a href="/blogs/{{$blog->sluger}}" tabindex="0"><span class="post-cat text-warning text-uppercase">{{$blog->sluger}}</span></a>
                                         </div>
                                         <h1 class="post-title mb-20 font-weight-900 text-white">
-                                            <a class="text-white" href="single.html" tabindex="0">How to Visit Bali's Monkey Forest</a>
+                                            <a class="text-white" href="/blogs/{{$blog->sluger}}" tabindex="0">{{$blog->title}} </a>
                                         </h1>
                                         <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                            <span class="post-on">26 August 2020</span>
+                                            <span class="post-on">{{$blog->created_at}}</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
