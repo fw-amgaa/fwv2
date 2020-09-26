@@ -32,6 +32,10 @@ Route::get('/blogs', function() {
     return view('blogs', compact('blogs'));
 });
 
+Route::get('/blogs/art', function() {
+    return view('categories/art');
+});
+
 Route::get('/blogs/{slug}', function ($slug) {
     $blog = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('slug', '=', $slug)->firstOrFail();
     return view('blog-single', compact('blog'));
