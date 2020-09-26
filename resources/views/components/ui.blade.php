@@ -313,7 +313,7 @@
     <!-- End Footer -->
     <div class="dark-mark"></div>
     <!-- Vendor JS-->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+       <script src=" js/vendor/modernizr-3.5.0.min.js"></script>
     <script src=" js/vendor/jquery-1.12.4.min.js"></script>
     <script src=" js/vendor/popper.min.js"></script>
     <script src=" js/vendor/bootstrap.min.js"></script>
@@ -329,9 +329,9 @@
     <script src=" js/vendor/perfect-scrollbar.js"></script>
     <script src=" js/vendor/waypoints.min.js"></script>
     <script src=" js/vendor/jquery.theia.sticky.js"></script>
-    <script src="./assets/js/vendor/imagesloaded.pkgd.min.js"></script>
-    <script src="./assets/js/vendor/masonry.pkgd.min.js"></script>
-    <!-- NewsBoard JS -->
+    <script src=" js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src=" js/vendor/masonry.pkgd.min.js"></script>
+    <!-- Main JS -->
     <script src=" js/main.js"></script>
 </body>
 
