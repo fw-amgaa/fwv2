@@ -1,7 +1,7 @@
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) {
     .container {
-        max-width: 640px;
+        max-width: 1140px;
     }
 }
 
@@ -38,7 +38,7 @@
     .entry-wraper,
     .entry-header.entry-header-style-1,
     .single-comment {
-        max-width: 640px;
+        max-width: 800px;
         margin: 0 auto;
     }
 }
