@@ -19,7 +19,7 @@
                 @foreach($blogs as $blog)
                 <article class="grid-item col pb-50 wow fadeIn animated">
                     <div class="post-card-1 border-radius-10 hover-up">
-                        <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url({{ Voyager::image($blogs->image) }})">
+                        <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url({{ Voyager::image($blog->image) }})">
                             <a class="img-link" href="/blogs/{{$blog->slug}}"></a>
                             <span class="top-right-icon bg-success"><i class="elegant-icon icon_camera_alt"></i></span>
                             <ul class="social-share">
