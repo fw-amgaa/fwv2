@@ -1342,6 +1342,16 @@ h1.page-404 {
     color: #000000;
     text-align: left;
 }
+
+.entry-main-content p span {
+    line-height: 1.75;
+    margin: 0cm 0cm 0.0001pt;
+    font-size: medium;
+    font-family: "Times New Roman", serif;
+    caret-color: #000000;
+    color: #000000;
+    text-align: left;
+}
 .entry-main-content h2 {
     line-height: 1.25;
     margin-top: 30px;
