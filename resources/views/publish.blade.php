@@ -48,9 +48,7 @@
             </div>
         </div>
     </main>
+    <script src="./assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/vendor/masonry.pkgd.min.js"></script>
 @endsection
 
-@section('java')
-<script src="./assets/js/vendor/imagesloaded.pkgd.min.js"></script>
-<script src="./assets/js/vendor/masonry.pkgd.min.js"></script>
-@endsection

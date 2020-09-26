@@ -329,7 +329,6 @@
     <script src=" js/vendor/perfect-scrollbar.js"></script>
     <script src=" js/vendor/waypoints.min.js"></script>
     <script src=" js/vendor/jquery.theia.sticky.js"></script>
-    @yield('java')
     <!-- NewsBoard JS -->
     <script src=" js/main.js"></script>
 </body>
