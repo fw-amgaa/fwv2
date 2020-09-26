@@ -15,6 +15,7 @@
         <div class="container">
             <!--Loop Masonry-->
             <div class="grid row mb-30">
+                <div class="grid-sizer"></div>
                 @foreach($blogs as $blog)
                 <article class="grid-item col pb-50 wow fadeIn animated">
                     <div class="post-card-1 border-radius-10 hover-up">
@@ -47,4 +48,9 @@
             </div>
         </div>
     </main>
+@endsection
+
+@section('java')
+<script src="./assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="./assets/js/vendor/masonry.pkgd.min.js"></script>
 @endsection
