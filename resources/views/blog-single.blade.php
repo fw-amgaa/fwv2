@@ -41,7 +41,7 @@
                 <img class="border-radius-10" src="{{Voyager::image($blog->image)}} " alt="post-title" />
             </figure>
             <!--figure-->
-            <article class="entry-wraper mb-50">
+            <article class="entry-wraper mb-50" style="max-width: 640px">
                 <div class="excerpt mb-30">
                     <p>{{$blog->excerpt}} </p>
                 </div>

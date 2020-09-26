@@ -7,8 +7,8 @@
             <div class="container">
                 <h2 class="font-weight-900">{{__('customlang.interview')}}</h2>
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow">Home</a>
-                    <span></span> {{__('customlang.blogs')}}
+                <a href="/" rel="nofollow">Home</a>
+                    <a href="/blogs" rel="nofollow">{{__('customlang.blogs')}}</a>
                     <span></span> {{__('customlang.interview')}}
                 </div>
                 <div class="bt-1 border-color-1 mt-30 mb-50"></div>

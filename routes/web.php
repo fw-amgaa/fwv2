@@ -36,6 +36,26 @@ Route::get('/blogs/art', function() {
     return view('categories/art');
 });
 
+Route::get('/blogs/history', function() {
+    return view('categories/history');
+});
+
+Route::get('/blogs/interview', function() {
+    return view('categories/interview');
+});
+
+Route::get('/blogs/book', function() {
+    return view('categories/book');
+});
+
+Route::get('/blogs/politics', function() {
+    return view('categories/politics');
+});
+
+Route::get('/blogs/self-development', function() {
+    return view('categories/self-development');
+});
+
 Route::get('/blogs/{slug}', function ($slug) {
     $blog = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('slug', '=', $slug)->firstOrFail();
     return view('blog-single', compact('blog'));

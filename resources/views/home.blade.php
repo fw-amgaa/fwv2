@@ -23,69 +23,6 @@
                                         </h1>
                                         <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
                                             <span class="post-on">26 August 2020</span>
-                                            <span class="hit-count has-dot">18k Views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-single overflow-hidden border-radius-10">
-                        <div class="post-thumb position-relative">
-                            <div class="thumb-overlay position-relative" style="background-image: url(http://via.placeholder.com/3000x1144)">
-                                <div class="post-content-overlay">
-                                    <div class="container">
-                                        <div class="entry-meta meta-0 font-small mb-20">
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-info text-uppercase">Lifestyle</span></a>
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-warning text-uppercase">Destinations</span></a>
-                                        </div>
-                                        <h1 class="post-title mb-20 font-weight-900 text-white">
-                                            <a class="text-white" href="single.html" tabindex="0">Abstract Australia from Above</a>
-                                        </h1>
-                                        <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                            <span class="post-on">15 September 2020</span>
-                                            <span class="hit-count has-dot">23k Views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-single overflow-hidden border-radius-10">
-                        <div class="post-thumb position-relative">
-                            <div class="thumb-overlay position-relative" style="background-image: url(http://via.placeholder.com/3000x1144)">
-                                <div class="post-content-overlay">
-                                    <div class="container">
-                                        <div class="entry-meta meta-0 font-small mb-20">
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-warning text-uppercase">Travel Tips</span></a>
-                                        </div>
-                                        <h1 class="post-title mb-20 font-weight-900 text-white">
-                                            <a class="text-white" href="single.html" tabindex="0">Tips for Scuba Diving the Great Barrier Reef</a>
-                                        </h1>
-                                        <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                            <span class="post-on">15 September 2020</span>
-                                            <span class="hit-count has-dot">17k Views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-single overflow-hidden border-radius-10">
-                        <div class="post-thumb position-relative">
-                            <div class="thumb-overlay position-relative" style="background-image: url(http://via.placeholder.com/3000x1144)">
-                                <div class="post-content-overlay">
-                                    <div class="container">
-                                        <div class="entry-meta meta-0 font-small mb-20">
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-info text-uppercase">Hotel</span></a>
-                                            <a href="category.html" tabindex="0"><span class="post-cat text-warning text-uppercase">Healthy</span></a>
-                                        </div>
-                                        <h1 class="post-title mb-20 font-weight-900 text-white">
-                                            <a class="text-white" href="single.html" tabindex="0">Staying at the Hilton Seychelles Northolme Resort & Spa</a>
-                                        </h1>
-                                        <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                            <span class="post-on">22 September 2020</span>
-                                            <span class="hit-count has-dot">16k Views</span>
                                         </div>
                                     </div>
                                 </div>

@@ -9,7 +9,7 @@
                 <h2 class="font-weight-900">{{__('customlang.self')}}</h2>
                 <div class="breadcrumb">
                     <a href="/" rel="nofollow">Home</a>
-                    <span></span> {{__('customlang.blogs')}}
+                    <a href="/blogs" rel="nofollow">{{__('customlang.blogs')}}</a>
                     <span></span> {{__('customlang.self-development')}}
                 </div>
                 <div class="bt-1 border-color-1 mt-30 mb-50"></div>

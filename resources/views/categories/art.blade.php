@@ -7,8 +7,8 @@
             <div class="container">
                 <h2 class="font-weight-900">{{__('customlang.art')}}</h2>
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow">Home</a>
-                    <span></span> {{__('customlang.blogs')}}
+                    <a href="/" rel="nofollow">Home</a>
+                    <a href="/blogs" rel="nofollow">{{__('customlang.blogs')}}</a>
                     <span></span> {{__('customlang.art')}}
                 </div>
                 <div class="bt-1 border-color-1 mt-30 mb-50"></div>
@@ -36,24 +36,6 @@
                                             <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
                                                 <span class="post-on">20 minutes ago</span>
                                                 <span class="hit-count has-dot">23k Views</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="position-relative post-thumb">
-                                    <div class="thumb-overlay img-hover-slide position-relative" style="background-image: url(http://via.placeholder.com/1000x600)">
-                                        <a class="img-link" href="single.html"></a>
-                                        <span class="top-left-icon bg-danger"><i class="elegant-icon icon_image"></i></span>
-                                        <div class="post-content-overlay text-white ml-30 mr-30 pb-30">
-                                            <div class="entry-meta meta-0 font-small mb-20">
-                                                <a href="category.html"><span class="post-cat text-info text-uppercase">Lifestyle</span></a>
-                                            </div>
-                                            <h3 class="post-title font-weight-900 mb-20">
-                                                <a class="text-white" href="single.html">This genius photo experiment shows we are all just sheeple in the consumer matrix</a>
-                                            </h3>
-                                            <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                                <span class="post-on">26 August 2020</span>
-                                                <span class="hit-count has-dot">18k Views</span>
                                             </div>
                                         </div>
                                     </div>

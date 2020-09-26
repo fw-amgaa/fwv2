@@ -88,113 +88,40 @@
                             <h5 class="mt-5 mb-30">Related posts</h5>
                         </div>
                         <div class="loop-list loop-list-style-1">
+                            <?php $__currentLoopData = $alsoBlogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blogs): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <article class="hover-up-2 transition-normal wow fadeInUp  animated">
                                 <div class="row mb-40 list-style-2">
                                     <div class="col-md-4">
                                         <div class="post-thumb position-relative border-radius-5">
-                                            <div class="img-hover-slide border-radius-5 position-relative" style="background-image: url(http://via.placeholder.com/1000x600)">
-                                                <a class="img-link" href="single.html"></a>
+                                            <div class="img-hover-slide border-radius-5 position-relative" style="background-image: url(<?php echo e(Voyager::image($blogs->image)); ?>)">
+                                                <a class="img-link" href="/blogs/<?php echo e($blogs->slug); ?>"></a>
                                             </div>
                                             <ul class="social-share">
                                                 <li><a href="#"><i class="elegant-icon social_share"></i></a></li>
                                                 <li><a class="fb" href="#" title="Share on Facebook" target="_blank"><i class="elegant-icon social_facebook"></i></a></li>
                                                 <li><a class="tw" href="#" target="_blank" title="Tweet now"><i class="elegant-icon social_twitter"></i></a></li>
-                                                <li><a class="pt" href="#" target="_blank" title="Pin it"><i class="elegant-icon social_pinterest"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-md-8 align-self-center">
                                         <div class="post-content">
                                             <div class="entry-meta meta-0 font-small mb-10">
-                                                <a href="category.html"><span class="post-cat text-primary">Food</span></a>
+                                                <a href="/blogs/<?php echo e($blogs->slugger); ?>"><span class="post-cat text-primary"><?php echo e($blogs->slugger); ?></span></a>
                                             </div>
                                             <h5 class="post-title font-weight-900 mb-20">
-                                                <a href="single.html">Helpful Tips for Working from Home as a Freelancer</a>
+                                                <a href="/blogs/<?php echo e($blogs->slug); ?>"><?php echo e($blogs->title); ?></a>
                                                 <span class="post-format-icon"><i class="elegant-icon icon_star_alt"></i></span>
                                             </h5>
                                             <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
-                                                <span class="post-on">7 August</span>
+                                                <span class="post-on"><?php echo e($blogs->created_at); ?></span>
                                                 <span class="time-reading has-dot">11 mins read</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </article>
-                            <article class="hover-up-2 transition-normal wow fadeInUp  animated">
-                                <div class="row mb-40 list-style-2">
-                                    <div class="col-md-4">
-                                        <div class="post-thumb position-relative border-radius-5">
-                                            <div class="img-hover-slide border-radius-5 position-relative" style="background-image: url(http://via.placeholder.com/1000x600)">
-                                                <a class="img-link" href="single.html"></a>
-                                            </div>
-                                            <ul class="social-share">
-                                                <li><a href="#"><i class="elegant-icon social_share"></i></a></li>
-                                                <li><a class="fb" href="#" title="Share on Facebook" target="_blank"><i class="elegant-icon social_facebook"></i></a></li>
-                                                <li><a class="tw" href="#" target="_blank" title="Tweet now"><i class="elegant-icon social_twitter"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 align-self-center">
-                                        <div class="post-content">
-                                            <div class="entry-meta meta-0 font-small mb-10">
-                                                <a href="category.html"><span class="post-cat text-success">Cooking</span></a>
-                                            </div>
-                                            <h5 class="post-title font-weight-900 mb-20">
-                                                <a href="single.html">10 Easy Ways to Be Environmentally Conscious At Home</a>
-                                            </h5>
-                                            <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
-                                                <span class="post-on">27 Sep</span>
-                                                <span class="time-reading has-dot">10 mins read</span>
-                                                <span class="post-by has-dot">22k views</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </div>
-                    </div>
-                </div>
-                <!--More posts-->
-                <div class="single-more-articles border-radius-5">
-                    <div class="widget-header-2 position-relative mb-30">
-                        <h5 class="mt-5 mb-30">You might be interested in</h5>
-                        <button class="single-more-articles-close"><i class="elegant-icon icon_close"></i></button>
-                    </div>
-                    <div class="post-block-list post-module-1 post-module-5">
-                        <ul class="list-post">
-                            <li class="mb-30">
-                                <div class="d-flex hover-up-2 transition-normal">
-                                    <div class="post-thumb post-thumb-80 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
-                                        <a class="color-white" href="single.html">
-                                            <img src="http://via.placeholder.com/500x500" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="post-content media-body">
-                                        <h6 class="post-title mb-15 text-limit-2-row font-medium"><a href="single.html">The Best Time to Travel to Cambodia</a></h6>
-                                        <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
-                                            <span class="post-on">27 Jan</span>
-                                            <span class="post-by has-dot">13k views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-10">
-                                <div class="d-flex hover-up-2 transition-normal">
-                                    <div class="post-thumb post-thumb-80 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
-                                        <a class="color-white" href="single.html">
-                                            <img src="http://via.placeholder.com/500x500" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="post-content media-body">
-                                        <h6 class="post-title mb-15 text-limit-2-row font-medium"><a href="single.html">20 Photos to Inspire You to Visit Cambodia</a></h6>
-                                        <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
-                                            <span class="post-on">27 August</span>
-                                            <span class="post-by has-dot">14k views</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </article>
