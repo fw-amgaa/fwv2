@@ -329,6 +329,8 @@
     <script src=" js/vendor/perfect-scrollbar.js"></script>
     <script src=" js/vendor/waypoints.min.js"></script>
     <script src=" js/vendor/jquery.theia.sticky.js"></script>
+    <script src="./assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/vendor/masonry.pkgd.min.js"></script>
     <!-- NewsBoard JS -->
     <script src=" js/main.js"></script>
 </body>
