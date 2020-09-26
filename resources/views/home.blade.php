@@ -115,7 +115,7 @@
                             </div>
                             <div class="loop-list loop-list-style-1">
                                 <div class="row">
-                                @foreach($blogs as $blog)
+                                @foreach($interviewBlogs as $blog)
                                 <article class="col-md-6 mb-40 wow fadeInUp  animated">
                                     <div class="post-card-1 border-radius-10 hover-up">
                                         <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url({{Voyager::image($blog->image)}})">
