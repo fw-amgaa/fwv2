@@ -1336,18 +1336,22 @@ h1.page-404 {
 .entry-main-content p {
     line-height: 1.75;
     margin: 0cm 0cm 0.0001pt;
-    font-size: medium;
-    font-family: "Times New Roman", serif;
+    font-size: medium !important;
+    font-family: "Times New Roman", serif !important;
     caret-color: #000000;
     color: #000000;
     text-align: left;
 }
 
+.entry-main-content p img {
+    height: auto !important;
+}
+
 .entry-main-content p span {
     line-height: 1.75;
     margin: 0cm 0cm 0.0001pt;
-    font-size: medium;
-    font-family: "Times New Roman", serif;
+    font-size: medium !important;
+    font-family: "Times New Roman", serif !important;
     caret-color: #000000;
     color: #000000;
     text-align: left;
