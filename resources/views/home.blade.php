@@ -156,7 +156,7 @@
                             </div>
                             <div class="loop-list loop-list-style-1">
                                 <div class="row">
-                                @foreach($blogs as $blog)
+                                @foreach($pub as $blog)
                                 <article class="grid-item col pb-50 wow fadeIn animated">
                                     <div class="post-card-1 border-radius-10 hover-up">
                                         <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url({{ Voyager::image($blog->image) }})">
