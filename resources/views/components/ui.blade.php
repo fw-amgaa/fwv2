@@ -167,6 +167,7 @@
                 
                 <div class="float-right header-tools text-muted font-small">
                 <!-- <button class="search-icon d-none d-md-inline"><span class="mr-15 text-muted font-small"><i class="elegant-icon icon_search mr-5"></i>Search</span></button> -->
+                        <ul class="main-menu d-none d-lg-inline font-small">
                             <li class="menu-item-has-children"> 
                               <a href="">
                               {{__('customlang.language')}}
@@ -176,6 +177,7 @@
                                     <li><a href="/lang/mn">Монгол</a></li>
                               </ul>
                             </li>
+                            </ul>
                     <ul class="header-social-network d-inline-block list-inline mr-15">
                         <li class="list-inline-item"><a class="social-icon fb text-xs-center" target="_blank" href="#"><i class="elegant-icon social_facebook"></i></a></li>
                         <li class="list-inline-item"><a class="social-icon tw text-xs-center" target="_blank" href="#"><i class="elegant-icon social_twitter "></i></a></li>
