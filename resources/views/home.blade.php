@@ -5,36 +5,6 @@
 
     <!-- Start Main content -->
     <main class="bg-grey pb-30">
-        <div class="container pt-30">
-            <div class="featured-slider-3 position-relative">
-                <div class="slider-3-arrow-cover"></div>
-                <div class="featured-slider-3-items">
-                    @foreach($slider as $blog)
-                    <div class="slider-single overflow-hidden border-radius-10">
-                        <div class="post-thumb position-relative">
-                            <div class="thumb-overlay position-relative" style="background-repeat: no-repeat; background-size: cover; background-image: url({{Voyager::image($blog->image)}})">
-                                <div class="post-content-overlay">
-                                    <div class="container">
-                                        <div class="entry-meta meta-0 font-small mb-20">
-                                            <a href="/blogs" tabindex="0"><span class="post-cat text-info text-uppercase">{{__('customlang.blogs')}}</span></a>
-                                            <a href="/blogs/{{$blog->sluger}}" tabindex="0"><span class="post-cat text-warning text-uppercase">{{$blog->sluger}}</span></a>
-                                        </div>
-                                        <h1 class="post-title mb-20 font-weight-900 text-white">
-                                            <a class="text-white" href="/blogs/{{$blog->sluger}}" tabindex="0">{{$blog->title}} </a>
-                                        </h1>
-                                        <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                            <span class="post-on">{{$blog->created_at}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-        <!-- End feature -->
         <div class="container">
             <div class="loop-grid mb-30">
                 <div class="row">
@@ -42,6 +12,7 @@
                         <div class="carausel-post-1 hover-up border-radius-10 overflow-hidden transition-normal position-relative wow fadeInUp animated">
                             <div class="arrow-cover"></div>
                             <div class="slide-fade">
+                            @foreach($slider as $featuredBlog)
                                 <div class="position-relative post-thumb">
                                     <div class="thumb-overlay img-hover-slide position-relative" style="background-image: url({{ Voyager::image($featuredBlog->image) }})">
                                         <a class="img-link" href="/blogs/{{ $featuredBlog->slug }}"></a>
@@ -60,6 +31,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
