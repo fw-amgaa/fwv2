@@ -120,54 +120,62 @@
                         <ul class="main-menu d-none d-lg-inline font-small">
                             <img src="img/logo.png" alt="" style="width: 40px">
                             <li class="current-item">
-                                <a href="/"> <i class="elegant-icon icon_house_alt mr-5"></i> Home</a>
+                                <a href="/"> <i class="elegant-icon icon_house_alt mr-5"></i> {{__('customlang.home')}}</a>
                             </li>
                             <li class="menu-item-has-children"> 
                               <a href="/blogs">
-                                Blogs
+                              {{__('customlang.blogs')}}
                               </a> 
                               <ul class="sub-menu text-muted font-small">
-                                    <li><a href="/blogs/art">Art</a></li>
-                                    <li><a href="/blogs/books">Books</a></li>
-                                    <li><a href="/blogs/interview">Interview</a></li>
-                                    <li><a href="/blogs/history">History</a></li>
-                                    <li><a href="/blogs/self-development">Self-Development</a></li>
-                                    <li><a href="/blogs/politics">Politics</a></li>
+                                    <li><a href="/blogs/art">{{__('customlang.art')}}</a></li>
+                                    <li><a href="/blogs/books">{{__('customlang.bookintro')}}</a></li>
+                                    <li><a href="/blogs/interview">{{__('customlang.interview')}}</a></li>
+                                    <li><a href="/blogs/history">{{__('customlang.history')}}</a></li>
+                                    <li><a href="/blogs/self-development">{{__('customlang.self-dev')}}</a></li>
+                                    <li><a href="/blogs/politics">{{__('customlang.politics')}}</a></li>
                               </ul>
                             </li>
                             <li> <a href="/academy">FW Academy</a> </li>
                             <li> <a href="/publish">FW Publish</a> </li>
-                            <li> <a href="/contact">Contact</a> </li>
-                            <li> <a href="/about">About</a> </li>
+                            <li> <a href="/about">{{__('customlang.about')}}</a> </li>
                         </ul>
                         <!--Mobile menu-->
                         <ul id="mobile-menu" class="d-block d-lg-none text-muted">
+                            <img src="img/logo.png" alt="" style="width: 40px">
                             <li class="current-item">
-                                <a href="/"> <i class="elegant-icon icon_house_alt mr-5"></i> Home</a>
+                                <a href="/"> <i class="elegant-icon icon_house_alt mr-5"></i> {{__('customlang.home')}}</a>
                             </li>
                             <li class="menu-item-has-children"> 
                               <a href="/blogs">
-                                Blogs
+                              {{__('customlang.blogs')}}
                               </a> 
                               <ul class="sub-menu text-muted font-small">
-                                    <li><a href="/blogs/art">Art</a></li>
-                                    <li><a href="/blogs/books">Books</a></li>
-                                    <li><a href="/blogs/interview">Interview</a></li>
-                                    <li><a href="/blogs/history">History</a></li>
-                                    <li><a href="/blogs/self-development">Self-Development</a></li>
-                                    <li><a href="/blogs/politics">Politics</a></li>
+                                    <li><a href="/blogs/art">{{__('customlang.art')}}</a></li>
+                                    <li><a href="/blogs/books">{{__('customlang.books')}}</a></li>
+                                    <li><a href="/blogs/interview">{{__('customlang.interview')}}</a></li>
+                                    <li><a href="/blogs/history">{{__('customlang.history')}}</a></li>
+                                    <li><a href="/blogs/self-development">{{__('customlang.self-dev')}}</a></li>
+                                    <li><a href="/blogs/politics">{{__('customlang.politics')}}</a></li>
                               </ul>
                             </li>
-                            <li> <a href="category-list.html">FW Academy</a> </li>
-                            <li> <a href="category-grid.html">FW Publish</a> </li>
-                            <li> <a href="/contact">Contact</a> </li>
-                            <li> <a href="/about">About</a> </li>
+                            <li> <a href="/academy">FW Academy</a> </li>
+                            <li> <a href="/publish">FW Publish</a> </li>
+                            <li> <a href="/about">{{__('customlang.about')}}</a> </li>
                         </ul>
                     </nav>
                 </div>
                 
                 <div class="float-right header-tools text-muted font-small">
-                <button class="search-icon d-none d-md-inline"><span class="mr-15 text-muted font-small"><i class="elegant-icon icon_search mr-5"></i>Search</span></button>
+                <!-- <button class="search-icon d-none d-md-inline"><span class="mr-15 text-muted font-small"><i class="elegant-icon icon_search mr-5"></i>Search</span></button> -->
+                            <li class="menu-item-has-children"> 
+                              <a href="">
+                              {{__('customlang.language')}}
+                              </a> 
+                              <ul class="sub-menu text-muted font-small">
+                                    <li><a href="/lang/en">English</a></li>
+                                    <li><a href="/lang/mn">Монгол</a></li>
+                              </ul>
+                            </li>
                     <ul class="header-social-network d-inline-block list-inline mr-15">
                         <li class="list-inline-item"><a class="social-icon fb text-xs-center" target="_blank" href="#"><i class="elegant-icon social_facebook"></i></a></li>
                         <li class="list-inline-item"><a class="social-icon tw text-xs-center" target="_blank" href="#"><i class="elegant-icon social_twitter "></i></a></li>
@@ -183,7 +191,7 @@
         </div>
     </header>
     <!--Start search form-->
-    <div class="main-search-form">
+    <!-- <div class="main-search-form">
         <div class="container">
             <div class=" pt-50 pb-50 ">
                 <div class="row mb-20">
@@ -244,7 +252,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
     @yield('content')
 
@@ -278,25 +286,24 @@
                             <h5 class="mt-5 mb-30">Quick link</h5>
                         </div>
                         <ul class="font-small">
-                            <li class="cat-item cat-item-2"><a href="/">Home</a></li>
+                            <li class="cat-item cat-item-2"><a href="/">{{__('customlang.home')}}</a></li>
                             <li class="cat-item cat-item-4"><a href="/publish">FW Publish</a></li>
                             <li class="cat-item cat-item-5"><a href="/academy">FW Academy</a></li>
-                            <li class="cat-item cat-item-6"><a href="/blogs">Blogs</a></li>
-                            <li class="cat-item cat-item-7"><a href="/about">About</a></li>
-                            <li class="cat-item cat-item-7"><a href="/contact">​​Contact</a></li>
+                            <li class="cat-item cat-item-6"><a href="/blogs">{{__('customlang.blogs')}}</a></li>
+                            <li class="cat-item cat-item-7"><a href="/about">{{__('customlang.about')}}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="sidebar-widget widget_newsletter wow fadeInUp animated mb-30" data-wow-delay="0.3s">
                         <div class="widget-header-2 position-relative mb-30">
-                            <h5 class="mt-5 mb-30">Newsletter</h5>
+                            <h5 class="mt-5 mb-30">{{__('customlang.newsletter')}}</h5>
                         </div>
                         <div class="newsletter">
                             <p class="font-medium">Subscribe to our newsletter and get our newest updates right on your inbox.</p>
                             <form class="input-group form-subcriber mt-30 d-flex">
                                 <input type="email" class="form-control bg-white font-small" placeholder="Enter your email">
-                                <button class="btn bg-primary text-white" type="submit">Subscribe</button>
+                                <button class="btn bg-primary text-white" type="submit">{{__('customlang.subscribe')}}</button>
                                 <label class="mt-20"> <input class="mr-5" name="name" type="checkbox" value="1" required=""> I agree to the <a href="#" target="_blank">terms &amp; conditions</a> </label>
                             </form>
                         </div>
@@ -306,7 +313,7 @@
             <div class="footer-copy-right pt-30 mt-20 wow fadeInUp animated">
                 <p class="float-md-left font-small text-muted">© 2020, Free Writers </p>
                 <p class="float-md-right font-small text-muted">
-                     All rights reserved
+                {{__('customlang.rights')}}
                 </p>
             </div>
         </div>

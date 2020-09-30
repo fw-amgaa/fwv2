@@ -24,12 +24,12 @@
                                 By <a href="author.html"><span class="author-name font-weight-bold">Altanshagai Mijiddorj</span></a>
                             </p>
                             <span class="mr-10">{{$blog->created_at}} </span>
-                            <span class="has-dot"> 8 mins read</span>
+                            <span class="has-dot"> 8 {{__('customlang.mins')}}</span>
                         </div>
                     </div>
                     <div class="col-md-6 text-right d-none d-md-inline">
                         <ul class="header-social-network d-inline-block list-inline mr-15">
-                            <li class="list-inline-item text-muted"><span>Share this: </span></li>
+                            <li class="list-inline-item text-muted"><span>{{__('customlang.share')}}: </span></li>
                             <li class="list-inline-item"><a class="social-icon fb text-xs-center" target="_blank" href="#"><i class="elegant-icon social_facebook"></i></a></li>
                             <li class="list-inline-item"><a class="social-icon tw text-xs-center" target="_blank" href="#"><i class="elegant-icon social_twitter "></i></a></li>
                         </ul>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="entry-bottom mt-50 mb-30 wow fadeIn animated">
                     <div class="tags">
-                        <span>Category: </span>
+                        <span>{{__('customlang.category')}}: </span>
                         <a href="/blogs/{{$blog->sluger}}" rel="tag">{{$blog->sluger}}</a>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                                             </h5>
                                             <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                                 <span class="post-on">{{$blogs->created_at}}</span>
-                                                <span class="time-reading has-dot">{{$blog->read}}</span>
+                                                <span class="time-reading has-dot">{{$blog->read}} {{__('customlang.mins')}}</span>
                                             </div>
                                         </div>
                                     </div>

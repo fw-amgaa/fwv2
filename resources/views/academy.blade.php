@@ -8,7 +8,7 @@
             <div class="container">
                 <h2 class="font-weight-900">FW Academy</h2>
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow">Home</a>
+                    <a href="index.html" rel="nofollow">{{__('customlang.home')}}</a>
                     <span></span> FW Academy
                 </div>
                 <div class="bt-1 border-color-1 mt-30 mb-50"></div>
@@ -31,7 +31,7 @@
                             <div class="post-content p-30">
                                 <div class="entry-meta meta-0 font-small mb-10">
                                     <a href="/academy"><span class="post-cat text-info">FW Academy</span></a>
-                                    <a href="/blogs/books"><span class="post-cat text-success">Book (For example)</span></a>
+                                    <a href="/blogs/books"><span class="post-cat text-success">{{__('customlang.book')}} (For example)</span></a>
                                 </div>
                                 <div class="d-flex post-card-content">
                                     <h5 class="post-title mb-20 font-weight-900">
@@ -42,7 +42,7 @@
                                     </div>
                                     <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                         <span class="post-on">{{$blog->created_at}}</span>
-                                        <span class="time-reading has-dot">{{$blog->read}} mins read</span>
+                                        <span class="time-reading has-dot">{{$blog->read}} {{__('customlang.mins')}}</span>
                                     </div>
                                 </div>
                             </div>

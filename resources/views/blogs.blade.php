@@ -7,7 +7,7 @@
             <div class="container">
                 <h2 class="font-weight-900">{{__('customlang.blogs')}}</h2>
                 <div class="breadcrumb">
-                    <a href="index.html" rel="nofollow">Home</a>
+                    <a href="index.html" rel="nofollow">{{__('customlang.home')}}</a>
                     <span></span> {{__('customlang.blogs')}}
                 </div>
                 <div class="bt-1 border-color-1 mt-30 mb-50"></div>
@@ -56,7 +56,7 @@
                             </div>
                             <div class="post-content p-30">
                                 <div class="entry-meta meta-0 font-small mb-10">
-                                    <a href="/blogs"><span class="post-cat text-info">Blog</span></a>
+                                    <a href="/blogs"><span class="post-cat text-info">{{__('customlang.blog')}}</span></a>
                                     <a href="/blogs/{{ $blog->sluger }}"><span class="post-cat text-success">{{ $blog->sluger }}</span></a>
                                 </div>
                                 <div class="d-flex post-card-content">
@@ -65,7 +65,7 @@
                                     </h5>
                                     <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                         <span class="post-on">{{ $blog->created_at }}</span>
-                                        <span class="time-reading has-dot">{{ $blog->read }} mins read</span>
+                                        <span class="time-reading has-dot">{{ $blog->read }} {{__('customlang.mins')}}</span>
                                     </div>
                                 </div>
                             </div>

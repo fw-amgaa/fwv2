@@ -7,7 +7,7 @@
             <div class="container">
                 <h2 class="font-weight-900">FW Publish</h2>
                 <div class="breadcrumb">
-                    <a href="/" rel="nofollow">Home</a>
+                    <a href="/" rel="nofollow">{{__('customlang.home')}}</a>
                     <span></span> FW Publish
                 </div>
             </div>
@@ -38,7 +38,7 @@
                                 </h5>
                                 <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                     <span class="post-on">{{$blog->created_at}}</span>
-                                    <span class="time-reading has-dot">{{$blog->read}} mins read</span>
+                                    <span class="time-reading has-dot">{{$blog->read}} {{__('customlang.pminsolitics')}}</span>
                                 </div>
                             </div>
                         </div>

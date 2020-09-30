@@ -26,8 +26,7 @@ return [
     'succ' => 'Your message is successfully sent',
     'sorry' => 'Sorry',
     'smth' => 'Something went wrong',
-    'history' => 'History',
-    'foresight' => 'Foresight',
+    'foresight' => 'Foresight', 
     'vision' => 'Vision',
     'category' => 'Category',
     'share' => 'Share',
@@ -47,5 +46,10 @@ return [
     'email' => 'Enter your email',
     'partner' => 'Our partners',
     'mission' => 'Mission',
-    'photo' => 'Gallery'
+    'photo' => 'Gallery',
+    'newsletter' => 'Newsletter',
+    'subscribe' => 'Subscribe',
+    'mins' => 'min read',
+    'book' => 'Book',
+    'latest' => 'Latest Posts'
 ];
