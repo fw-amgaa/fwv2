@@ -131,7 +131,7 @@
                                     <li><a href="/blogs/books">{{__('customlang.bookintro')}}</a></li>
                                     <li><a href="/blogs/interview">{{__('customlang.interview')}}</a></li>
                                     <li><a href="/blogs/history">{{__('customlang.history')}}</a></li>
-                                    <li><a href="/blogs/self-development">{{__('customlang.self-dev')}}</a></li>
+                                    <li><a href="/blogs/self-development">{{__('customlang.selfdev')}}</a></li>
                                     <li><a href="/blogs/politics">{{__('customlang.politics')}}</a></li>
                               </ul>
                             </li>
@@ -163,7 +163,7 @@
                                     <li><a href="/blogs/books">{{__('customlang.books')}}</a></li>
                                     <li><a href="/blogs/interview">{{__('customlang.interview')}}</a></li>
                                     <li><a href="/blogs/history">{{__('customlang.history')}}</a></li>
-                                    <li><a href="/blogs/self-development">{{__('customlang.self-dev')}}</a></li>
+                                    <li><a href="/blogs/self-development">{{__('customlang.selfdev')}}</a></li>
                                     <li><a href="/blogs/politics">{{__('customlang.politics')}}</a></li>
                               </ul>
                             </li>
