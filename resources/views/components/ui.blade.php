@@ -138,6 +138,15 @@
                             <li> <a href="/academy">FW Academy</a> </li>
                             <li> <a href="/publish">FW Publish</a> </li>
                             <li> <a href="/about">{{__('customlang.about')}}</a> </li>
+                            <li class="menu-item-has-children"> 
+                              <a href="">
+                              {{__('customlang.language')}}
+                              </a> 
+                              <ul class="sub-menu text-muted font-small">
+                                    <li><a href="/lang/en">English</a></li>
+                                    <li><a href="/lang/mn">Монгол</a></li>
+                              </ul>
+                            </li>
                         </ul>
                         <!--Mobile menu-->
                         <ul id="mobile-menu" class="d-block d-lg-none text-muted">
@@ -167,17 +176,6 @@
                 
                 <div class="float-right header-tools text-muted font-small">
                 <!-- <button class="search-icon d-none d-md-inline"><span class="mr-15 text-muted font-small"><i class="elegant-icon icon_search mr-5"></i>Search</span></button> -->
-                        <ul class="main-menu d-none d-lg-inline font-small">
-                            <li class="menu-item-has-children"> 
-                              <a href="">
-                              {{__('customlang.language')}}
-                              </a> 
-                              <ul class="sub-menu text-muted font-small">
-                                    <li><a href="/lang/en">English</a></li>
-                                    <li><a href="/lang/mn">Монгол</a></li>
-                              </ul>
-                            </li>
-                            </ul>
                     <ul class="header-social-network d-inline-block list-inline mr-15">
                         <li class="list-inline-item"><a class="social-icon fb text-xs-center" target="_blank" href="#"><i class="elegant-icon social_facebook"></i></a></li>
                         <li class="list-inline-item"><a class="social-icon tw text-xs-center" target="_blank" href="#"><i class="elegant-icon social_twitter "></i></a></li>
