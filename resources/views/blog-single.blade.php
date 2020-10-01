@@ -71,11 +71,11 @@
                         </h4>
                         <h5 class="text-muted">About author</h5>
                         <div class="author-description text-muted"> {{$blog->author_desc}} </div>
-                        <a href="" class="author-bio-link mb-md-0 mb-3">View all posts (125)</a>
+                        <!-- <a href="" class="author-bio-link mb-md-0 mb-3">View all posts</a> -->
                         <div class="author-social">
                             <ul class="author-social-icons">
                                 <li class="author-social-link-facebook"><a href="{{$blog->facebook}}" target="_blank"><i class="elegant-icon social_facebook"></i></a></li>
-                                <li class="author-social-link-twitter"><a href="{{$blog->instagram}}" target="_blank"><i class="elegant-icon social_twitter"></i></a></li>
+                                <li class="author-social-link-twitter"><a href="{{$blog->instagram}}" target="_blank"><i class="elegant-icon social_instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
