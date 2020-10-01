@@ -67,7 +67,9 @@ Route::get('/blogs/self-development', function() {
 });
 
 Route::get('/blogs/{slug}', function ($slug) {
-    $blog = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('slug', '=', $slug)->firstOrFail();
+    $blog = Post::join('categories', 'categories.id', '=', 'posts.category_id')
+    ->join('users', 'users.id', '=', 'posts.author_id')
+    ->where('slug', '=', $slug)->firstOrFail();
     return view('blog-single', compact('blog'));
 })->name('blogSingle');
 

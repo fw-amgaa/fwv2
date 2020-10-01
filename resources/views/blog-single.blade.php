@@ -20,8 +20,8 @@
                     <div class="col-md-6">
                         <div class="entry-meta align-items-center meta-2 font-small color-muted">
                             <p class="mb-5">
-                                <a class="author-avatar" href="#"><img class="img-circle" src="http://via.placeholder.com/300x300" alt=""></a>
-                                By <a href="author.html"><span class="author-name font-weight-bold">Altanshagai Mijiddorj</span></a>
+                                <a class="author-avatar" href="#"><img class="img-circle" src=" {{ Voyager::image($blog->avatar) }} " alt=""></a>
+                                By <a href=""><span class="author-name font-weight-bold">{{ $blog->name }}</span></a>
                             </p>
                             <span class="mr-10">{{$blog->created_at}} </span>
                             <span class="has-dot"> 8 {{__('customlang.mins')}}</span>
@@ -64,19 +64,18 @@
                 <!--author box-->
                 <div class="author-bio p-30 mt-50 border-radius-10 bg-white wow fadeIn animated">
                     <div class="author-image mb-30">
-                        <a href="author.html"><img src="http://via.placeholder.com/300x300" alt="" class="avatar"></a>
+                        <a href="author.html"><img src="{{ Voyager::image($blog->avatar) }}" alt="" class="avatar"></a>
                     </div>
                     <div class="author-info">
-                        <h4 class="font-weight-bold mb-20"><span class="vcard author"><span class="fn"><a href="author.html" title="Posted by Barbara Cartland" rel="author">Barbara Cartland</a></span></span>
+                        <h4 class="font-weight-bold mb-20"><span class="vcard author"><span class="fn"><a href="" title="Posted by {{$blog->name}}" rel="author">{{$blog->name}}</a></span></span>
                         </h4>
                         <h5 class="text-muted">About author</h5>
-                        <div class="author-description text-muted">You should write because you love the shape of stories and sentences and the creation of different words on a page. </div>
-                        <a href="author.html" class="author-bio-link mb-md-0 mb-3">View all posts (125)</a>
+                        <div class="author-description text-muted"> </div>
+                        <!-- <a href="" class="author-bio-link mb-md-0 mb-3">View all posts (125)</a> -->
                         <div class="author-social">
                             <ul class="author-social-icons">
                                 <li class="author-social-link-facebook"><a href="#" target="_blank"><i class="ti-facebook"></i></a></li>
                                 <li class="author-social-link-twitter"><a href="#" target="_blank"><i class="ti-twitter-alt"></i></a></li>
-                                <li class="author-social-link-instagram"><a href="#" target="_blank"><i class="ti-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
