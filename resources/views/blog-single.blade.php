@@ -70,12 +70,12 @@
                         <h4 class="font-weight-bold mb-20"><span class="vcard author"><span class="fn"><a href="" title="Posted by {{$blog->name}}" rel="author">{{$blog->name}}</a></span></span>
                         </h4>
                         <h5 class="text-muted">About author</h5>
-                        <div class="author-description text-muted"> </div>
-                        <!-- <a href="" class="author-bio-link mb-md-0 mb-3">View all posts (125)</a> -->
+                        <div class="author-description text-muted"> {{$blog->author_desc}} </div>
+                        <a href="" class="author-bio-link mb-md-0 mb-3">View all posts (125)</a>
                         <div class="author-social">
                             <ul class="author-social-icons">
-                                <li class="author-social-link-facebook"><a href="#" target="_blank"><i class="ti-facebook"></i></a></li>
-                                <li class="author-social-link-twitter"><a href="#" target="_blank"><i class="ti-twitter-alt"></i></a></li>
+                                <li class="author-social-link-facebook"><a href="{{$blog->facebook}}" target="_blank"><i class="ti-facebook"></i></a></li>
+                                <li class="author-social-link-twitter"><a href="{{$blog->instagram}}" target="_blank"><i class="ti-twitter-alt"></i></a></li>
                             </ul>
                         </div>
                     </div>
