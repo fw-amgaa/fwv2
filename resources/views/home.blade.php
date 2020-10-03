@@ -56,6 +56,9 @@
                                     <h5 class="post-title mb-20 font-weight-900">
                                         <a href="/blogs/{{ $blog->slug }}">{{ $blog->title }}</a>
                                     </h5>
+                                    <div class="post-excerpt mb-25 font-small text-muted">
+                                                    <p>{{$blog->excerpt}}</p>
+                                                </div>
                                     <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                         <span class="post-on">{{ $blog->created_at }}</span>
                                         <span class="time-reading has-dot">{{ $blog->read }} {{__('customlang.mins')}}</span>
@@ -139,6 +142,9 @@
                                                 <h5 class="post-title mb-20 font-weight-900">
                                                     <a href="/blogs/{{$blog->title}}">{{$blog->title}}</a>
                                                 </h5>
+                                                <div class="post-excerpt mb-25 font-small text-muted">
+                                                    <p>{{$blog->excerpt}}</p>
+                                                </div>
                                                 <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
                                                     <span class="post-on">{{$blog->created_at}}</span>
                                                     <span class="time-reading has-dot">{{$blog->read}} {{__('customlang.mins')}}</span>

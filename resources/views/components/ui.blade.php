@@ -212,13 +212,13 @@
                             <p>
                                 Сэтгэлгээний хөлдүүсийг арилгахын төлөө үзгээ сугалсан дайчид!
                             </p>
-                            <p><strong class="color-black">Address</strong><br>
+                            <p><strong class="color-black">{{__('address')}}</strong><br>
                                 604, Erkhet office<br>
                                 Bayan-Zurh District, Ulaanbaatar</p>
-                            <p><strong class="color-black">Follow us</strong><br>
+                            <p><strong class="color-black">{{__('follow')}}</strong><br>
                                 <ul class="header-social-network d-inline-block list-inline color-white mb-20">
                                     <li class="list-inline-item"><a class="fb" href="https://www.facebook.com/freewriters.mn" target="_blank" title="Facebook"><i class="elegant-icon social_facebook"></i></a></li>
-                                    <li class="list-inline-item"><a class="ig" href="#" target="_blank" title="Tweet now"><i class="elegant-icon social_instagram"></i></a></li>
+                                    <li class="list-inline-item"><a class="ig" href="https://www.instagram.com/freewriters_mn/" target="_blank" title="Instagram"><i class="elegant-icon social_instagram"></i></a></li>
                                 </ul>
                         </div>
                     </div>
@@ -226,7 +226,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="sidebar-widget widget_categories wow fadeInUp animated mb-30" data-wow-delay="0.1s">
                         <div class="widget-header-2 position-relative mb-30">
-                            <h5 class="mt-5 mb-30">Quick link</h5>
+                            <h5 class="mt-5 mb-30">{{__('quicklink')}}</h5>
                         </div>
                         <ul class="font-small">
                             <li class="cat-item cat-item-2"><a href="/">{{__('customlang.home')}}</a></li>
@@ -243,11 +243,11 @@
                             <h5 class="mt-5 mb-30">{{__('customlang.newsletter')}}</h5>
                         </div>
                         <div class="newsletter">
-                            <p class="font-medium">Subscribe to our newsletter and get our newest updates right on your inbox.</p>
+                            <p class="font-medium"> {{__('customlang.subscribenews')}} </p>
                             <form class="input-group form-subcriber mt-30 d-flex">
                                 <input type="email" class="form-control bg-white font-small" placeholder="Enter your email">
                                 <button class="btn bg-primary text-white" type="submit">{{__('customlang.subscribe')}}</button>
-                                <label class="mt-20"> <input class="mr-5" name="name" type="checkbox" value="1" required=""> I agree to the <a href="#" target="_blank">terms &amp; conditions</a> </label>
+                                <label class="mt-20"> <input class="mr-5" name="name" type="checkbox" value="1" required=""> {{__('customlang.agree')}} <a href="#" target="_blank">terms &amp; conditions</a> </label>
                             </form>
                         </div>
                     </div>

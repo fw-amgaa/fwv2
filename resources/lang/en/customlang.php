@@ -51,5 +51,10 @@ return [
     'subscribe' => 'Subscribe',
     'mins' => 'min read',
     'book' => 'Book',
-    'latest' => 'Latest Posts'
+    'latest' => 'Latest Posts',
+    'address' => 'Address',
+    'follow' => 'Follow us',
+    'quicklink' => 'Quick Link',
+    'subscribenews' => 'Subscribe to our newsletter and get our newest updates right on your inbox.',
+    'agree' => 'I agree to the'
 ];
