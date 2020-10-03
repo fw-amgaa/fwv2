@@ -19,7 +19,6 @@
                                         <span class="top-left-icon bg-warning"><i class="elegant-icon icon_star_alt"></i></span>
                                         <div class="post-content-overlay text-white ml-30 mr-30 pb-30">
                                             <div class="entry-meta meta-0 font-small mb-20">
-                                                <a href="/blogs"><span class="post-cat text-info text-uppercase">{{__('customlang.blogs')}}</span></a>
                                                 <a href="/blogs/{{ $featuredBlog->sluger }}"><span class="post-cat text-warning text-uppercase">{{ $featuredBlog->sluger }}</span></a>
                                             </div>
                                             <h3 class="post-title font-weight-900 mb-20">
@@ -49,8 +48,7 @@
                             </div>
                             <div class="post-content p-30">
                                 <div class="entry-meta meta-0 font-small mb-10">
-                                    <a href="/blogs"><span class="post-cat text-info">{{__('customlang.blog')}}</span></a>
-                                    <a href="/blogs/{{ $blog->sluger }}"><span class="post-cat text-success">{{ $blog->sluger }}</span></a>
+                                    <a href="/blogs/{{ $blog->sluger }}"><span class="post-cat text-success" style="text-transform: capitalize">{{ $blog->sluger }}</span></a>
                                 </div>
                                 <div class="d-flex post-card-content">
                                     <h5 class="post-title mb-20 font-weight-900">

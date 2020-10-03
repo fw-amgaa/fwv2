@@ -206,16 +206,16 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="sidebar-widget wow fadeInUp animated mb-30">
                         <div class="widget-header-2 position-relative mb-30">
-                            <h5 class="mt-5 mb-30">About us</h5>
+                            <h5 class="mt-5 mb-30"> {{__('customlang.about')}} </h5>
                         </div>
                         <div class="textwidget">
                             <p>
                                 Сэтгэлгээний хөлдүүсийг арилгахын төлөө үзгээ сугалсан дайчид!
                             </p>
-                            <p><strong class="color-black">{{__('address')}}</strong><br>
+                            <p><strong class="color-black">{{__('customlang.address')}}</strong><br>
                                 604, Erkhet office<br>
                                 Bayan-Zurh District, Ulaanbaatar</p>
-                            <p><strong class="color-black">{{__('follow')}}</strong><br>
+                            <p><strong class="color-black">{{__('customlang.follow')}}</strong><br>
                                 <ul class="header-social-network d-inline-block list-inline color-white mb-20">
                                     <li class="list-inline-item"><a class="fb" href="https://www.facebook.com/freewriters.mn" target="_blank" title="Facebook"><i class="elegant-icon social_facebook"></i></a></li>
                                     <li class="list-inline-item"><a class="ig" href="https://www.instagram.com/freewriters_mn/" target="_blank" title="Instagram"><i class="elegant-icon social_instagram"></i></a></li>
@@ -226,7 +226,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="sidebar-widget widget_categories wow fadeInUp animated mb-30" data-wow-delay="0.1s">
                         <div class="widget-header-2 position-relative mb-30">
-                            <h5 class="mt-5 mb-30">{{__('quicklink')}}</h5>
+                            <h5 class="mt-5 mb-30">{{__('customlang.quicklink')}}</h5>
                         </div>
                         <ul class="font-small">
                             <li class="cat-item cat-item-2"><a href="/">{{__('customlang.home')}}</a></li>

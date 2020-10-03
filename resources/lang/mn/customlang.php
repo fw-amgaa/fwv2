@@ -47,7 +47,7 @@ return [
     'partner' => 'Бидний хамтрагчид',
     'mission' => 'Эрхэм зорилго',
     'photo' => 'Зургын цомог',
-    'newsletter' => 'Newsletter',
+    'newsletter' => 'Мэдээ',
     'subscribe' => 'Захиалах',
     'mins' => 'минут уншина',
     'book' => 'Ном',
