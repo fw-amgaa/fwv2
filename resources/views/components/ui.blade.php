@@ -31,7 +31,7 @@
                     <h5 class="mt-5 mb-15"></h5>
                 </div>
                 <div class="post-block-list post-module-1 post-module-5">
-                    <img src="{{ Voyager::image($author->avatar) }}" alt="" class="avatar">
+                    <img src="" alt="" class="avatar">
                     <div>
                         {{$author->author_desc}}
                     </div>
