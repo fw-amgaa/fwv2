@@ -48,8 +48,8 @@ TABLE CONTENT
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
 :root {
     --color-mode: "light";
-    --color-primary: #5869da;
-    --color-secondary: #2d3d8b;
+    --color-primary: #f3c304;
+    --color-secondary: #f3c304;
     --color-success: #09815c;
     --color-danger: #e3363e;
     --color-warning: #e38836;
