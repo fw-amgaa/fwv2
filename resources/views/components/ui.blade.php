@@ -61,7 +61,7 @@
                     <nav>
                         <!--Desktop menu-->
                         <ul class="main-menu d-none d-lg-inline font-small">
-                            <img src="img/logo.png" alt="" style="width: 40px">
+                            <img src="{{ URL::asset('img/logo.png') }}" alt="" style="width: 40px">
                             <li class="current-item">
                                 <a href="/"> <i class="elegant-icon icon_house_alt mr-5"></i> {{__('customlang.home')}}</a>
                             </li>
@@ -264,24 +264,24 @@
     <!-- End Footer -->
     <div class="dark-mark"></div>
     <!-- Vendor JS-->
-       <script src=" js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src=" js/vendor/jquery-1.12.4.min.js"></script>
-    <script src=" js/vendor/popper.min.js"></script>
-    <script src=" js/vendor/bootstrap.min.js"></script>
-    <script src=" js/vendor/jquery.slicknav.js"></script>
-    <script src=" js/vendor/slick.min.js"></script>
-    <script src=" js/vendor/wow.min.js"></script>
-    <script src=" js/vendor/jquery.ticker.js"></script>
-    <script src=" js/vendor/jquery.vticker-min.js"></script>
-    <script src=" js/vendor/jquery.scrollUp.min.js"></script>
-    <script src=" js/vendor/jquery.nice-select.min.js"></script>
-    <script src=" js/vendor/jquery.magnific-popup.js"></script>
-    <script src=" js/vendor/jquery.sticky.js"></script>
-    <script src=" js/vendor/perfect-scrollbar.js"></script>
-    <script src=" js/vendor/waypoints.min.js"></script>
-    <script src=" js/vendor/jquery.theia.sticky.js"></script>
-    <script src=" js/vendor/imagesloaded.pkgd.min.js"></script>
-    <script src=" js/vendor/masonry.pkgd.min.js"></script>
+       <script src="{{ URL::asset(' js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script src="{{ URL::asset('js/vendor/jquery-1.12.4.min.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/popper.min.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/bootstrap.min.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/jquery.slicknav.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/slick.min.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/wow.min.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/jquery.ticker.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/jquery.vticker-min.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/jquery.scrollUp.min.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/jquery.nice-select.min.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/jquery.magnific-popup.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/jquery.sticky.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/perfect-scrollbar.js') }}"></script>
+    <script src="{{ URL::asset('js/vendor/waypoints.min.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/jquery.theia.sticky.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/imagesloaded.pkgd.min.js') }} "></script>
+    <script src="{{ URL::asset('js/vendor/masonry.pkgd.min.js') }} "></script>
     <!-- Main JS -->
     <script src=" js/main.js"></script>
 </body>
