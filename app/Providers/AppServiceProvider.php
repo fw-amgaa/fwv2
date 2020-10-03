@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use TCG\Voyager\Models\Post;
 use TCG\Voyager\Models\Category;
+use TCG\Voyager\Models\User;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -43,6 +44,8 @@ class AppServiceProvider extends ServiceProvider
         $slider = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('home', '1')->get();
 
         $pub = Post::join('categories', 'categories.id', '=', 'posts.category_id')->orderBy('posts.created_at', 'ASC')->take(3)->get();
+
+        $author = User::where('users.id', '1')->get();
     
         View::share('blogs', $blogs);
         View::share('categories', $categories);
@@ -60,5 +63,6 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('slider', $slider);
         View::share('pub', $pub);
+        View::share('author', $author);
     }
 }
