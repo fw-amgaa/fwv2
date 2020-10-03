@@ -1368,6 +1368,8 @@ h1.page-404 {
 
 .entry-main-content p img {
     height: auto !important;
+    border-radius: 15px;
+    margin: 20px 0;
 }
 
 .entry-main-content p span {

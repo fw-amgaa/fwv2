@@ -38,16 +38,28 @@ class AppServiceProvider extends ServiceProvider
         $latestBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->orderBy('posts.created_at', 'DESC')->take(8)->get();
         $interviewBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'interview')->take(4)->get();
 
-        $art = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'art')->get();
-        $interview = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'interview')->get();
-        $books = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'books')->get();
-        $history = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'history')->get();
-        $politics = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'politics')->get();
-        $self = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'self-development')->get();
+        $art = Post::join('categories', 'categories.id', '=', 'posts.category_id')->join('icons', 'icons.id', '=', 'posts.icon')
+        ->join('colors', 'colors.id', '=', 'posts.icon_color')->where('sluger', 'art')->get();
+
+        $interview = Post::join('categories', 'categories.id', '=', 'posts.category_id')->join('icons', 'icons.id', '=', 'posts.icon')
+        ->join('colors', 'colors.id', '=', 'posts.icon_color')->where('sluger', 'interview')->get();
+
+        $books = Post::join('categories', 'categories.id', '=', 'posts.category_id')->join('icons', 'icons.id', '=', 'posts.icon')
+        ->join('colors', 'colors.id', '=', 'posts.icon_color')->where('sluger', 'books')->get();
+
+        $history = Post::join('categories', 'categories.id', '=', 'posts.category_id')->join('icons', 'icons.id', '=', 'posts.icon')
+        ->join('colors', 'colors.id', '=', 'posts.icon_color')->where('sluger', 'history')->get();
+
+        $politics = Post::join('categories', 'categories.id', '=', 'posts.category_id')->join('icons', 'icons.id', '=', 'posts.icon')
+        ->join('colors', 'colors.id', '=', 'posts.icon_color')->where('sluger', 'politics')->get();
+
+        $self = Post::join('categories', 'categories.id', '=', 'posts.category_id')->join('icons', 'icons.id', '=', 'posts.icon')
+        ->join('colors', 'colors.id', '=', 'posts.icon_color')->where('sluger', 'self-development')->get();
 
         $slider = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('home', '1')->get();
 
-        $pub = Post::join('categories', 'categories.id', '=', 'posts.category_id')->orderBy('posts.created_at', 'ASC')->take(3)->get();
+        $pub = Post::join('categories', 'categories.id', '=', 'posts.category_id')->join('icons', 'icons.id', '=', 'posts.icon')
+        ->join('colors', 'colors.id', '=', 'posts.icon_color')->orderBy('posts.created_at', 'ASC')->take(3)->get();
 
         $author = User::where('id', '4')->firstOrFail();
     
