@@ -45,8 +45,8 @@
                 <div class="post-block-list post-module-1 post-module-5">
                     <ul class="header-social-network d-inline-block list-inline mr-15">
                         <li class="list-inline-item text-muted"><span>{{__('customlang.share')}}: </span></li>
-                        <li class="list-inline-item"><a class="social-icon fb text-xs-center" target="_blank" href="#"><i class="elegant-icon social_facebook"></i></a></li>
-                        <li class="list-inline-item"><a class="social-icon tw text-xs-center" target="_blank" href="#"><i class="elegant-icon social_twitter "></i></a></li>
+                        <li class="list-inline-item"><a class="social-icon fb text-xs-center" target="_blank" href="{{$author->facebook}}"><i class="elegant-icon social_facebook"></i></a></li>
+                        <li class="list-inline-item"><a class="social-icon tw text-xs-center" target="_blank" href="{{$author->instagram}}"><i class="elegant-icon social_instagram "></i></a></li>
                     </ul>
                 </div>
             </div>
