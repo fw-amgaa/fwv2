@@ -33,6 +33,7 @@ class AppServiceProvider extends ServiceProvider
         $alsoBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')
         ->join('icons', 'icons.id', '=', 'posts.icon')
         ->join('colors', 'colors.id', '=', 'posts.icon_color')
+        ->where('home', '0')
         ->take(4)->get();
 
         $latestBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->orderBy('posts.created_at', 'DESC')->take(8)->get();
