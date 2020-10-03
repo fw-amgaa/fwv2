@@ -138,7 +138,7 @@
                                             </div>
                                             <div class="d-flex post-card-content">
                                                 <h5 class="post-title mb-20 font-weight-900">
-                                                    <a href="/blogs/{{$blog->title}}">{{$blog->title}}</a>
+                                                    <a href="/blogs/{{$blog->slug}}">{{$blog->title}}</a>
                                                 </h5>
                                                 <div class="post-excerpt mb-25 font-small text-muted">
                                                     <p>{{$blog->excerpt}}</p>
