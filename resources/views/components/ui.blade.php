@@ -206,19 +206,19 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="sidebar-widget wow fadeInUp animated mb-30">
                         <div class="widget-header-2 position-relative mb-30">
-                            <h5 class="mt-5 mb-30">About me</h5>
+                            <h5 class="mt-5 mb-30">About us</h5>
                         </div>
                         <div class="textwidget">
                             <p>
-                                Start writing, no matter what. The water does not flow until the faucet is turned on.
+                                Сэтгэлгээний хөлдүүсийг арилгахын төлөө үзгээ сугалсан дайчид!
                             </p>
                             <p><strong class="color-black">Address</strong><br>
-                                123 Main Street<br>
-                                New York, NY 10001</p>
-                            <p><strong class="color-black">Follow me</strong><br>
+                                604, Erkhet office<br>
+                                Bayan-Zurh District, Ulaanbaatar</p>
+                            <p><strong class="color-black">Follow us</strong><br>
                                 <ul class="header-social-network d-inline-block list-inline color-white mb-20">
-                                    <li class="list-inline-item"><a class="fb" href="#" target="_blank" title="Facebook"><i class="elegant-icon social_facebook"></i></a></li>
-                                    <li class="list-inline-item"><a class="tw" href="#" target="_blank" title="Tweet now"><i class="elegant-icon social_twitter"></i></a></li>
+                                    <li class="list-inline-item"><a class="fb" href="https://www.facebook.com/freewriters.mn" target="_blank" title="Facebook"><i class="elegant-icon social_facebook"></i></a></li>
+                                    <li class="list-inline-item"><a class="ig" href="#" target="_blank" title="Tweet now"><i class="elegant-icon social_instagram"></i></a></li>
                                 </ul>
                         </div>
                     </div>
