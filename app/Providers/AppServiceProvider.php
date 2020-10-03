@@ -30,7 +30,10 @@ class AppServiceProvider extends ServiceProvider
         $blogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->get();
         $categories = Category::all();
         $featuredBlog = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('featured', '1')->first();
-        $alsoBlogs = Post::take(4)->get();
+        $alsoBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')
+        ->join('icons', 'icons.id', '=', 'posts.icon')
+        ->join('colors', 'colors.id', '=', 'posts.icon_color')
+        ->take(4)->get();
 
         $latestBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->orderBy('posts.created_at', 'DESC')->take(8)->get();
         $interviewBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('sluger', 'interview')->take(4)->get();
