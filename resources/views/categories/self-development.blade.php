@@ -17,32 +17,6 @@
         <div class="container">
             <div class="loop-grid mb-30">
                 <div class="row">
-                    <div class="col-lg-8 mb-30">
-                        <div class="carausel-post-1 hover-up border-radius-10 overflow-hidden transition-normal position-relative wow fadeInUp animated">
-                            <div class="arrow-cover"></div>
-                            <div class="slide-fade">
-                                <div class="position-relative post-thumb">
-                                    <div class="thumb-overlay img-hover-slide position-relative" style="background-image: url(http://via.placeholder.com/1000x600)">
-                                        <a class="img-link" href="single.html"></a>
-                                        <span class="top-left-icon bg-warning"><i class="elegant-icon icon_star_alt"></i></span>
-                                        <div class="post-content-overlay text-white ml-30 mr-30 pb-30">
-                                            <div class="entry-meta meta-0 font-small mb-20">
-                                                <a href="category.html"><span class="post-cat text-info text-uppercase">Travel</span></a>
-                                                <a href="category.html"><span class="post-cat text-success text-uppercase">Animal</span></a>
-                                            </div>
-                                            <h3 class="post-title font-weight-900 mb-20">
-                                                <a class="text-white" href="single.html">Beachmaster Elephant Seal Fights off Rival Male, The match is uncompromising</a>
-                                            </h3>
-                                            <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                                <span class="post-on">20 minutes ago</span>
-                                                <span class="hit-count has-dot">23k Views</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     @foreach($self as $blog)
                     <article class="col-lg-4 col-md-6 mb-30 wow fadeInUp animated" data-wow-delay="0.2s">
                         <div class="post-card-1 border-radius-10 hover-up">

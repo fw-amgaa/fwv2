@@ -20,24 +20,26 @@
                         <div class="carausel-post-1 hover-up border-radius-10 overflow-hidden transition-normal position-relative wow fadeInUp animated">
                             <div class="arrow-cover"></div>
                             <div class="slide-fade">
+                            @foreach($slider as $featuredBlog)
                                 <div class="position-relative post-thumb">
-                                    <div class="thumb-overlay img-hover-slide position-relative" style="background-image: url(http://via.placeholder.com/1000x600)">
-                                        <a class="img-link" href="single.html"></a>
+                                    <div class="thumb-overlay img-hover-slide position-relative" style="background-image: url({{ Voyager::image($featuredBlog->image) }})">
+                                        <a class="img-link" href="/blogs/{{ $featuredBlog->slug }}"></a>
                                         <span class="top-left-icon bg-warning"><i class="elegant-icon icon_star_alt"></i></span>
                                         <div class="post-content-overlay text-white ml-30 mr-30 pb-30">
                                             <div class="entry-meta meta-0 font-small mb-20">
-                                                <a href="category.html"><span class="post-cat text-info text-uppercase">Travel</span></a>
-                                                <a href="category.html"><span class="post-cat text-success text-uppercase">Animal</span></a>
+                                                <a href="/blogs"><span class="post-cat text-info text-uppercase">{{__('customlang.blogs')}}</span></a>
+                                                <a href="/blogs/{{ $featuredBlog->sluger }}"><span class="post-cat text-warning text-uppercase">{{ $featuredBlog->sluger }}</span></a>
                                             </div>
                                             <h3 class="post-title font-weight-900 mb-20">
-                                                <a class="text-white" href="single.html">Beachmaster Elephant Seal Fights off Rival Male, The match is uncompromising</a>
+                                                <a class="text-white" href="/blogs/{{ $featuredBlog->slug }}">{{ $featuredBlog->title }}</a>
                                             </h3>
                                             <div class="entry-meta meta-1 font-small text-white mt-10 pr-5 pl-5">
-                                                <span class="post-on">20 minutes ago</span>
-                                                <span class="hit-count has-dot">23k Views</span>
+                                                <span class="post-on">{{ $featuredBlog->created_at }}</span>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            @endforeach
                                 </div>
                             </div>
                         </div>
