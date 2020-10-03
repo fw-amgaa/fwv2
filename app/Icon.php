@@ -9,7 +9,7 @@ class Icon extends Eloquent
 
     public function posts()
     {
-        return $this->hasMany('App\Post');
+        return $this->hasMany('TCG\Voyager\Models\Post');
     }
 
 }
