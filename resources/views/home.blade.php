@@ -40,7 +40,7 @@
                         <div class="post-card-1 border-radius-10 hover-up">
                             <div class="post-thumb thumb-overlay img-hover-slide position-relative" style="background-image: url({{ Voyager::image($blog->image) }})">
                                 <a class="img-link" href="/blogs/{{ $blog->slug }}"></a>
-                                <span class="top-right-icon {{$blog->color_class}}"><i class="elegant-icon {{$blog->icon_class}}"></i></span>
+                                <span class="top-right-icon {{$blog->colors->color_class}}"><i class="elegant-icon {{$blog->icons->icon_class}}"></i></span>
                                 <ul class="social-share">
                                     <li><a href="#"><i class="elegant-icon social_share"></i></a></li>
                                     <li><a class="fb" href="#" title="Share on Facebook" target="_blank"><i class="elegant-icon social_facebook"></i></a></li>
