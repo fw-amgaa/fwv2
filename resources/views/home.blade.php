@@ -93,7 +93,7 @@
                                         <div class="post-content p-30">
                                             <div class="entry-meta meta-0 font-small mb-10">
                                                 <a href="/academy"><span class="post-cat text-info">FW Academy</span></a>
-                                                <a href="/blogs/books"><span class="post-cat text-success">{{__('customlang.book')}} (For example)</span></a>
+                                                <a href="/blogs/books"><span class="post-cat text-success" style="text-transform: capitalize">{{__('customlang.book')}} (For example)</span></a>
                                             </div>
                                             <div class="d-flex post-card-content">
                                                 <h5 class="post-title mb-20 font-weight-900">

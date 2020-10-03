@@ -264,7 +264,7 @@
     <!-- End Footer -->
     <div class="dark-mark"></div>
     <!-- Vendor JS-->
-       <script src="{{ URL::asset(' js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script src="{{ URL::asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
     <script src="{{ URL::asset('js/vendor/jquery-1.12.4.min.js') }} "></script>
     <script src="{{ URL::asset('js/vendor/popper.min.js') }} "></script>
     <script src="{{ URL::asset('js/vendor/bootstrap.min.js') }} "></script>
