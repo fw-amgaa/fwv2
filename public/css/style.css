@@ -68,6 +68,29 @@ TABLE CONTENT
     --button-shadow-color-hover: hsla(0, 0%, 42.4%, 0.3);
 }
 
+@font-face {
+    font-family: Georgia;
+    src: url(/public/fonts/Georgia\ Regular\ font.ttf);
+}
+
+@font-face {
+    font-family: Georgia;
+    src: url(/public/fonts/georgia\ bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Georgia;
+    src: url(/public/fonts/Georgia\ Bold\ Italic\ font.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: Georgia;
+    src: url(/public/fonts/georgia\ italic.ttf);
+    font-style: italic;
+}
+
 /*Bootstrap color customize*/
 .text-primary {
     color: var(--color-primary) !important;
@@ -176,7 +199,7 @@ button.bg-primary:hover {
 
 /* GENERAL */
 body {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: Georgia;
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
@@ -193,7 +216,7 @@ h6,
     font-style: normal;
     font-weight: 500;
     text-transform: none;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: Georgia;
 }
 p {
     margin-bottom: 1.2em;
@@ -1337,7 +1360,7 @@ h1.page-404 {
     line-height: 1.75;
     margin: 0cm 0cm 0.0001pt;
     font-size: medium !important;
-    font-family: "Times New Roman", serif !important;
+    font-family: Georgia;
     caret-color: #000000;
     color: #000000;
     text-align: left;
@@ -1351,7 +1374,7 @@ h1.page-404 {
     line-height: 1.75;
     margin: 0cm 0cm 0.0001pt;
     font-size: medium !important;
-    font-family: "Times New Roman", serif !important;
+    font-family: Georgia !important;
     caret-color: #000000;
     color: #000000;
     text-align: left;
@@ -1938,5 +1961,5 @@ pre {
     line-height: 23px;
     font-size: 14px;
     color: #666;
-    font-family: "Lora", serif !important;
+    font-family: Georgia !important;
 }
