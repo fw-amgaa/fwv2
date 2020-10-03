@@ -28,7 +28,7 @@
             <!--Categories-->
             <div class="sidebar-widget widget_categories mb-50 mt-30">
                 <div class="widget-header-2 position-relative">
-                    <h5 class="mt-5 mb-15">{{$author->name}}</h5>
+                    <h5 class="mt-5 mb-15"></h5>
                 </div>
                 <div class="post-block-list post-module-1 post-module-5">
                     <img src="{{ Voyager::image($author->avatar) }}" alt="" class="avatar">

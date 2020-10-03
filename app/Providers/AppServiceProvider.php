@@ -45,7 +45,7 @@ class AppServiceProvider extends ServiceProvider
 
         $pub = Post::join('categories', 'categories.id', '=', 'posts.category_id')->orderBy('posts.created_at', 'ASC')->take(3)->get();
 
-        $author = User::where('users.id', '4')->get();
+        $author = User::where('id', '4')->get();
     
         View::share('blogs', $blogs);
         View::share('categories', $categories);
