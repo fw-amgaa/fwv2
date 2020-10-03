@@ -283,7 +283,7 @@
     <script src="{{ URL::asset('js/vendor/imagesloaded.pkgd.min.js') }} "></script>
     <script src="{{ URL::asset('js/vendor/masonry.pkgd.min.js') }} "></script>
     <!-- Main JS -->
-    <script src=" js/main.js"></script>
+    <script src="{{ URL::asset('js/main.js') }} "></script>
 </body>
 
 </html>
