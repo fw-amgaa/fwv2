@@ -5,11 +5,11 @@
         <!--archive header-->
         <div class="archive-header pt-50 text-center">
             <div class="container">
-                <h2 class="font-weight-900">{{__('customlang.self')}}</h2>
+                <h2 class="font-weight-900">{{__('customlang.selfdev')}}</h2>
                 <div class="breadcrumb">
                 <a href="/" rel="nofollow">Home</a>
                     <a href="/blogs" rel="nofollow">{{__('customlang.blogs')}}</a>
-                    <span></span> {{__('customlang.self-development')}}
+                    <span></span> {{__('customlang.selfdev')}}
                 </div>
                 <div class="bt-1 border-color-1 mt-30 mb-50"></div>
             </div>
