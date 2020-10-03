@@ -1928,3 +1928,15 @@ pre {
     border-radius: 10px;
     height: auto;
 }
+
+.avatar-image {
+    border-radius: 15px;
+}
+
+.avatar-description {
+    margin: 20px 0;
+    line-height: 23px;
+    font-size: 14px;
+    color: #666;
+    font-family: "Lora", serif !important;
+}
