@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $blogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->get();
+        $blogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('home', '0')->get();
         $categories = Category::all();
         $featuredBlog = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('featured', '1')->first();
         $alsoBlogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')
