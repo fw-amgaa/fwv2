@@ -1358,7 +1358,6 @@ h1.page-404 {
 }
 .entry-main-content p {
     line-height: 1.75;
-    margin: 0cm 0cm 0.0001pt;
     font-size: medium !important;
     font-family: Georgia;
     caret-color: #000000;
@@ -1374,7 +1373,6 @@ h1.page-404 {
 
 .entry-main-content p span {
     line-height: 1.75;
-    margin: 0cm 0cm 0.0001pt;
     font-size: medium !important;
     font-family: Georgia !important;
     caret-color: #000000;
