@@ -1963,3 +1963,10 @@ pre {
     color: #666;
     font-family: Georgia !important;
 }
+
+figcaption {
+    font-style: 14px;
+    text-transform: capitalize;
+    margin: 5px 0;
+    font-style: italic;
+}
