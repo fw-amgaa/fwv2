@@ -43,27 +43,27 @@ Route::get('/publish', function() {
 });
 
 Route::get('/blogs/art', function() {
-    return view('categories/art');
+    return view('art');
 });
 
 Route::get('/blogs/history', function() {
-    return view('categories/history');
+    return view('history');
 });
 
 Route::get('/blogs/interview', function() {
-    return view('categories/interview');
+    return view('interview');
 });
 
 Route::get('/blogs/books', function() {
-    return view('categories/books');
+    return view('books');
 });
 
 Route::get('/blogs/politics', function() {
-    return view('categories/politics');
+    return view('politics');
 });
 
 Route::get('/blogs/self-development', function() {
-    return view('categories/self-development');
+    return view('self-development');
 });
 
 Route::get('/blogs/{slug}', function ($slug) {

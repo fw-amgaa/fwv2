@@ -4,7 +4,7 @@
 
 
     <!-- Start Main content -->
-    <main class="bg-grey pb-30">
+    <main class="bg-grey pb-30 pt-30">
         <div class="container">
             <div class="loop-grid mb-30">
                 <div class="row">
@@ -149,46 +149,6 @@
                                 </article>
                                 @endforeach
                                 </div>
-                            </div>
-                        </div>
-                        <div class="post-module-3">
-                            <div class="widget-header-1 position-relative mb-30">
-                                <h5 class="mt-5 mb-30">{{__('customlang.latest')}}</h5>
-                            </div>
-                            <div class="loop-list loop-list-style-1">
-                            @foreach($latestBlogs as $blog)
-                                <article class="hover-up-2 transition-normal wow fadeInUp animated">
-                                    <div class="row mb-40 list-style-2">
-                                        <div class="col-md-4">
-                                            <div class="post-thumb position-relative border-radius-5">
-                                                <div class="img-hover-slide border-radius-5 position-relative" style="background-image: url({{ Voyager::image($blog->image) }})">
-                                                    <a class="img-link" href="/blogs/{{ $blog->slug }}"></a>
-                                                </div>
-                                                <ul class="social-share">
-                                                    <li><a href="#"><i class="elegant-icon social_share"></i></a></li>
-                                                    <li><a class="fb" href="#" title="Share on Facebook" target="_blank"><i class="elegant-icon social_facebook"></i></a></li>
-                                                    <li><a class="tw" href="#" target="_blank" title="Tweet now"><i class="elegant-icon social_twitter"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8 align-self-center">
-                                            <div class="post-content">
-                                                <div class="entry-meta meta-0 font-small mb-10">
-                                                    <a href="category.html"><span class="post-cat text-success">{{ $blog->sluger }}</span></a>
-                                                </div>
-                                                <h5 class="post-title font-weight-900 mb-20">
-                                                    <a href="/blogs/{{ $blog->slug }}">{{ $blog->title }} </a>
-                                                    <span class="post-format-icon"><i class="elegant-icon icon_star_alt"></i></span>
-                                                </h5>
-                                                <div class="entry-meta meta-1 float-left font-x-small text-uppercase">
-                                                    <span class="post-on">{{ $blog->created_at }}</span>
-                                                    <span class="time-reading has-dot">{{$blog->read}} {{__('customlang.mins')}}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            @endforeach
                             </div>
                         </div>
                     </div>
